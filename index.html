@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Zelqar - AI Automation Agency</title>
+<title>Zorex - AI Automation Agency</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -107,24 +107,38 @@
         .icon-fill {
             font-variation-settings: 'FILL' 1;
         }
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .mask-image-fade {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
 <!-- Unified TopNavBar -->
 <nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
 <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zelqar</a>
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="solutions.html" data-page="solutions">Solutions</a>
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">Process</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
 <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
 </div>
 <div class="flex items-center gap-4">
-<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="#book">Book Strategy Call</a>
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
 <button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
 </div>
 </div>
@@ -132,17 +146,17 @@
 <a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
 <a href="solutions.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
 <a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
-<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Process</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
 <a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
 <a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
 <a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
-<a href="#book" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
+<a href="contact.html" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
 </div>
 </nav>
 <!-- Main Content -->
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative pt-section-padding pb-24 px-8 overflow-hidden bg-surface-bright border-b border-outline-variant/30">
+<section class="relative pt-16 pb-24 px-8 overflow-hidden bg-surface-bright border-b border-outline-variant/30">
 <div class="max-w-container-max mx-auto relative z-10 flex flex-col items-center text-center">
 <div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm uppercase mb-8 shadow-sm">
 <span class="material-symbols-outlined text-sm icon-fill">bolt</span>
@@ -156,11 +170,11 @@
                     Stop paying brilliant people to do robotic work. We build custom AI and workflow infrastructure that permanently eliminates operational bottlenecks, turning your business into a high-leverage machine.
                 </p>
 <div class="flex flex-col sm:flex-row items-center gap-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:bg-primary transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200" href="#book">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:bg-primary transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200" href="contact.html">
                         Book Your Strategy Audit
                         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </a>
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary-container text-primary-container rounded-full font-label-sm uppercase tracking-wider hover:bg-surface-container transition-colors duration-200" href="#case-studies">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary-container text-primary-container rounded-full font-label-sm uppercase tracking-wider hover:bg-surface-container transition-colors duration-200" href="case-studies.html">
                         View Case Studies
                     </a>
 </div>
@@ -171,18 +185,25 @@
 </section>
 <!-- Integrations Bar -->
 <section class="py-12 border-b border-outline-variant/30 bg-surface-container-low overflow-hidden">
-<div class="max-w-container-max mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest whitespace-nowrap">
+<div class="max-w-container-max mx-auto px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest whitespace-nowrap z-10 shrink-0">
                     Seamlessly Integrated With Your Stack
                 </p>
-<div class="flex items-center gap-8 md:gap-12 opacity-60 flex-wrap justify-center">
-<!-- Text placeholders for logos to maintain style without external images -->
-<span class="font-bold text-xl tracking-tight">Twilio</span>
-<span class="font-bold text-xl tracking-tight">MongoDB</span>
-<span class="font-bold text-xl tracking-tight">Shopify</span>
-<span class="font-bold text-xl tracking-tight">Zapier</span>
-<span class="font-bold text-xl tracking-tight">HubSpot</span>
-<span class="font-bold text-xl tracking-tight">Stripe</span>
+<div class="relative flex overflow-hidden w-full mask-image-fade">
+<div class="flex items-center gap-12 md:gap-20 opacity-70 animate-marquee whitespace-nowrap w-max" id="marquee-track">
+<div class="flex items-center gap-12 md:gap-20 pr-12 md:pr-20" id="marquee-inner">
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">LangChain</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Claude</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">GPT</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">n8n</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">GHL</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Zapier</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Make</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">OpenAI</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">HubSpot</span>
+<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Stripe</span>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -193,38 +214,38 @@
 <!-- Stat Card 1 -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary-container">trending_up</span>
+<span class="material-symbols-outlined text-primary-container">psychology</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2">+40%</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lead Conversion</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Average increase for clients using our automated follow-up engine.</p>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-2">+<span class="stat-counter" data-target="85">0</span>%</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workflow Autonomy</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Average reduction in manual human intervention across core enterprise processes.</p>
 </div>
 <!-- Stat Card 2 -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
 <div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary">schedule</span>
+<span class="material-symbols-outlined text-secondary">bolt</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2">9 HRS</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Saved Weekly</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Per employee, reclaimed from manual data entry and reporting.</p>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span class="stat-counter" data-target="10">0</span>x</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Processing Speed</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Acceleration in cross-platform data processing via unified orchestration.</p>
 </div>
 <!-- Stat Card 3 -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary-container">payments</span>
+<span class="material-symbols-outlined text-primary-container">account_balance</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2">$1,200</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Monthly Reduction</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">In redundant software subscriptions consolidated by our workflows.</p>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-2">$<span class="stat-counter" data-target="25000">0</span></h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Monthly Overhead Cut</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Saved in redundant SaaS licenses and manual labor overhead via consolidation.</p>
 </div>
 <!-- Stat Card 4 (Solid Accent) -->
 <div class="bg-primary-container rounded-xl p-8 shadow-lg flex flex-col justify-center relative overflow-hidden">
 <div class="absolute -right-4 -top-4 text-white/5">
-<span class="material-symbols-outlined text-[120px]">timer</span>
+<span class="material-symbols-outlined text-[120px]">hub</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-primary mb-2 relative z-10">30 DAYS</h3>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2 relative z-10"><span class="stat-counter" data-target="45">0</span> DAYS</h3>
 <p class="font-label-sm text-label-sm text-accent-gold uppercase tracking-wider relative z-10">Average Deployment</p>
-<p class="font-body-md text-body-md text-on-primary/80 mt-4 text-sm relative z-10">From strategy audit to live production environment.</p>
+<p class="font-body-md text-body-md text-on-primary/80 mt-4 text-sm relative z-10">From strategic architecture mapping to live cognitive system integration.</p>
 </div>
 </div>
 </div>
@@ -239,30 +260,42 @@
                         They have a plumbing problem.
                     </h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 group/grid">
 <!-- Problem 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 relative">
-<div class="absolute top-0 left-8 -translate-y-1/2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20">
-                            Friction Point 01
-                        </div>
-<h4 class="font-headline-md text-xl text-primary-container mb-4 mt-2">The Data Is "Somewhere"</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Your CRM says one thing, your billing software says another, and your team spends hours cross-referencing spreadsheets just to send an invoice.</p>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+    <span class="material-symbols-outlined text-[120px] text-error">database_off</span>
+</div>
+<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
+    Friction Point 01
+</div>
+<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The Data Is "Somewhere"</h4>
+<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your CRM says one thing, your billing software says another, and your team spends hours cross-referencing spreadsheets just to send an invoice.</p>
 </div>
 <!-- Problem 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 relative">
-<div class="absolute top-0 left-8 -translate-y-1/2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20">
-                            Friction Point 02
-                        </div>
-<h4 class="font-headline-md text-xl text-primary-container mb-4 mt-2">The "I'll Do It Later" Trap</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Critical follow-ups, contract generations, and client onboarding tasks get delayed because "busy work" takes precedence over revenue-generating work.</p>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+    <span class="material-symbols-outlined text-[120px] text-error">pending_actions</span>
+</div>
+<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
+    Friction Point 02
+</div>
+<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The "I'll Do It Later" Trap</h4>
+<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Critical follow-ups, contract generations, and client onboarding tasks get delayed because "busy work" takes precedence over revenue-generating work.</p>
 </div>
 <!-- Problem 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 relative">
-<div class="absolute top-0 left-8 -translate-y-1/2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20">
-                            Friction Point 03
-                        </div>
-<h4 class="font-headline-md text-xl text-primary-container mb-4 mt-2">Paying Premium for $10 Tasks</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Your highest-paid experts are spending 30% of their day clicking buttons, copy-pasting data, and manually updating task boards.</p>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+    <span class="material-symbols-outlined text-[120px] text-error">money_off</span>
+</div>
+<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
+    Friction Point 03
+</div>
+<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Paying Premium for $10 Tasks</h4>
+<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your highest-paid experts are spending 30% of their day clicking buttons, copy-pasting data, and manually updating task boards.</p>
 </div>
 </div>
 </div>
@@ -276,8 +309,8 @@
 <h2 class="font-headline-lg text-headline-lg text-primary-container">What We Build For You</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mt-4">We don't sell software subscriptions. We build tailored, invisible infrastructure that runs your operations in the background.</p>
 </div>
-<a class="inline-flex items-center gap-2 font-label-sm uppercase tracking-wider text-primary-container hover:text-secondary transition-colors group" href="#book">
-                        See All Solutions 
+<a class="inline-flex items-center gap-2 font-label-sm uppercase tracking-wider text-primary-container hover:text-secondary transition-colors group" href="services.html">
+                        See All Services 
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
@@ -286,58 +319,61 @@
 <!-- Large Card (Solid) -->
 <div class="md:col-span-8 bg-primary-container rounded-2xl p-10 text-on-primary relative overflow-hidden flex flex-col justify-between group">
 <div class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700">
-<span class="material-symbols-outlined text-[300px]">account_tree</span>
+<span class="material-symbols-outlined text-[300px]">hub</span>
 </div>
 <div class="relative z-10">
 <div class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-accent-gold">hub</span>
+<span class="material-symbols-outlined text-accent-gold">account_tree</span>
 </div>
-<h3 class="font-headline-md text-3xl mb-4">Core Workflow Engines</h3>
-<p class="font-body-lg text-on-primary-container max-w-md">The central nervous system of your business. We connect your isolated tools into a single, automated logic flow that handles data routing, client onboarding, and task assignments automatically.</p>
+<h3 class="font-headline-md text-3xl mb-4">Enterprise AI Orchestration</h3>
+<p class="font-body-lg text-on-primary-container max-w-md">Seamlessly integrate cognitive capabilities into legacy technology stacks. We engineer robust, API-driven intelligence layers that create cross-platform synergy, unifying disparate data silos into a cohesive analytical engine.</p>
 </div>
 <div class="relative z-10 mt-8 pt-8 border-t border-white/10 flex gap-4">
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Zapier</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Make</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Custom APIs</span>
+<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Unified APIs</span>
+<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Cross-Platform</span>
+<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Legacy Modernization</span>
 </div>
 </div>
 <!-- Medium Card -->
-<div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors flex flex-col">
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary">smart_toy</span>
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors flex flex-col group relative overflow-hidden">
+<div class="absolute right-4 bottom-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 pointer-events-none">
+    <span class="material-symbols-outlined text-[150px] text-primary">robot_2</span>
 </div>
-<h3 class="font-headline-md text-2xl text-primary-container mb-4">AI Support Agents</h3>
-<p class="font-body-md text-on-surface-variant flex-grow">Custom-trained LLMs that handle Tier 1 customer support, qualify leads 24/7, and instantly draft context-aware email replies for your team to review.</p>
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 relative z-10">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Autonomous Agents</h3>
+<p class="font-body-md text-on-surface-variant flex-grow relative z-10">Deploy multi-agent orchestrations capable of complex reasoning and task-oriented autonomy to analyze objectives and formulate strategic execution plans.</p>
 </div>
 <!-- Small Card 1 -->
 <div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container text-sm">filter_alt</span>
+<span class="material-symbols-outlined text-primary-container text-sm">dns</span>
 </div>
-<h3 class="font-headline-md text-xl text-primary-container">Lead Capture</h3>
+<h3 class="font-headline-md text-xl text-primary-container">Legacy Integration</h3>
 </div>
-<p class="font-body-md text-on-surface-variant text-sm">Automated pipelines that ingest leads from ads, enrich their data via Clearbit, and drop them directly into your CRM with zero manual entry.</p>
+<p class="font-body-md text-on-surface-variant text-sm">Bridge the gap between modern artificial intelligence and existing enterprise infrastructure with non-disruptive modernization pathways.</p>
 </div>
 <!-- Small Card 2 -->
 <div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container text-sm">insert_chart</span>
+<span class="material-symbols-outlined text-primary-container text-sm">route</span>
 </div>
-<h3 class="font-headline-md text-xl text-primary-container">Daily Reports</h3>
+<h3 class="font-headline-md text-xl text-primary-container">Strategic Automation</h3>
 </div>
-<p class="font-body-md text-on-surface-variant text-sm">Stop building spreadsheets. Get automated, real-time KPI dashboards pushed to your Slack or inbox every morning at 8 AM.</p>
+<p class="font-body-md text-on-surface-variant text-sm">Deploy autonomous workflows that intelligently adapt to changing operational constraints for end-to-end process orchestration.</p>
 </div>
 <!-- Small Card 3 -->
 <div class="md:col-span-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container text-sm">payments</span>
+<span class="material-symbols-outlined text-primary-container text-sm">neurology</span>
 </div>
-<h3 class="font-headline-md text-xl text-primary-container">Revenue Analytics</h3>
+<h3 class="font-headline-md text-xl text-primary-container">Agentic Design</h3>
 </div>
-<p class="font-body-md text-on-surface-variant text-sm">Connect Stripe, HubSpot, and QuickBooks to automatically track MRR, churn, and LTV without touching a single cell in Excel.</p>
+<p class="font-body-md text-on-surface-variant text-sm">Design multi-agent swarms and cognitive task management frameworks that execute complex decision-making through ambiguity.</p>
 </div>
 </div>
 </div>
@@ -360,7 +396,7 @@
 <span class="material-symbols-outlined icon-fill text-sm">star</span>
 <span class="material-symbols-outlined icon-fill text-sm">star</span>
 </div>
-<p class="font-body-md text-on-surface italic mb-8">"Zelqar didn't just give us a tool; they re-engineered our entire sales pipeline. We're closing 30% more deals simply because the automated follow-ups never miss a beat. Best ROI of the year."</p>
+<p class="font-body-md text-on-surface italic mb-8">"Zorex didn't just give us a tool; they re-engineered our entire sales pipeline. We're closing 30% more deals simply because the automated follow-ups never miss a beat. Best ROI of the year."</p>
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">MT</div>
 <div>
@@ -379,7 +415,7 @@
 <span class="material-symbols-outlined icon-fill text-sm">star</span>
 <span class="material-symbols-outlined icon-fill text-sm">star</span>
 </div>
-<p class="font-body-md text-on-surface italic mb-8">"We were drowning in administrative tasks during client onboarding. The system Zelqar built reduced a 4-hour manual process down to 3 minutes of automated data routing."</p>
+<p class="font-body-md text-on-surface italic mb-8">"We were drowning in administrative tasks during client onboarding. The system Zorex built reduced a 4-hour manual process down to 3 minutes of automated data routing."</p>
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">AM</div>
 <div>
@@ -413,7 +449,7 @@
 </div>
 <!-- Decorative background map -->
 <div class="absolute inset-0 opacity-5 pointer-events-none mix-blend-multiply flex items-center justify-center" data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated.">
-<img alt="Background pattern" class="w-full h-full object-cover" data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated." src="https://zelqar.com/"/>
+<img alt="Background pattern" class="w-full h-full object-cover" data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated." src="https://zorex.com/"/>
 </div>
 </section>
 <!-- Final CTA -->
@@ -429,7 +465,7 @@
                     Stop letting operational drag eat your margins. Schedule a zero-commitment strategy audit to see exactly where automation can scale your revenue.
                 </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200" href="#">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200" href="contact.html">
                         Book Your Strategy Audit Now
                     </a>
 </div>
@@ -440,8 +476,8 @@
 <!-- Unified Footer -->
 <footer class="w-full py-16 bg-[#193868] border-t border-white/10">
 <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-8">
-<a href="index.html" class="text-xl font-bold text-white no-underline">Zelqar</a>
-<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D]">© 2024 Zelqar AI Automation Agency. Precision-engineered growth.</div>
+<a href="index.html" class="text-xl font-bold text-white no-underline">Zorex</a>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D]">© 2024 Zorex AI Automation Agency. Precision-engineered growth.</div>
 <div class="flex flex-wrap justify-center gap-6">
 <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
 <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="solutions.html">Solutions</a>
@@ -469,6 +505,47 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+
+// Marquee Clone Logic
+var marqueeTrack = document.getElementById('marquee-track');
+var marqueeInner = document.getElementById('marquee-inner');
+if(marqueeTrack && marqueeInner) {
+    var clone = marqueeInner.cloneNode(true);
+    clone.id = 'marquee-inner-clone';
+    clone.setAttribute('aria-hidden', 'true');
+    marqueeTrack.appendChild(clone);
+}
+
+// Number Counter Animation Logic
+var counters = document.querySelectorAll('.stat-counter');
+var observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 };
+var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var target = entry.target;
+            var finalValue = parseInt(target.getAttribute('data-target'), 10);
+            var duration = 2000; // ms
+            var stepTime = Math.max(Math.abs(Math.floor(duration / finalValue)), 10);
+            var current = 0;
+            var increment = Math.ceil(finalValue / (duration / stepTime));
+
+            var timer = setInterval(function() {
+                current += increment;
+                if (current >= finalValue) {
+                    target.innerText = finalValue.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    target.innerText = current.toLocaleString();
+                }
+            }, stepTime);
+            
+            observer.unobserve(target); // Only animate once
+        }
+    });
+}, observerOptions);
+
+counters.forEach(function(c) { observer.observe(c); });
+
 })();
 </script>
 </body></html>
