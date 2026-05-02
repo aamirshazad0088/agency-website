@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zelqar AI - Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary": "#272317",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#e4c285",
+                      "outline-variant": "#c4c6d0",
+                      "tertiary-fixed-dim": "#cfc6b3",
+                      "on-surface-variant": "#44474f",
+                      "outline": "#747780",
+                      "inverse-surface": "#303030",
+                      "surface": "#fcf9f8",
+                      "surface-container-low": "#f6f3f2",
+                      "on-background": "#1b1c1c",
+                      "tertiary-fixed": "#ebe1cf",
+                      "tertiary-container": "#3d382b",
+                      "primary-container": "#193868",
+                      "on-secondary-fixed-variant": "#5a4312",
+                      "inverse-on-surface": "#f3f0ef",
+                      "secondary-container": "#fedb9b",
+                      "surface-tint": "#425e90",
+                      "primary-fixed-dim": "#abc7ff",
+                      "on-tertiary-fixed-variant": "#4c4638",
+                      "on-primary-container": "#87a2d9",
+                      "inverse-primary": "#abc7ff",
+                      "surface-container-highest": "#e4e2e1",
+                      "on-tertiary-container": "#aaa190",
+                      "background": "#fcf9f8",
+                      "secondary": "#745a27",
+                      "on-secondary-fixed": "#261900",
+                      "on-surface": "#1b1c1c",
+                      "primary": "#00224e",
+                      "on-secondary-container": "#795f2b",
+                      "secondary-fixed": "#ffdea4",
+                      "on-primary-fixed-variant": "#294677",
+                      "surface-container": "#f0eded",
+                      "on-tertiary-fixed": "#1f1b10",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fcf9f8",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e4e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#d7e2ff",
+                      "on-primary-fixed": "#001b3f",
+                      "surface-container-high": "#eae7e7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "card-gap": "32px",
+                      "gutter": "24px",
+                      "section-padding": "120px",
+                      "stack-sm": "8px",
+                      "stack-lg": "24px",
+                      "stack-md": "16px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "label-sm": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FDFCFB]/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zelqar</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="solutions.html" data-page="solutions">Solutions</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">Process</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-[#193868] text-white rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="index.html#book">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-[#193868]"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="solutions.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Process</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+<a href="index.html#book" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto text-center relative overflow-hidden">
+<!-- Subtle background abstract element -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-96 bg-secondary-fixed/20 blur-3xl rounded-full -z-10 pointer-events-none"></div>
+<div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full font-label-sm mb-8">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+                Bespoke Enterprise Solutions
+            </div>
+<h1 class="font-headline-xl text-headline-xl text-primary-container mb-6 max-w-4xl mx-auto">
+                Industry-Specific<br/>Automation Solutions
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                Driving enterprise value through custom AI architectures. We engineering precision workflows that transform operational bottlenecks into scalable competitive advantages.
+            </p>
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-sm tracking-wider hover:scale-[1.02] transition-transform shadow-sm">
+                Explore Core Capabilities
+            </button>
+</section>
+<!-- Industry Verticals Grid -->
+<section class="py-section-padding px-gutter bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Architected for Your Vertical</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Deploying targeted intelligence frameworks to address the specific friction points of high-stakes industries.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-card-gap">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">shopping_cart</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">E-commerce</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Scaling support capabilities and optimizing complex logistics through predictive modeling and automated resolution pathways.
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">account_balance</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">Financial Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Deploying robust fraud detection algorithms and establishing compliant, automated reporting structures for real-time audit readiness.
+                        </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">medical_services</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">Healthcare</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Secure patient data management, intelligent appointment routing, and automated triage systems designed within strict compliance parameters.
+                        </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">real_estate_agent</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">Real Estate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Intelligent lead qualification algorithms, automated scheduling systems, and predictive market analysis for high-value portfolio management.
+                        </p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">gavel</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">Legal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Rapid document parsing, case precedent analysis, and automated contract generation ensuring high fidelity and risk mitigation.
+                        </p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">cloud</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">SaaS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Predictive churn reduction models, dynamic onboarding flows, and automated account health scoring to maximize lifecycle value.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Technical Solutions (Bento Layout) -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Core Technical Solutions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">The architectural pillars of our bespoke enterprise intelligence deployments.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
+<!-- Bento 1: LLM Integration (Wide) -->
+<div class="lg:col-span-2 bg-primary-container rounded-xl p-10 text-on-primary relative overflow-hidden flex flex-col justify-end">
+<!-- Background texture/image area -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary to-primary-container opacity-90 z-0"></div>
+<div class="relative z-10 w-full max-w-lg">
+<div class="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-1 rounded-full font-label-sm mb-6 border border-white/20">
+<span class="material-symbols-outlined text-[14px]">architecture</span>
+                            Foundation
+                        </div>
+<h3 class="font-headline-md text-[32px] mb-4">Enterprise LLM Integration</h3>
+<p class="font-body-md text-on-primary-container">
+                            Deploying private, fine-tuned language models within your secure infrastructure. We ensure proprietary data remains isolated while leveraging advanced reasoning capabilities for specialized operational tasks.
+                        </p>
+</div>
+</div>
+<!-- Bento 2: Workflow -->
+<div class="bg-surface-container-low rounded-xl p-10 border border-outline-variant/30 flex flex-col justify-between">
+<div class="w-12 h-12 bg-secondary-fixed rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">account_tree</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[24px] text-primary-container mb-3">Autonomous Workflow Orchestration</h3>
+<p class="font-body-md text-on-surface-variant">
+                            Connecting disparate enterprise systems through intelligent APIs, allowing for multi-step tasks to execute without human intervention.
+                        </p>
+</div>
+</div>
+<!-- Bento 3: Dashboards -->
+<div class="lg:col-span-3 bg-surface-container-highest rounded-xl p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="md:w-1/2">
+<div class="inline-flex items-center gap-2 bg-surface text-primary-container px-3 py-1 rounded-full font-label-sm mb-6 border border-outline-variant/50">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+                            Visibility
+                        </div>
+<h3 class="font-headline-md text-[32px] text-primary-container mb-4">Real-time Intelligence Dashboards</h3>
+<p class="font-body-md text-on-surface-variant mb-6">
+                            Transforming raw operational data into actionable strategic insights. Custom interfaces provide executive oversight of AI agent performance, ROI metrics, and system health.
+                        </p>
+<a class="inline-flex items-center gap-2 font-label-sm text-primary-container hover:text-secondary transition-colors uppercase tracking-wide" href="#">
+                            View Dashboard Specs <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:w-1/2 w-full h-64 bg-surface-dim rounded-lg border border-outline-variant/20 relative overflow-hidden flex items-center justify-center shadow-inner">
+<!-- Placeholder for dashboard graphic -->
+<div class="text-outline/50 font-label-sm uppercase tracking-widest text-center">
+<span class="material-symbols-outlined text-4xl block mb-2">monitoring</span>
+                            Data Visualization UI Component
+                         </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Outcome Focus Section -->
+<section class="py-section-padding px-gutter bg-primary-container text-on-primary">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-16 text-white">The Results of Precision</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 divide-y md:divide-y-0 md:divide-x divide-white/20">
+<div class="pt-8 md:pt-0 px-6">
+<div class="font-headline-xl text-headline-xl text-secondary-fixed mb-2">90%</div>
+<div class="font-label-sm uppercase tracking-wider text-on-primary-container mb-4">Manual Task Reduction</div>
+<p class="font-body-md text-white/80">Reallocating human capital from repetitive data entry to high-value strategic initiatives.</p>
+</div>
+<div class="pt-8 md:pt-0 px-6">
+<div class="font-headline-xl text-headline-xl text-secondary-fixed mb-2">24/7</div>
+<div class="font-label-sm uppercase tracking-wider text-on-primary-container mb-4">Autonomous Operations</div>
+<p class="font-body-md text-white/80">Continuous system execution across time zones, ensuring zero operational downtime for critical processes.</p>
+</div>
+<div class="pt-8 md:pt-0 px-6">
+<div class="font-headline-xl text-headline-xl text-secondary-fixed mb-2">40%</div>
+<div class="font-label-sm uppercase tracking-wider text-on-primary-container mb-4">Lead Conversion Increase</div>
+<p class="font-body-md text-white/80">Achieved through sub-second response times and highly personalized, AI-driven initial engagements.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-padding px-gutter bg-surface">
+<div class="max-w-3xl mx-auto text-center bg-surface-container-low rounded-2xl p-16 border border-secondary/20 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 blur-2xl rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-primary-container/10 blur-2xl rounded-full -ml-16 -mb-16 pointer-events-none"></div>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6 relative z-10">Ready for a Bespoke Solution?</h2>
+<p class="font-body-md text-on-surface-variant mb-10 max-w-xl mx-auto relative z-10">
+                    Schedule a consultation with our principal engineers to discuss architectural integration and operational impact for your enterprise.
+                </p>
+<button class="relative z-10 bg-primary-container text-on-primary px-10 py-4 rounded-full font-label-sm tracking-wider hover:bg-primary transition-colors shadow-md">
+                    Book Strategy Call
+                </button>
+</div>
+</section>
+</main>
+<!-- Unified Footer -->
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-8">
+<a href="index.html" class="text-xl font-bold text-white no-underline">Zelqar</a>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D]">© 2024 Zelqar AI Automation Agency. Precision-engineered growth.</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="solutions.html">Solutions</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="about.html">About Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
+if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}
+var page=window.location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-link').forEach(function(l){var d=l.getAttribute('data-page'),a=false;
+if(d==='services'&&page==='services.html')a=true;
+if(d==='solutions'&&page==='solutions.html')a=true;
+if(d==='case-studies'&&(page.startsWith('case-study')||page==='case-studies.html'))a=true;
+if(d==='process'&&page==='process.html')a=true;
+if(d==='blog'&&page==='blog.html')a=true;
+if(d==='contact'&&page==='contact.html')a=true;
+if(d==='about'&&page==='about.html')a=true;
+if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
+});
+})();
+</script>
+</body></html>

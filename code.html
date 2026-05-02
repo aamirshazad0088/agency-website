@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aurelian Enterprise AI - Strategy Consultation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#261900",
+                      "on-surface": "#1b1c1c",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#d7e2ff",
+                      "on-primary-fixed": "#001b3f",
+                      "tertiary-container": "#3d382b",
+                      "on-background": "#1b1c1c",
+                      "outline": "#747780",
+                      "inverse-surface": "#303030",
+                      "background": "#fcf9f8",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#1f1b10",
+                      "surface-variant": "#e4e2e1",
+                      "secondary": "#745a27",
+                      "on-secondary-fixed-variant": "#5a4312",
+                      "on-primary-container": "#87a2d9",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#fedb9b",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#abc7ff",
+                      "on-tertiary-fixed-variant": "#4c4638",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#795f2b",
+                      "inverse-on-surface": "#f3f0ef",
+                      "tertiary": "#272317",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ebe1cf",
+                      "surface-bright": "#fcf9f8",
+                      "on-primary-fixed-variant": "#294677",
+                      "tertiary-fixed-dim": "#cfc6b3",
+                      "primary-container": "#193868",
+                      "outline-variant": "#c4c6d0",
+                      "primary-fixed-dim": "#abc7ff",
+                      "primary": "#00224e",
+                      "on-surface-variant": "#44474f",
+                      "surface-dim": "#dcd9d9",
+                      "secondary-fixed": "#ffdea4",
+                      "surface-container": "#f0eded",
+                      "on-tertiary-container": "#aaa190",
+                      "surface-tint": "#425e90",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-container-high": "#eae7e7",
+                      "surface-container-highest": "#e4e2e1",
+                      "surface": "#fcf9f8",
+                      "secondary-fixed-dim": "#e4c285"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "card-gap": "32px",
+                      "stack-md": "16px",
+                      "stack-lg": "24px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "section-padding": "120px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-sm": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-[#FDFBF7] dark:bg-slate-950 docked full-width top-0 border-b border-[#E5E1D8] dark:border-slate-800 flat no shadows z-50 relative">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 py-6 w-full">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold tracking-tighter text-[#193868] dark:text-white" href="#">Aurelian AI</a>
+<nav class="hidden md:flex gap-8">
+<a class="font-manrope text-sm font-semibold tracking-tight uppercase text-slate-500 dark:text-slate-400 hover:text-[#D4AF37] transition-all duration-300" href="#">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight uppercase text-slate-500 dark:text-slate-400 hover:text-[#D4AF37] transition-all duration-300" href="#">Methodology</a>
+<a class="font-manrope text-sm font-semibold tracking-tight uppercase text-slate-500 dark:text-slate-400 hover:text-[#D4AF37] transition-all duration-300" href="#">Case Studies</a>
+<a class="font-manrope text-sm font-semibold tracking-tight uppercase text-slate-500 dark:text-slate-400 hover:text-[#D4AF37] transition-all duration-300" href="#">Insights</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="font-manrope text-sm font-semibold tracking-tight uppercase text-[#193868] dark:text-blue-100 hover:text-[#D4AF37] transition-all duration-300 hidden md:block" href="#">Client Login</a>
+<a class="bg-primary-container text-on-primary font-label-sm font-manrope text-sm font-semibold tracking-tight uppercase px-6 py-3 rounded-full hover:bg-primary-container/90 transition-colors hidden md:block" href="#">Book Strategy Call</a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-8 pt-24 pb-16">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container rounded-full mb-8">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-on-secondary-container">EXECUTIVE CONSULTATION</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary-container mb-6">Architect Your Cognitive Future</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">This highly focused, 45-minute strategic deep dive is strictly designed for enterprise leadership. We will map the integration of sophisticated AI infrastructures into your existing operational roadmap.</p>
+</div>
+</section>
+<!-- Main Content Area -->
+<section class="max-w-[1280px] mx-auto px-8 pb-section-padding">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-card-gap">
+<!-- Left Column: Scheduling -->
+<div class="lg:col-span-7 space-y-8">
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-surface-container-highest shadow-sm">
+<div class="flex items-center justify-between mb-8 pb-6 border-b border-surface-container-highest">
+<h2 class="font-headline-md text-headline-md text-primary-container">Strategy Session Request</h2>
+</div>
+<form class="space-y-10">
+<!-- Section 1: Contact Details -->
+<div class="space-y-6">
+<h3 class="font-label-sm text-outline uppercase tracking-wider">01. Contact Details</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Corporate Email</label>
+<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="j.doe@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Company Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Enterprise Corp" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Job Title</label>
+<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="VP of Operations" type="text"/>
+</div>
+</div>
+</div>
+<!-- Section 2: Discovery Questions -->
+<div class="space-y-6">
+<h3 class="font-label-sm text-outline uppercase tracking-wider">02. Discovery &amp; Qualification</h3>
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">What is the primary operational bottleneck you're looking to solve with AI?</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none" placeholder="Describe your current challenges and goals..." rows="4"></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Current scale of automation implementation</label>
+<select class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+<option value="discovery">Discovery</option>
+<option value="pilot">Pilot</option>
+<option value="scaling">Scaling</option>
+<option value="enterprise">Enterprise-wide</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-on-surface">Projected timeline for deployment</label>
+<select class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+<option value="immediate">Immediate</option>
+<option value="3-6">3-6 Months</option>
+<option value="6-12">6-12 Months</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Submission -->
+<div class="pt-8 border-t border-surface-container-highest">
+<button class="w-full bg-primary-container text-on-primary font-label-sm uppercase py-4 rounded-lg hover:bg-primary-container/90 transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+            Confirm Strategy Call
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-outline mt-4">By submitting, you agree to our terms and confidentiality protocols.</p>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Column: Info -->
+<div class="lg:col-span-5 space-y-card-gap">
+<!-- What to Expect -->
+<div class="bg-[#FDFBF7] rounded-xl p-8 border border-[#E5E1D8]">
+<h3 class="font-headline-md text-headline-md text-primary-container mb-6">What to Expect</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container">memory</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-primary-container mb-1">High-level technical feasibility audit.</h4>
+<p class="font-body-sm text-on-surface-variant text-sm">Assess current infrastructure readiness for enterprise AI deployment.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container">trending_up</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-primary-container mb-1">Strategic ROI projection.</h4>
+<p class="font-body-sm text-on-surface-variant text-sm">Quantifiable metrics on efficiency gains and cost reduction.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container">schema</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-primary-container mb-1">Custom Agentic workflow exploration.</h4>
+<p class="font-body-sm text-on-surface-variant text-sm">Mapping autonomous agents to your specific business logic.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Consultant Profile -->
+<div class="bg-primary-container rounded-xl p-8 text-on-primary">
+<div class="flex items-center gap-6 mb-6">
+<img class="w-20 h-20 rounded-full object-cover border-2 border-[#D4AF37]" data-alt="A professional headshot of an executive male in his late 40s wearing a tailored dark navy suit and white shirt. He has short, neatly styled hair and a confident, approachable expression. The background is a slightly blurred, modern corporate office interior with soft, warm lighting that highlights the high-end, premium aesthetic of the corporate environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdTf_0HGQElZed5esUJQnluJoLMVi728y20twSA-wEUbpSu1J8Jl5We8lsWbb1fD89oPG6ZMEwHoeJPF01Egyf2vPz1h9IWJ2sZqBjVSrdpcGzWX63QWFAyNytfayfusWuK8pBHZyVfsBKStccz7bEJpnx2bxqHhyiunsaMvRG2hZVvQ7Z1cVWf_gWVcLcxKmRSgXQ6LyyvBfR5QsnfgTmsG8vfhz5tbia3896vtHbewBdFzZmExvswVOJ_5P6rNd9op89fz9bA"/>
+<div>
+<h4 class="font-headline-md text-2xl mb-1">Dr. Elias Vance</h4>
+<p class="font-label-sm text-[#D4AF37]">PRINCIPAL AI ARCHITECT</p>
+</div>
+</div>
+<p class="font-body-sm text-primary-fixed-dim text-sm leading-relaxed mb-6">
+                            Former Lead Systems Engineer at DeepMind. Specializes in mapping complex legacy architectures to modern LLM-driven autonomous frameworks.
+                        </p>
+<div class="pt-6 border-t border-white/10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#D4AF37] text-3xl">format_quote</span>
+<p class="font-body-md italic text-primary-fixed">"The initial strategy session with Aurelian completely recalibrated our approach to automation. We went from experimenting with tools to deploying a cohesive cognitive architecture."</p>
+</div>
+<p class="font-label-sm text-white/60 mt-4 ml-[52px]">— CTO, Global Logistics Conglomerate</p>
+</div>
+</div>
+<!-- Security -->
+<div class="flex items-center gap-4 p-6 bg-surface-container-lowest border border-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-secondary text-3xl">lock</span>
+<div>
+<h4 class="font-body-md font-bold text-on-surface mb-1">Enterprise Security &amp; Non-Disclosure</h4>
+<p class="font-body-sm text-on-surface-variant text-sm">All consultations are strictly confidential and governed by standard enterprise NDAs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#193868] dark:bg-black full-width border-t border-white/5 flat mt-auto">
+<div class="max-w-[1280px] mx-auto px-8 py-20 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-black text-white">Aurelian AI</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+<a class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform duration-200" href="#">Contact Us</a>
+<a class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform duration-200" href="#">LinkedIn</a>
+<a class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform duration-200" href="#">Global Offices</a>
+</div>
+<div class="font-manrope text-xs tracking-[0.1em] uppercase font-light text-slate-400">
+                © 2024 Aurelian Strategy Group. Enterprise AI Excellence.
+            </div>
+</div>
+</footer>
+</body></html>

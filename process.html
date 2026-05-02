@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enterprise AI Methodology &amp; Governance - Zelqar AI Automation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface-container": "#f0eded",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#abc7ff",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#ffdea4",
+                    "secondary": "#745a27",
+                    "on-secondary-fixed": "#261900",
+                    "error": "#ba1a1a",
+                    "tertiary": "#272317",
+                    "on-tertiary-fixed": "#1f1b10",
+                    "tertiary-fixed": "#ebe1cf",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-primary-fixed-variant": "#294677",
+                    "surface-bright": "#fcf9f8",
+                    "on-surface-variant": "#44474f",
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#795f2b",
+                    "on-primary-fixed": "#001b3f",
+                    "surface-tint": "#425e90",
+                    "secondary-container": "#fedb9b",
+                    "tertiary-container": "#3d382b",
+                    "tertiary-fixed-dim": "#cfc6b3",
+                    "inverse-surface": "#303030",
+                    "primary-fixed-dim": "#abc7ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#aaa190",
+                    "on-primary-container": "#87a2d9",
+                    "primary": "#00224e",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "background": "#fcf9f8",
+                    "primary-container": "#193868",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-background": "#1b1c1c",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e4e2e1",
+                    "on-secondary-fixed-variant": "#5a4312",
+                    "primary-fixed": "#d7e2ff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "outline": "#747780",
+                    "secondary-fixed-dim": "#e4c285",
+                    "on-tertiary-fixed-variant": "#4c4638",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#eae7e7",
+                    "outline-variant": "#c4c6d0",
+                    "accent-gold": "#E2C08D",
+                    "accent-tan": "#FDFCFB",
+                    "accent-navy": "#193868"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+                "spacing": {
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-lg": "24px",
+                    "stack-sm": "8px",
+                    "container-max": "1280px",
+                    "card-gap": "32px",
+                    "section-padding": "120px"
+                },
+                "fontFamily": {
+                    "label-sm": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "headline-xl": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"]
+                },
+                "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .icon-fill { font-variation-settings: 'FILL' 1; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased pt-[72px]">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FDFCFB]/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zelqar</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="solutions.html" data-page="solutions">Solutions</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">Process</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-[#193868] text-white rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="index.html#book">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-[#193868]"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="solutions.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Process</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+<a href="index.html#book" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<header class="py-section-padding px-8 relative overflow-hidden">
+<div class="max-w-container-max mx-auto text-center relative z-10">
+<span class="inline-block bg-secondary-container text-on-secondary-container font-label-sm px-4 py-2 rounded-full mb-stack-lg shadow-sm">THE FRAMEWORK</span>
+<h1 class="font-headline-xl text-primary mb-stack-md">The Zelqar Methodology:<br/>Engineering Enterprise Agentic Systems</h1>
+<p class="font-body-lg text-on-surface-variant max-w-3xl mx-auto">
+    A methodical, rigorous approach to transforming enterprise operations through bespoke AI architecture. We don't just build software; we architect cognitive infrastructure and autonomous agentic workflows for global organizations.
+</p>
+</div>
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none flex justify-center items-center">
+<div class="w-[800px] h-[800px] border border-primary rounded-full absolute mix-blend-multiply transition-transform duration-1000 hover:scale-105"></div>
+<div class="w-[600px] h-[600px] border border-secondary rounded-full absolute mix-blend-multiply ml-20 mt-20 transition-transform duration-1000 hover:-scale-105"></div>
+</div>
+</header>
+
+<!-- Why Agentic Systems? -->
+<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/20 mb-section-padding">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-primary mb-stack-md">The Paradigm Shift: Intelligence Over Automation</h2>
+<p class="font-body-lg text-on-surface-variant max-w-3xl mx-auto">
+    The era of rigid, rules-based automation is yielding to adaptive, reasoning-capable AI. Zelqar engineers agentic ecosystems that execute complex, non-deterministic enterprise workflows with precision and scale.
+</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-stretch">
+<div class="bg-surface p-10 rounded-2xl border border-outline-variant/30 opacity-70 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-md flex flex-col justify-between group">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="p-3 bg-surface-container-highest rounded-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-3xl" data-icon="settings">settings</span>
+</div>
+<h3 class="font-headline-md text-on-surface-variant">Traditional Automation</h3>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">
+    Legacy RPA relies on static scripts and brittle 'if-then' logic. It breaks when encountering exceptions or unstructured data, requiring constant human intervention and costly maintenance.
+</p>
+<ul class="space-y-3 font-body-md text-on-surface-variant/80">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline mt-1" data-icon="close">close</span> Rigid, deterministic execution paths.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline mt-1" data-icon="close">close</span> Fails gracefully on exceptions.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline mt-1" data-icon="close">close</span> Limited to structured data inputs.</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary p-10 rounded-2xl border border-primary-container transition-all duration-500 shadow-lg transform hover:-translate-y-2 group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary opacity-10 rounded-bl-full transition-transform duration-700 group-hover:scale-150"></div>
+<div>
+<div class="flex items-center gap-4 mb-6 relative z-10">
+<div class="p-3 bg-primary-container rounded-lg text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-headline-md text-secondary-fixed">Agentic Intelligence</h3>
+</div>
+<p class="font-body-md text-primary-fixed-dim mb-6 relative z-10">
+    Agentic systems leverage Large Language Models to reason, plan, and autonomously execute multi-step objectives. They adapt to new information, formulate strategies, and utilize enterprise tools dynamically.
+</p>
+<ul class="space-y-3 font-body-md text-on-primary/90 relative z-10">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed mt-1" data-icon="check_circle">check_circle</span> Dynamic planning and cognitive reasoning.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed mt-1" data-icon="check_circle">check_circle</span> Autonomous tool execution (APIs, DBs, ERPs).</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed mt-1" data-icon="check_circle">check_circle</span> Processes unstructured data seamlessly.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Process Timeline / Sections -->
+<main class="pb-section-padding px-8">
+<div class="max-w-container-max mx-auto relative">
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/50 transform -translate-x-1/2 z-0"></div>
+<section class="mb-card-gap relative z-10 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-5/12 text-right md:pr-12 order-2 md:order-1 mt-8 md:mt-0">
+<div class="bg-surface-container rounded-xl p-10 border border-outline-variant/30 hover:border-secondary hover:shadow-lg transition-all duration-500 relative overflow-hidden group-hover:-translate-y-1">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary transition-all duration-500 group-hover:w-2"></div>
+<h3 class="font-headline-md text-primary mb-stack-sm">Phase I: Strategic Discovery &amp; Audit</h3>
+<p class="font-body-md text-on-surface-variant mb-stack-md">
+    We initiate engagements with a rigorous executive-level analysis. Our architects map your operational telemetry to identify high-friction workflows where agentic deployment delivers compounding ROI and competitive advantage.
+</p>
+<ul class="text-left font-body-md text-on-surface-variant space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="insights">insights</span> <span class="font-bold">Value Stream Mapping:</span> Identifying high-leverage intervention points.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="database">database</span> <span class="font-bold">Data Readiness Assessment:</span> Evaluating context windows and unstructured data silos.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="gavel">gavel</span> <span class="font-bold">Governance Pre-Audit:</span> Establishing regulatory and compliance boundaries.</li>
+</ul>
+</div>
+</div>
+<div class="w-16 h-16 bg-primary-container text-secondary rounded-full flex items-center justify-center z-10 order-1 md:order-2 border-4 border-background shadow-lg transition-transform duration-500 group-hover:scale-110">
+<span class="font-headline-md font-bold text-on-primary">1</span>
+</div>
+<div class="md:w-5/12 order-3 hidden md:block">
+<div class="h-80 rounded-xl overflow-hidden bg-surface-variant relative shadow-md">
+<img alt="Data analysts reviewing charts and graphs" class="object-cover w-full h-full opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnEMCCRlbd5JecRN5Prt3YJ0jxWlU8AoRX9I3a6VH2Bqy5O_PDuLLVB5X2gEbtNgnOavL3knu3HTT9RfqccK7p9e0ApDad-X-LYry-_1b2EQbrL-JGV3-vQLJXecpNgELEmmnAo9reboYMz-Jbg7Lbpp0paheNPlj4uNxoeNv3Abq_A61nvctkIOfmUXV7Uk9X35b2YmnHn8RKQidi9u6OAN5nKt3zEBPzDCzI4pMG--eZmUqtqBFJpZ1SX7dXBsJ5kEx8yxoSLg"/>
+</div>
+</div>
+</section>
+<section class="mb-card-gap relative z-10 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-5/12 order-3 md:order-1 hidden md:block">
+<div class="h-80 rounded-xl overflow-hidden bg-primary-container relative shadow-md">
+<img alt="Abstract glowing lines representing data architecture" class="object-cover w-full h-full opacity-70 mix-blend-screen group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcTeJO0-fkXWXOa7cRs3pMsGOS2FEhXq7q58J5ya3S1ZDa9um3ypLr0p9O_t89Ca3-69TUExhqJVimZqkScCoerhO7U73WtOm2YtxAG8bk2zP-BDzCGJ7v1QnxSoV4-8f5FA1fB_3DfiAbLMZ2ZxNmA9CcwOKgS6Ez4pU3eHGGsAPyD_bn9Mjm22QKZHxvKLfcX3aBuxGH5qQ2lezufEvKZLq7z9UAgutTM2PDM00kap-AhzANANNHpOUIxFYoxRAYjXu4WeWhCA"/>
+</div>
+</div>
+<div class="w-16 h-16 bg-primary-container text-secondary rounded-full flex items-center justify-center z-10 order-1 md:order-2 border-4 border-background shadow-lg transition-transform duration-500 group-hover:scale-110">
+<span class="font-headline-md font-bold text-on-primary">2</span>
+</div>
+<div class="md:w-5/12 text-left md:pl-12 order-2 md:order-3 mt-8 md:mt-0">
+<div class="bg-primary rounded-xl p-10 shadow-xl relative overflow-hidden text-on-primary transition-all duration-500 group-hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-4 opacity-10 transition-transform duration-700 group-hover:rotate-12 group-hover:scale-110">
+<span class="material-symbols-outlined text-8xl" data-icon="account_tree">account_tree</span>
+</div>
+<h3 class="font-headline-md text-secondary-fixed mb-stack-sm relative z-10">Phase II: Architecture &amp; Orchestration</h3>
+<p class="font-body-md text-primary-fixed-dim mb-stack-md relative z-10">
+    We engineer a secure, scalable blueprint tailored to your tech stack. This involves designing multi-agent communication protocols, selecting foundational models, and blueprinting enterprise-grade security perimeters to protect proprietary knowledge.
+</p>
+<ul class="text-left font-body-md text-primary-fixed-dim space-y-3 relative z-10">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed text-lg mt-0.5" data-icon="architecture">architecture</span> <span class="font-bold text-on-primary">Multi-Agent Systems (MAS):</span> Designing specialized agent hierarchies and handoffs.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed text-lg mt-0.5" data-icon="lock">lock</span> <span class="font-bold text-on-primary">Security Blueprinting:</span> Architecting air-gapped deployments and zero-trust data access.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-fixed text-lg mt-0.5" data-icon="hub">hub</span> <span class="font-bold text-on-primary">Tool Integration Strategy:</span> Mapping API orchestration for ERP, CRM, and internal databases.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="mb-card-gap relative z-10 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-5/12 text-right md:pr-12 order-2 md:order-1 mt-8 md:mt-0">
+<div class="bg-surface-container rounded-xl p-10 border border-outline-variant/30 hover:border-secondary hover:shadow-lg transition-all duration-500 relative overflow-hidden group-hover:-translate-y-1">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary transition-all duration-500 group-hover:w-2"></div>
+<h3 class="font-headline-md text-primary mb-stack-sm">Phase III: Engineering &amp; Red-Teaming</h3>
+<p class="font-body-md text-on-surface-variant mb-stack-md">
+    Our elite engineering corps translates the architecture into robust code. We focus on fine-tuning models, building resilient RAG pipelines, and conducting aggressive adversarial testing to ensure enterprise-grade reliability and safety.
+</p>
+<ul class="text-left font-body-md text-on-surface-variant space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="memory">memory</span> <span class="font-bold">Advanced RAG Pipelines:</span> Ensuring high-fidelity retrieval from proprietary knowledge bases.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="rule_folder">rule_folder</span> <span class="font-bold">Guardrail Enforcement:</span> Programmatic constraints to prevent hallucination and unauthorized actions.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="bug_report">bug_report</span> <span class="font-bold">Adversarial Red-Teaming:</span> Stress-testing agents against edge cases and prompt injection.</li>
+</ul>
+</div>
+</div>
+<div class="w-16 h-16 bg-primary-container text-secondary rounded-full flex items-center justify-center z-10 order-1 md:order-2 border-4 border-background shadow-lg transition-transform duration-500 group-hover:scale-110">
+<span class="font-headline-md font-bold text-on-primary">3</span>
+</div>
+<div class="md:w-5/12 order-3 hidden md:block">
+<div class="h-80 rounded-xl overflow-hidden bg-surface-variant relative shadow-md">
+<img alt="Code on a screen" class="object-cover w-full h-full opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-XEchKkA5oERQ-XBX7D5L15eK2qX8W2xZrjZuLd-L3mwvuWquqlnaSKI4wwy2BlSrzyXCRubIox0U3z_tAAhMfBhAoiW8TyqxnBVGcpaRseBHUAcEvwkPzFu14R-2yXQeEHyDeP2-nt53bIJSkLXJRQR8uSAZtZgSm9jRDx0X-wYMsG7xBoBYzuNJnSk_MSXXf8_NZasFqTQNhy61XCEoXmTjjxUZx-s9Z7RuENuKGQJJbpL-z7xX8WEKkSQb2P1I6HFfZGR0VQ"/>
+</div>
+</div>
+</section>
+<section class="relative z-10 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-5/12 order-3 md:order-1 hidden md:block">
+<div class="h-80 rounded-xl overflow-hidden bg-surface-variant relative shadow-md">
+<img alt="Rockets or scaling imagery" class="object-cover w-full h-full opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo6nVXDziyo5E6Q6NRHCIxvF7f2QwxzyJq7PrnSNPQzogw8_V9hHTE7Jx9YPA_cbPpbXIusxE5SpgC-D-vARyqzr7lYAiT7v4P--WuUeGYPI7dyYGxZzNW6Flbi9zjNPG-gQZNhwfHjv9Fgoi2UFw6PTY5GZdlPvdYzzltSjtmEf659cKqZlD1gR70HfHyxccarGT2j1U1qEFDJHeJNH6yTjDoDomLAHgDZSHzQOMZlNS15pfAjq_wKaCrxeQ9Pv4w1YyS5CC0mQ"/>
+</div>
+</div>
+<div class="w-16 h-16 bg-primary-container text-secondary rounded-full flex items-center justify-center z-10 order-1 md:order-2 border-4 border-background shadow-lg transition-transform duration-500 group-hover:scale-110">
+<span class="font-headline-md font-bold text-on-primary">4</span>
+</div>
+<div class="md:w-5/12 text-left md:pl-12 order-2 md:order-3 mt-8 md:mt-0">
+<div class="bg-surface-container rounded-xl p-10 border border-outline-variant/30 hover:border-secondary hover:shadow-lg transition-all duration-500 relative overflow-hidden group-hover:-translate-y-1">
+<div class="absolute top-0 right-0 w-1 h-full bg-secondary transition-all duration-500 group-hover:w-2"></div>
+<h3 class="font-headline-md text-primary mb-stack-sm">Phase IV: Deployment &amp; Value Realization</h3>
+<p class="font-body-md text-on-surface-variant mb-stack-md">
+    We execute a phased rollout, transitioning from shadow-mode validation to full autonomous operation. Post-deployment, we establish continuous monitoring frameworks to track performance, manage model drift, and quantify business value.
+</p>
+<ul class="text-left font-body-md text-on-surface-variant space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="published_with_changes">published_with_changes</span> <span class="font-bold">Human-in-the-loop (HITL) Workflows:</span> Establishing supervised approval gates for critical actions.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="monitoring">monitoring</span> <span class="font-bold">Telemetry &amp; Observability:</span> Real-time tracking of agent reasoning paths and performance metrics.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5" data-icon="trending_up">trending_up</span> <span class="font-bold">Continuous Value Tracking:</span> Aligning system outputs directly to executive ROI objectives.</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Enterprise Governance & Security -->
+<section class="py-24 px-8 bg-surface border-t border-outline-variant/20 mb-section-padding">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="inline-block bg-surface-variant text-on-surface-variant font-label-sm px-4 py-2 rounded-full mb-6 uppercase tracking-widest">Enterprise Trust</span>
+<h2 class="font-headline-md text-primary mb-stack-sm">Uncompromising Governance &amp; Security</h2>
+<p class="font-body-lg text-on-surface-variant max-w-3xl mx-auto">
+    We recognize that integrating LLMs into core enterprise functions demands absolute rigor. Our implementations are built on foundational principles of data sovereignty, deterministic control, and auditable transparency.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 hover:shadow-md transition-shadow duration-300">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="verified_user">verified_user</span>
+<h3 class="font-headline-md text-xl text-primary mb-4">Data Sovereignty</h3>
+<p class="font-body-md text-on-surface-variant">
+    Your proprietary data never trains external models. We offer self-hosted, virtual private cloud (VPC), or completely air-gapped deployment options to ensure compliance with stringent industry regulations (SOC2, GDPR, HIPAA).
+</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 hover:shadow-md transition-shadow duration-300">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="policy">policy</span>
+<h3 class="font-headline-md text-xl text-primary mb-4">Deterministic Guardrails</h3>
+<p class="font-body-md text-on-surface-variant">
+    We implement semantic routing and strict structural constraints. Agents are constrained to specific domains and tool-use permissions, preventing hallucinations and ensuring actions strictly adhere to corporate policy.
+</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 hover:shadow-md transition-shadow duration-300">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="manage_search">manage_search</span>
+<h3 class="font-headline-md text-xl text-primary mb-4">Explainable AI (XAI)</h3>
+<p class="font-body-md text-on-surface-variant">
+    Every agentic decision and tool invocation is logged and auditable. Our observability suites provide executive dashboards detailing reasoning chains, allowing for full transparency and swift intervention if needed.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-section-padding px-8 bg-primary">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline-lg text-on-primary mb-stack-lg">Ready to engineer your cognitive infrastructure?</h2>
+<p class="font-body-lg text-primary-fixed-dim mb-12 max-w-2xl mx-auto">
+    Schedule a private briefing with our senior architects to discuss your specific operational challenges and discover how Zelqar can deploy precise, enterprise-grade AI automation.
+</p>
+<button class="bg-secondary text-on-secondary font-label-sm px-8 py-4 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg uppercase tracking-widest text-sm inline-flex items-center gap-2">
+    Request Architecture Review
+    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+
+<!-- Unified Footer -->
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-8">
+<a href="index.html" class="text-xl font-bold text-white no-underline">Zelqar</a>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D]">© 2024 Zelqar AI Automation Agency. Precision-engineered growth.</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="solutions.html">Solutions</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="about.html">About Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
+if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}
+var page=window.location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-link').forEach(function(l){var d=l.getAttribute('data-page'),a=false;
+if(d==='services'&&page==='services.html')a=true;
+if(d==='solutions'&&page==='solutions.html')a=true;
+if(d==='case-studies'&&(page.startsWith('case-study')||page==='case-studies.html'))a=true;
+if(d==='process'&&page==='process.html')a=true;
+if(d==='blog'&&page==='blog.html')a=true;
+if(d==='contact'&&page==='contact.html')a=true;
+if(d==='about'&&page==='about.html')a=true;
+if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
+});
+})();
+</script>
+</body>
+</html>

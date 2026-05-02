@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agentic Systems: Architecting Enterprise Intelligence | Zelqar Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "primary-container": "#193868",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-primary-container": "#87a2d9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary-fixed": "#d7e2ff",
+                        "on-tertiary-fixed-variant": "#4c4638",
+                        "on-background": "#1b1c1c",
+                        "secondary-fixed": "#ffdea4",
+                        "tertiary-fixed": "#ebe1cf",
+                        "surface-dim": "#dcd9d9",
+                        "on-primary-fixed-variant": "#294677",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e4c285",
+                        "secondary-container": "#fedb9b",
+                        "on-surface-variant": "#44474f",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-tertiary-container": "#aaa190",
+                        "on-secondary-fixed-variant": "#5a4312",
+                        "on-tertiary-fixed": "#1f1b10",
+                        "primary": "#00224e",
+                        "inverse-primary": "#abc7ff",
+                        "surface-tint": "#425e90",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed-dim": "#cfc6b3",
+                        "outline": "#747780",
+                        "tertiary": "#272317",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "primary-fixed-dim": "#abc7ff",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-container": "#795f2b",
+                        "secondary": "#745a27",
+                        "surface": "#fcf9f8",
+                        "tertiary-container": "#3d382b",
+                        "on-primary-fixed": "#001b3f",
+                        "on-secondary-fixed": "#261900",
+                        "accent-gold": "#E2C08D",
+                        "accent-tan": "#FDFCFB",
+                        "accent-navy": "#193868"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-padding": "120px",
+                        "card-gap": "32px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "stack-lg": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-md": ["Manrope", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zelqar</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="solutions.html" data-page="solutions">Solutions</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">Process</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="#book">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="solutions.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Process</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+<a href="#book" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-20">
+
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-section-padding pb-card-gap">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-stack-lg">
+<span class="inline-block bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-4 py-1 rounded-full uppercase tracking-widest mb-stack-md">Strategic Insight</span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-stack-md">Agentic Systems: Architecting the Future of Enterprise Intelligence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">The paradigm is shifting from programmed instructions to autonomous reasoning. Discover how enterprise leaders are deploying agentic architecture to scale operational capacity beyond human constraints.</p>
+<div class="flex items-center gap-x-4 font-label-sm text-label-sm text-outline uppercase tracking-widest">
+<span>By Dr. Aris Thorne</span>
+<span class="w-1 h-1 bg-secondary rounded-full"></span>
+<span>October 24, 2024</span>
+<span class="w-1 h-1 bg-secondary rounded-full"></span>
+<span>12 Min Read</span>
+</div>
+</div>
+<div class="w-full aspect-[21/9] bg-surface-container-high rounded-xl overflow-hidden relative shadow-sm border border-outline-variant">
+<img class="w-full h-full object-cover opacity-90" data-alt="A sophisticated, high-end abstract visualization representing an advanced neural network or agentic AI system. The scene is illuminated in a bright, modern light-mode aesthetic, utilizing a premium corporate palette of warm parchment cream, deep authority navy, and subtle metallic gold accents. Luminous data nodes connect dynamically within a vast, minimalist space, conveying high-trust corporate stability combined with cutting-edge technological precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtpDp0I9Gqq_sPe7zZrcrwTDQC-mM1RgVE3Tlp2rMT0vNYFVz_gcgQIZE3-UbotXm3L1O1gJf0ysKmfzjTTYF_NCS2r2uYjpKwVZnquzzRTnpnXFEwFrGdb3S8_14eBUE2-JDV6dRjOr2OX69dpn8HjBjhb_5t4jMFZ2UBLA7HCN4zq6p2vtf1D_YjXtMgW7Co6HMKDXxXdp8hZGAAq_cgL1JpJVJe1EPb66vtwPdNtzKd9TTHgY2i1t5ee8m2MY6JEQspR_jy7A"/>
+</div>
+</section>
+<!-- Article Body -->
+<section class="max-w-3xl mx-auto px-gutter py-card-gap">
+<p class="font-body-lg text-body-lg text-on-surface mb-stack-lg first-letter:text-headline-xl first-letter:font-headline-xl first-letter:text-primary first-letter:mr-3 first-letter:float-left">
+                For over a decade, robotic process automation (RPA) has been the cornerstone of enterprise efficiency. We scripted rules, mapped linear workflows, and squeezed incremental margins from repetitive tasks. But we have reached the asymptote of basic automation. The future does not belong to systems that merely execute; it belongs to systems that reason.
+            </p>
+<p class="font-body-md text-body-md text-on-surface mb-stack-lg">
+                Enter Agentic Systems. Unlike their predecessors, autonomous agents are not bound by rigid logic trees. Equipped with large language models serving as cognitive engines, these systems can interpret ambiguous inputs, formulate multi-step plans, utilize external tools, and autonomously course-correct when encountering obstacles. This marks the transition from delegated tasks to delegated outcomes.
+            </p>
+<!-- Comparison Bento -->
+<div class="my-section-padding">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-lg text-center">The Paradigm Shift</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-card-gap">
+<!-- Traditional Card -->
+<div class="bg-surface p-10 rounded-xl border border-outline-variant shadow-sm flex flex-col h-full">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-stack-md border border-outline-variant">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm text-[24px]">Traditional Automation</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-stack-md">The Imperative Era</p>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-sm mt-1">remove</span>
+<span>Follows explicit, hardcoded rules (If X, then Y).</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-sm mt-1">remove</span>
+<span>Fails immediately upon encountering unexpected edge cases.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-sm mt-1">remove</span>
+<span>Requires human intervention for decision-making.</span>
+</li>
+</ul>
+</div>
+<!-- Agentic Card (Solid Variant) -->
+<div class="bg-primary p-10 rounded-xl flex flex-col h-full shadow-lg relative overflow-hidden">
+<!-- Decorative bg element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="w-12 h-12 bg-surface-tint rounded-lg flex items-center justify-center mb-stack-md relative z-10">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-stack-sm text-[24px] relative z-10">Agentic Intelligence</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-stack-md relative z-10">The Declarative Era</p>
+<ul class="space-y-4 font-body-md text-body-md text-primary-fixed-dim flex-grow relative z-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span>Given a goal, autonomously determines the steps to achieve it.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span>Adapts to novel situations and unstructured data dynamically.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check</span>
+<span>Executes tool-use (APIs, databases) independently to resolve queries.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-card-gap mb-stack-md">Architecting for Autonomy</h2>
+<p class="font-body-md text-body-md text-on-surface mb-stack-lg">
+                Building an agentic system requires a fundamental architectural rethink. It moves away from linear pipelines toward a central 'Cognitive Core' surrounded by specialized capabilities. This architecture ensures that the agent can perceive its environment, formulate hypotheses, execute actions, and store memories for future context.
+            </p>
+</section>
+<!-- Wide Architecture Diagram Block -->
+<section class="max-w-container-max mx-auto px-gutter py-card-gap">
+<div class="bg-surface rounded-xl border border-outline-variant p-8 md:p-12 shadow-sm">
+<div class="mb-stack-lg flex justify-between items-end border-b border-surface-dim pb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary text-[24px]">System Architecture Diagram</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">High-level view of a single-agent cognitive loop.</p>
+</div>
+<span class="hidden md:inline-block font-label-sm text-label-sm bg-surface-container px-3 py-1 rounded text-outline uppercase">Fig 1.0</span>
+</div>
+<div class="w-full aspect-video bg-surface-container-high rounded-lg border border-outline-variant overflow-hidden relative flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A clean, highly structured technical diagram visualizing an enterprise AI architecture. The design is rendered in a premium corporate editorial style, utilizing a sophisticated light-mode palette of warm cream, deep navy lines, and sharp metallic gold highlights. The diagram features interconnected nodes labeled 'Cognitive Core', 'Memory Systems', and 'Tool Execution', displaying a harmonious balance of intentional whitespace and modern technological clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGmwscUPa3Bql6_SxZ79CjGLJU9ZrZZALqlhWLJKvONd2uKb9Vw2pUbpP4_GjWu542N4JesDHXlpTeyw0N87of67bIFvF7polBs-vm3RcznyivaHSQrbfssF33iDbDxq81XYeCuN0kfpBT1p4bbqwSRXGUpJc5c21U5cEhZh6_8DmMmpblsHY1QwxaNvzYEmWwWwGD21pOeAsi6tEJn5EdC1lid6aApHOW-0zaGcQXjL8evtL2Jqk7_6wXhT2F0AaJod2tdEXjoQ"/>
+<!-- Overlay to make it feel more like a diagram integrated into the UI -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface/50 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Article Body Continued -->
+<section class="max-w-3xl mx-auto px-gutter py-card-gap">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">Redefining Operational Capacity</h2>
+<p class="font-body-md text-body-md text-on-surface mb-stack-lg">
+                The most profound impact of agentic architecture is the decoupling of operational growth from headcount scaling. Traditional enterprises scale linearly: 10x output requires roughly 10x the personnel. Agentic systems introduce non-linear scaling, where a small team of human 'supervisors' manages a fleet of autonomous digital workers.
+            </p>
+<!-- ROI Stats Bento -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-stack-lg">
+<div class="bg-surface-container p-6 rounded-lg border border-surface-variant">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest mb-2">Throughput</p>
+<p class="font-headline-xl text-headline-xl text-primary mb-1">40x</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Increase in parallel task execution capacity.</p>
+</div>
+<div class="bg-surface-container p-6 rounded-lg border border-surface-variant">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest mb-2">Error Reduction</p>
+<p class="font-headline-xl text-headline-xl text-primary mb-1">94%</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Decrease in processing anomalies via self-correction.</p>
+</div>
+<div class="col-span-2 md:col-span-1 bg-surface-container p-6 rounded-lg border border-surface-variant bg-gradient-to-br from-surface-container to-surface-container-high">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest mb-2">ROI Horizon</p>
+<p class="font-headline-xl text-headline-xl text-secondary mb-1">&lt;6mo</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Average break-even on enterprise deployment.</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-section-padding">
+                As we architect the future of enterprise intelligence, the question is no longer whether AI can automate a process, but whether it can autonomously orchestrate the entire operational outcome. Those who build the foundation for agentic systems today will define the competitive landscape of tomorrow.
+            </p>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-gutter pb-section-padding">
+<div class="bg-primary rounded-xl p-12 md:p-20 text-center relative overflow-hidden shadow-lg border-t-4 border-secondary">
+<!-- Background abstract shapes -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+<div class="absolute -top-[50%] -left-[10%] w-[70%] h-[150%] bg-surface-tint opacity-20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[10%] -right-[10%] w-[50%] h-[100%] bg-secondary opacity-10 rounded-full blur-[100px]"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-stack-md">Ready to Deploy Agentic Architecture?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-stack-lg">Engage with our principal architects to evaluate your infrastructure and chart a roadmap toward autonomous enterprise intelligence.</p>
+<button class="bg-secondary text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-secondary-container transition-colors duration-300 shadow-sm border border-transparent">
+                        Request Architecture Review
+                    </button>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-8">
+<a href="index.html" class="text-xl font-bold text-white no-underline">Zelqar</a>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D]">© 2024 Zelqar AI Automation Agency. Precision-engineered growth.</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="solutions.html">Solutions</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#case-studies">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="blog.html">Blog</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="about.html">About Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
+if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}
+var page=window.location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-link').forEach(function(l){var d=l.getAttribute('data-page'),a=false;
+if(d==='services'&&page==='services.html')a=true;
+if(d==='solutions'&&page==='solutions.html')a=true;
+if(d==='case-studies'&&(page.startsWith('case-study')||page==='case-studies.html'))a=true;
+if(d==='process'&&page==='process.html')a=true;
+if(d==='blog'&&page==='blog.html')a=true;
+if(d==='contact'&&page==='contact.html')a=true;
+if(d==='about'&&page==='about.html')a=true;
+if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
+});
+})();
+</script>
+</body></html>
