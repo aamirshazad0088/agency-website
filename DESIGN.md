@@ -1,5 +1,5 @@
 ---
-name: Aurelian Corporate
+name: Zorex
 colors:
   surface: '#fcf9f8'
   surface-dim: '#dcd9d9'
