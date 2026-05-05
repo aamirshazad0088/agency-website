@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Zorex — AI Software & Agentic Systems for Growing Businesses</title>
-<meta name="description" content="Zorex builds custom AI software, agentic systems, and LLM-powered applications for growing businesses. We design and deploy AI that thinks, decides, and acts.">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Zorex — AI Software & Agentic Systems">
-<meta property="og:description" content="Custom AI applications, intelligent agents, and system integrations built for SMBs and growing companies.">
-<meta property="og:type" content="website">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Zorex — AI Software Agency | Agentic Systems & LLM Development</title>
+    <meta name="description"
+        content="Zorex builds custom agentic AI systems, LLM applications, and intelligent automation for growing businesses. AI that thinks, decides, and acts — deployed in under 30 days.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Zorex">
+    <meta name="publisher" content="Zorex">
+    <meta name="theme-color" content="#193868">
+    <link rel="canonical" href="https://zelqar.vercel.app/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <!-- Open Graph Protocol -->
+    <meta property="og:site_name" content="Zorex">
+    <meta property="og:title" content="Zorex — AI Software Agency | Agentic Systems & LLM Development">
+    <meta property="og:description"
+        content="Custom agentic AI systems, LLM applications, and intelligent automation for growing businesses. Deployed in under 30 days.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zelqar.vercel.app/">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zorex — AI Software Agency | Agentic Systems & LLM Development">
+    <meta name="twitter:description"
+        content="Custom agentic AI systems, LLM applications, and intelligent automation for growing businesses. Deployed in under 30 days.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -94,477 +117,921 @@
                         "headline-md": ["Manrope", "sans-serif"]
                     },
                     "fontSize": {
-                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}]
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }]
                     }
                 }
             }
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .icon-fill {
             font-variation-settings: 'FILL' 1;
         }
+
         .animate-marquee {
             animation: marquee 20s linear infinite;
         }
+
         .animate-marquee:hover {
             animation-play-state: paused;
         }
+
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
+
         .mask-image-fade {
             mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
             -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
-<!-- Unified TopNavBar -->
-<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
-<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex</a>
-<div class="hidden md:flex items-center gap-8">
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="solutions.html" data-page="solutions">Solutions</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
-<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
-</div>
-<div class="flex items-center gap-4">
-<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
-<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
-</div>
-</div>
-<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
-<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
-<a href="solutions.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
-<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
-<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
-<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
-<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
-<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
-<a href="contact.html" class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book Strategy Call</a>
-</div>
-</nav>
-<!-- Main Content -->
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative pt-16 pb-24 px-8 overflow-hidden bg-surface-bright border-b border-outline-variant/30">
-<div class="max-w-container-max mx-auto relative z-10 flex flex-col items-center text-center">
-<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm uppercase mb-8 shadow-sm">
-<span class="material-symbols-outlined text-sm icon-fill">bolt</span>
+
+<body
+    class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+    <!-- Unified TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="services.html" data-page="services">Services</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="solutions.html" data-page="solutions">Solutions</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="case-studies.html" data-page="case-studies">Case Studies</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="process.html" data-page="process">How we work</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="blog.html" data-page="blog">Blog</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="about.html" data-page="about">About Us</a>
+                <a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors"
+                    href="contact.html" data-page="contact">Contact Us</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline"
+                    href="contact.html">Book Strategy Call</a>
+                <button id="mobile-menu-btn" class="md:hidden text-primary-container"><span
+                        class="material-symbols-outlined text-3xl">menu</span></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+            <a href="services.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+            <a href="solutions.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Solutions</a>
+            <a href="case-studies.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case
+                Studies</a>
+            <a href="process.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How
+                we work</a>
+            <a href="blog.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+            <a href="about.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About
+                Us</a>
+            <a href="contact.html"
+                class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact
+                Us</a>
+            <a href="contact.html"
+                class="block bg-[#193868] text-white text-center py-3 rounded-full font-['Manrope'] text-xs font-semibold uppercase tracking-wider no-underline">Book
+                Strategy Call</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative pt-16 pb-24 px-8 overflow-hidden bg-surface-bright border-b border-outline-variant/30">
+            <div class="max-w-container-max mx-auto relative z-10 flex flex-col items-center text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm uppercase mb-8 shadow-sm">
+                    <span class="material-symbols-outlined text-sm icon-fill">bolt</span>
                     AI SOFTWARE · AGENTIC SYSTEMS · AI INTEGRATION
                 </div>
-<h1 class="font-headline-xl text-headline-xl text-primary-container max-w-4xl mb-6">
-                    We Build AI Systems That Multiply Your Output.<br/>
-<span class="text-secondary">Acquire More. Scale Faster.</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
-                    Zorex designs and deploys custom AI software, intelligent agents, and LLM-powered applications — built around your specific business logic to drive client acquisition and revenue.
+                <h1 id="hero-headline" class="font-headline-xl text-headline-xl text-primary-container max-w-4xl mb-6">
+                    We Automate the Work That's Costing You.<br />
+                    <span class="text-secondary">So You Scale the Work That's Making You.</span>
+                </h1>
+                <p id="hero-description" class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                    Zorex designs and deploys custom AI software, intelligent agents, and LLM-powered applications —
+                    built around your specific business logic to drive client acquisition and revenue.
                 </p>
-<div class="flex flex-col sm:flex-row items-center gap-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:bg-primary transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200" href="contact.html">
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:bg-primary transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200"
+                        href="contact.html">
                         Book a Discovery Call
                         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
-</a>
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary-container text-primary-container rounded-full font-label-sm uppercase tracking-wider hover:bg-surface-container transition-colors duration-200" href="case-studies.html">
+                    </a>
+                    <a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary-container text-primary-container rounded-full font-label-sm uppercase tracking-wider hover:bg-surface-container transition-colors duration-200"
+                        href="case-studies.html">
                         See Our Work
                     </a>
-</div>
-</div>
-<!-- Decorative background elements -->
-<div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
-<div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
-</section>
-<!-- Integrations Bar -->
-<section class="py-12 border-b border-outline-variant/30 bg-surface-container-low overflow-hidden">
-<div class="max-w-container-max mx-auto px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest whitespace-nowrap z-10 shrink-0">
+                </div>
+            </div>
+            <!-- Decorative background elements -->
+            <div
+                class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-secondary-container/20 rounded-full blur-3xl -z-10">
+            </div>
+            <div
+                class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] bg-primary-fixed/20 rounded-full blur-3xl -z-10">
+            </div>
+        </section>
+        <!-- Integrations Bar -->
+        <section class="py-12 border-b border-outline-variant/30 bg-surface-container-low overflow-hidden">
+            <div class="max-w-container-max mx-auto px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                <p
+                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest whitespace-nowrap z-10 shrink-0">
                     Seamlessly Integrated With Your Stack
                 </p>
-<div class="relative flex overflow-hidden w-full mask-image-fade">
-<div class="flex items-center gap-12 md:gap-20 opacity-70 animate-marquee whitespace-nowrap w-max" id="marquee-track">
-<div class="flex items-center gap-12 md:gap-20 pr-12 md:pr-20" id="marquee-inner">
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">LangChain</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">LangGraph</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">OpenAI API</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Claude API</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Pinecone</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">FastAPI</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Python</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">n8n</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">HubSpot</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">GHL</span>
-<span class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Stripe</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Stats Row -->
-<section class="py-section-padding px-8 bg-background relative z-20 -mt-10">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Stat Card 1 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary-container">psychology</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span class="stat-counter" data-target="50">50</span>+</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Systems Shipped</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Deployed systems driving measurable revenue and client acquisition.</p>
-</div>
-<!-- Stat Card 2 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary">bolt</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span class="stat-counter" data-target="20">20</span>+</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hrs/Wk Reclaimed</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Team hours reclaimed per client, refocused on closing deals and strategy.</p>
-</div>
-<!-- Stat Card 3 -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary-container">account_balance</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span class="stat-counter" data-target="90">90</span>%+</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Client Retention</p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Clients on ongoing retainer continuing to build out their AI advantage.</p>
-</div>
-<!-- Stat Card 4 (Solid Accent) -->
-<div class="bg-primary-container rounded-xl p-8 shadow-lg flex flex-col justify-center relative overflow-hidden">
-<div class="absolute -right-4 -top-4 text-white/5">
-<span class="material-symbols-outlined text-[120px]">hub</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-primary mb-2 relative z-10">&lt; <span class="stat-counter" data-target="30">30</span> DAYS</h3>
-<p class="font-label-sm text-label-sm text-accent-gold uppercase tracking-wider relative z-10">Average Deployment</p>
-<p class="font-body-md text-body-md text-on-primary/80 mt-4 text-sm relative z-10">From strategic architecture mapping to live AI system integration.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Problem Section -->
-<section class="py-section-padding px-8 bg-surface-container border-y border-outline-variant/20">
-<div class="max-w-container-max mx-auto">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-4">The Reality Check</span>
-<h2 class="font-headline-lg text-headline-lg text-primary-container">
-                        Most businesses know they need AI.<br/>
-                        The problem is they don't know what to actually build — or they've tried tools that didn't fit. Here's what we hear every week:
+                <div class="relative flex overflow-hidden w-full mask-image-fade">
+                    <div class="flex items-center gap-12 md:gap-20 opacity-70 animate-marquee whitespace-nowrap w-max"
+                        id="marquee-track">
+                        <div class="flex items-center gap-12 md:gap-20 pr-12 md:pr-20" id="marquee-inner">
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">LangChain</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">LangGraph</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">OpenAI
+                                API</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Claude
+                                API</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Pinecone</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">FastAPI</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Python</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">n8n</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">HubSpot</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">GHL</span>
+                            <span
+                                class="font-bold text-2xl tracking-tight text-on-surface-variant hover:text-primary transition-colors cursor-default">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Row -->
+        <section class="py-section-padding px-8 bg-background relative z-20 -mt-10">
+            <div class="max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Stat Card 1 -->
+                    <div
+                        class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary-container">psychology</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span
+                                class="stat-counter" data-target="50">50</span>+</h3>
+                        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI
+                            Systems Shipped</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Deployed systems
+                            driving measurable revenue and client acquisition.</p>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div
+                        class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-secondary">bolt</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span
+                                class="stat-counter" data-target="20">20</span>+</h3>
+                        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hrs/Wk
+                            Reclaimed</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Team hours reclaimed
+                            per client, refocused on closing deals and strategy.</p>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div
+                        class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary-container">account_balance</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-2"><span
+                                class="stat-counter" data-target="90">90</span>%+</h3>
+                        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Client
+                            Retention</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant mt-4 text-sm">Clients on ongoing
+                            retainer continuing to build out their AI advantage.</p>
+                    </div>
+                    <!-- Stat Card 4 (Solid Accent) -->
+                    <div
+                        class="bg-primary-container rounded-xl p-8 shadow-lg flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-white/5">
+                            <span class="material-symbols-outlined text-[120px]">hub</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-primary mb-2 relative z-10">&lt; <span
+                                class="stat-counter" data-target="30">30</span> DAYS</h3>
+                        <p class="font-label-sm text-label-sm text-accent-gold uppercase tracking-wider relative z-10">
+                            Average Deployment</p>
+                        <p class="font-body-md text-body-md text-on-primary/80 mt-4 text-sm relative z-10">From
+                            strategic architecture mapping to live AI system integration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Problem Section -->
+        <section class="py-section-padding px-8 bg-surface-container border-y border-outline-variant/20">
+            <div class="max-w-container-max mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-4">The
+                        Reality Check</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary-container">
+                        Your best people are doing your worst work.<br />
+                        That's not a staffing problem that's a systems problem.
                     </h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 group/grid">
-<!-- Problem 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
-<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
-    <span class="material-symbols-outlined text-[120px] text-error">database_off</span>
-</div>
-<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
-    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
-    Friction Point 01
-</div>
-<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The Data Is "Somewhere"</h4>
-<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your CRM says one thing, your billing software says another, and your team spends hours cross-referencing spreadsheets just to send an invoice.</p>
-</div>
-<!-- Problem 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
-<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
-    <span class="material-symbols-outlined text-[120px] text-error">pending_actions</span>
-</div>
-<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
-    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
-    Friction Point 02
-</div>
-<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The "I'll Do It Later" Trap</h4>
-<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Critical follow-ups, contract generations, and client onboarding tasks get delayed because "busy work" takes precedence over revenue-generating work.</p>
-</div>
-<!-- Problem 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
-<div class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
-    <span class="material-symbols-outlined text-[120px] text-error">money_off</span>
-</div>
-<div class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
-    <div class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]"></div>
-    Friction Point 03
-</div>
-<h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Paying Premium for $10 Tasks</h4>
-<p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your highest-paid experts are spending 30% of their day clicking buttons, copy-pasting data, and manually updating task boards.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Services / Solutions Section (Bento Grid) -->
-<section class="py-section-padding px-8 bg-background" id="services">
-<div class="max-w-container-max mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-<div class="max-w-2xl">
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-4">What We Build</span>
-<h2 class="font-headline-lg text-headline-lg text-primary-container">We build for acquisition and scale.</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">We don't sell software subscriptions or generic AI tools. We design and build custom AI systems — from LLM-powered applications to multi-agent pipelines — engineered around how your business actually operates and wins clients.</p>
-</div>
-<a class="inline-flex items-center gap-2 font-label-sm uppercase tracking-wider text-primary-container hover:text-secondary transition-colors group" href="services.html">
-                        See All Services 
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[minmax(280px,auto)]">
-<!-- Large Card (Solid) -->
-<div class="md:col-span-6 bg-primary-container rounded-2xl p-10 text-on-primary relative overflow-hidden flex flex-col justify-between group">
-<div class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700">
-<span class="material-symbols-outlined text-[300px]">hub</span>
-</div>
-<div class="relative z-10">
-<div class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-accent-gold">account_tree</span>
-</div>
-<h3 class="font-headline-md text-3xl mb-4">Agentic AI Systems</h3>
-<p class="font-body-lg text-on-primary-container max-w-md">We design and deploy AI agents with real reasoning capability — agents that evaluate context, qualify leads, make decisions, and take multi-step actions across your systems to drive sales. Not chatbots. Actual agents.</p>
-</div>
-<div class="relative z-10 mt-8 pt-8 border-t border-white/10 flex flex-wrap gap-4">
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Multi-step reasoning</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Tool use & API actions</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Custom decision logic</span>
-</div>
-</div>
-<!-- Medium Card -->
-<div class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors flex flex-col group relative overflow-hidden">
-<div class="absolute right-4 bottom-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 pointer-events-none">
-    <span class="material-symbols-outlined text-[150px] text-primary">robot_2</span>
-</div>
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 relative z-10">
-<span class="material-symbols-outlined text-secondary">psychology</span>
-</div>
-<h3 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Custom LLM Applications</h3>
-<p class="font-body-md text-on-surface-variant flex-grow relative z-10">We build LLM-powered software tailored to your specific data, workflows, and users. Equip your sales teams with internal AI copilots, knowledge retrieval systems, and client-facing AI tools that convert.</p>
-<div class="relative z-10 mt-8 pt-6 border-t border-outline-variant/20 flex flex-wrap gap-4">
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> RAG pipelines</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Fine-tuned models</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Domain-specific tools</span>
-</div>
-</div>
-<!-- Small Card 1 -->
-<div class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container text-sm">dns</span>
-</div>
-<h3 class="font-headline-md text-xl text-primary-container">AI Integration</h3>
-</div>
-<p class="font-body-md text-on-surface-variant mb-4">We connect AI capabilities into the systems you already use — your CRM, ERP, support platform, or internal tools — without requiring a full stack rebuild. Ensure no lead ever slips through the cracks.</p>
-<div class="flex flex-wrap gap-4">
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> REST & Webhooks</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Existing stack compatibility</span>
-</div>
-</div>
-<!-- Small Card 2 -->
-<div class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container text-sm">route</span>
-</div>
-<h3 class="font-headline-md text-xl text-primary-container">Intelligent Process Systems</h3>
-</div>
-<p class="font-body-md text-on-surface-variant mb-4">For repeatable business processes that currently require human judgment, we build AI-assisted systems that handle the decision logic — freeing your team to focus on closing and high-value strategy.</p>
-<div class="flex flex-wrap gap-4">
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Decision-layer AI</span>
-<span class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">check_circle</span> Process orchestration</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-section-padding px-8 bg-surface-bright border-t border-outline-variant/20 relative overflow-hidden" id="case-studies">
-<div class="max-w-container-max mx-auto relative z-10">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary-container">Trusted by Industry Leaders</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">The numbers speak for themselves. The relief is palpable.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Quote 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
-<div class="flex items-center gap-1 mb-6 text-accent-gold">
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-</div>
-<p class="font-body-md text-on-surface italic mb-8">"Zorex didn't just give us a tool; they re-engineered our entire sales pipeline. We're closing 30% more deals simply because the automated follow-ups never miss a beat. Best ROI of the year."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">MT</div>
-<div>
-<p class="font-bold text-primary-container text-sm">Marcus T. — Operations Lead</p>
-<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">E-Commerce Brand</p>
-</div>
-</div>
-</div>
-<!-- Quote 2 -->
-<a href="case-study-novus.html" class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative block no-underline hover:shadow-md transition-shadow group">
-<span class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
-<div class="flex items-center gap-1 mb-6 text-accent-gold">
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-</div>
-<p class="font-body-md text-on-surface italic mb-8">"We were drowning in administrative tasks during client onboarding. The system Zorex built reduced a 4-hour manual process down to 3 minutes of automated data routing."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">AM</div>
-<div>
-<p class="font-bold text-primary-container text-sm">Aisha M. — Head of Support</p>
-<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Healthcare Clinic</p>
-</div>
-</div>
-<span class="inline-flex items-center gap-1 font-label-sm text-[10px] text-secondary uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">Read Case Study <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
-</a>
-<!-- Quote 3 -->
-<a href="case-study-echocommerce.html" class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative block no-underline hover:shadow-md transition-shadow group">
-<span class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
-<div class="flex items-center gap-1 mb-6 text-accent-gold">
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-<span class="material-symbols-outlined icon-fill text-sm">star</span>
-</div>
-<p class="font-body-md text-on-surface italic mb-8">"I was skeptical about 'AI Software', but the custom LLM agent they deployed for our Tier 1 support handles 60% of our tickets flawlessly. It's like hiring a team of experts that never sleep."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">DL</div>
-<div>
-<p class="font-bold text-primary-container text-sm">David L. — Agency Founder</p>
-<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Marketing Agency</p>
-</div>
-</div>
-<span class="inline-flex items-center gap-1 font-label-sm text-[10px] text-secondary uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">Read Case Study <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
-</a>
-</div>
-</div>
-<!-- Decorative background map -->
-<div class="absolute inset-0 opacity-5 pointer-events-none mix-blend-multiply flex items-center justify-center" data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated.">
-<img alt="Background pattern" class="w-full h-full object-cover" data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated." src="https://zorex.com/"/>
-</div>
-</section>
-<!-- Final CTA -->
-<section class="py-section-padding px-8 bg-primary-container relative overflow-hidden" id="book">
-<!-- Background Texture -->
-<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
-<div class="max-w-4xl mx-auto text-center relative z-10">
-<h2 class="font-headline-xl text-5xl md:text-6xl text-on-primary mb-8 leading-tight">
-                    Your competitors are already running AI.<br/>
-<span class="text-accent-gold">The gap widens every month.</span>
-</h2>
-<p class="font-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto">
-                    We take on a limited number of new clients each engagement cycle to maintain delivery quality. Schedule a discovery call to see what we'd build for you to drive client acquisition.
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 group/grid">
+                    <!-- Problem 1 -->
+                    <div
+                        class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+                        <div
+                            class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+                            <span class="material-symbols-outlined text-[120px] text-error">database_off</span>
+                        </div>
+                        <div
+                            class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+                            <div
+                                class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]">
+                            </div>
+                            Friction Point 01
+                        </div>
+                        <h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The Data Is
+                            "Somewhere"</h4>
+                        <p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your CRM says one
+                            thing, your billing software says another, and your team spends hours cross-referencing
+                            spreadsheets just to send an invoice.</p>
+                    </div>
+                    <!-- Problem 2 -->
+                    <div
+                        class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+                        <div
+                            class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+                            <span class="material-symbols-outlined text-[120px] text-error">pending_actions</span>
+                        </div>
+                        <div
+                            class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+                            <div
+                                class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]">
+                            </div>
+                            Friction Point 02
+                        </div>
+                        <h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">The "I'll Do It
+                            Later" Trap</h4>
+                        <p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Critical
+                            follow-ups, contract generations, and client onboarding tasks get delayed because "busy
+                            work" takes precedence over revenue-generating work.</p>
+                    </div>
+                    <!-- Problem 3 -->
+                    <div
+                        class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 relative hover:border-error/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group/card cursor-default overflow-hidden">
+                        <div
+                            class="absolute -top-4 -right-4 p-6 opacity-[0.03] group-hover/card:opacity-10 group-hover/card:scale-110 transition-all duration-500 pointer-events-none">
+                            <span class="material-symbols-outlined text-[120px] text-error">money_off</span>
+                        </div>
+                        <div
+                            class="inline-flex items-center gap-2 bg-error-container/40 text-error px-3 py-1.5 rounded-full font-label-sm text-[10px] uppercase tracking-wider border border-error/20 mb-6 relative z-10 backdrop-blur-sm">
+                            <div
+                                class="w-1.5 h-1.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(186,26,26,0.8)]">
+                            </div>
+                            Friction Point 03
+                        </div>
+                        <h4 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Paying Premium
+                            for $10 Tasks</h4>
+                        <p class="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Your highest-paid
+                            experts are spending 30% of their day clicking buttons, copy-pasting data, and manually
+                            updating task boards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services / Solutions Section (Bento Grid) -->
+        <section class="py-section-padding px-8 bg-background" id="services">
+            <div class="max-w-container-max mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <span
+                            class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-4">What
+                            We Build</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container">Engineered around how your
+                            business actually operates.
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mt-4">We don't sell tools. We build
+                            the infrastructure your business is missing — custom AI systems designed around your
+                            workflows, your data, and your actual operations.</p>
+                    </div>
+                    <a class="inline-flex items-center gap-2 font-label-sm uppercase tracking-wider text-primary-container hover:text-secondary transition-colors group"
+                        href="services.html">
+                        See All Services
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Bento Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[minmax(280px,auto)]">
+                    <!-- Large Card (Solid) -->
+                    <div
+                        class="md:col-span-6 bg-primary-container rounded-2xl p-10 text-on-primary relative overflow-hidden flex flex-col justify-between group">
+                        <div
+                            class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700">
+                            <span class="material-symbols-outlined text-[300px]">hub</span>
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-accent-gold">account_tree</span>
+                            </div>
+                            <h3 class="font-headline-md text-3xl mb-4">Agentic AI Systems</h3>
+                            <p class="font-body-lg text-on-primary-container max-w-md">We design and deploy AI agents
+                                with real reasoning capability — agents that evaluate context, qualify leads, make
+                                decisions, and take multi-step actions across your systems to drive sales. Not chatbots.
+                                Actual agents.</p>
+                        </div>
+                        <div class="relative z-10 mt-8 pt-8 border-t border-white/10 flex flex-wrap gap-4">
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Multi-step
+                                reasoning</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Tool use & API
+                                actions</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-accent-gold flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Custom decision
+                                logic</span>
+                        </div>
+                    </div>
+                    <!-- Medium Card -->
+                    <div
+                        class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors flex flex-col group relative overflow-hidden">
+                        <div
+                            class="absolute right-4 bottom-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 pointer-events-none">
+                            <span class="material-symbols-outlined text-[150px] text-primary">robot_2</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6 relative z-10">
+                            <span class="material-symbols-outlined text-secondary">psychology</span>
+                        </div>
+                        <h3 class="font-headline-md text-2xl text-primary-container mb-4 relative z-10">Custom LLM
+                            Applications</h3>
+                        <p class="font-body-md text-on-surface-variant flex-grow relative z-10">We build LLM-powered
+                            software tailored to your specific data, workflows, and users. Equip your sales teams with
+                            internal AI copilots, knowledge retrieval systems, and client-facing AI tools that convert.
+                        </p>
+                        <div class="relative z-10 mt-8 pt-6 border-t border-outline-variant/20 flex flex-wrap gap-4">
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> RAG pipelines</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Fine-tuned
+                                models</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Domain-specific
+                                tools</span>
+                        </div>
+                    </div>
+                    <!-- Small Card 1 -->
+                    <div
+                        class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary-container text-sm">dns</span>
+                            </div>
+                            <h3 class="font-headline-md text-xl text-primary-container">AI Integration</h3>
+                        </div>
+                        <p class="font-body-md text-on-surface-variant mb-4">We connect AI capabilities into the systems
+                            you already use — your CRM, ERP, support platform, or internal tools — without requiring a
+                            full stack rebuild. Ensure no lead ever slips through the cracks.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> REST & Webhooks</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Existing stack
+                                compatibility</span>
+                        </div>
+                    </div>
+                    <!-- Small Card 2 -->
+                    <div
+                        class="md:col-span-6 bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 hover:bg-surface-container transition-colors">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary-container text-sm">route</span>
+                            </div>
+                            <h3 class="font-headline-md text-xl text-primary-container">Intelligent Process Systems</h3>
+                        </div>
+                        <p class="font-body-md text-on-surface-variant mb-4">For repeatable business processes that
+                            currently require human judgment, we build AI-assisted systems that handle the decision
+                            logic — freeing your team to focus on closing and high-value strategy.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Decision-layer
+                                AI</span>
+                            <span
+                                class="text-sm font-label-sm uppercase tracking-wider text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-xs">check_circle</span> Process
+                                orchestration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section
+            class="py-section-padding px-8 bg-surface-bright border-t border-outline-variant/20 relative overflow-hidden"
+            id="case-studies">
+            <div class="max-w-container-max mx-auto relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary-container">Trusted by Industry Leaders
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mt-4">The numbers speak for themselves.
+                        The relief is palpable.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Quote 1 -->
+                    <div
+                        class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative hover:shadow-md transition-shadow">
+                        <span
+                            class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
+                        <div class="flex items-center gap-1 mb-6 text-accent-gold">
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic mb-8">"Zorex didn't just give us a tool; they
+                            re-engineered our entire sales pipeline. We're closing 30% more deals simply because the
+                            automated follow-ups never miss a beat. Best ROI of the year."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">
+                                MT</div>
+                            <div>
+                                <p class="font-bold text-primary-container text-sm">Marcus T. — Operations Lead</p>
+                                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">
+                                    E-Commerce Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Quote 2 -->
+                    <a href="case-study-novus.html"
+                        class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative block no-underline hover:shadow-md transition-shadow group">
+                        <span
+                            class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
+                        <div class="flex items-center gap-1 mb-6 text-accent-gold">
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic mb-8">"We were drowning in administrative tasks
+                            during client onboarding. The system Zorex built reduced a 4-hour manual process down to 3
+                            minutes of automated data routing."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">
+                                AM</div>
+                            <div>
+                                <p class="font-bold text-primary-container text-sm">Aisha M. — Head of Support</p>
+                                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">
+                                    Healthcare Clinic</p>
+                            </div>
+                        </div>
+                        <span
+                            class="inline-flex items-center gap-1 font-label-sm text-[10px] text-secondary uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">Read
+                            Case Study <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
+                    </a>
+                    <!-- Quote 3 -->
+                    <a href="case-study-echocommerce.html"
+                        class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20 relative block no-underline hover:shadow-md transition-shadow group">
+                        <span
+                            class="material-symbols-outlined text-4xl text-secondary-container absolute top-6 right-6 opacity-50">format_quote</span>
+                        <div class="flex items-center gap-1 mb-6 text-accent-gold">
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                            <span class="material-symbols-outlined icon-fill text-sm">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic mb-8">"I was skeptical about 'AI Software', but
+                            the custom LLM agent they deployed for our Tier 1 support handles 60% of our tickets
+                            flawlessly. It's like hiring a team of experts that never sleep."</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary-container font-bold">
+                                DL</div>
+                            <div>
+                                <p class="font-bold text-primary-container text-sm">David L. — Agency Founder</p>
+                                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">
+                                    Marketing Agency</p>
+                            </div>
+                        </div>
+                        <span
+                            class="inline-flex items-center gap-1 font-label-sm text-[10px] text-secondary uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">Read
+                            Case Study <span class="material-symbols-outlined text-xs">arrow_forward</span></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative background map -->
+            <div class="absolute inset-0 opacity-5 pointer-events-none mix-blend-multiply flex items-center justify-center"
+                data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated.">
+                <img alt="Background pattern" class="w-full h-full object-cover"
+                    data-alt="A highly detailed, abstract topographic map or node network visualization in deep navy blue lines on a white background. The lines form a complex, interconnected web reminiscent of data flows or global connectivity. The lighting is flat and graphic, creating a modern, minimalist corporate aesthetic. The mood is precise, technological, and sophisticated."
+                    src="https://zorex.com/" />
+            </div>
+        </section>
+        <!-- Final CTA -->
+        <section class="py-section-padding px-8 bg-primary-container relative overflow-hidden" id="book">
+            <!-- Background Texture -->
+            <div
+                class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container">
+            </div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <h2 class="font-headline-xl text-5xl md:text-6xl text-on-primary mb-8 leading-tight">
+                    Your competitors are already running AI.<br />
+                    <span class="text-accent-gold">The gap widens every month.</span>
+                </h2>
+                <p class="font-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto">
+                    We take on a limited number of new clients each engagement cycle to maintain delivery quality.
+                    Schedule a discovery call to see what we'd build for you to drive client acquisition.
                 </p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200" href="contact.html">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200"
+                        href="contact.html">
                         Book Your Discovery Call
                     </a>
-</div>
-</div>
-</section>
-</main>
-<!-- Unified Footer -->
-<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
-<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
-<div class="flex flex-col gap-4">
-<a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex</a>
-<div class="flex flex-col gap-2">
-<a href="mailto:hello@zorex.com" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
-<a href="tel:+18005550199" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +1 (800) 555-0199</a>
-<a href="https://calendly.com/zorex-strategy" target="_blank" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">event_available</span> Calendly</a>
-<a href="https://linkedin.com/company/zorex-ai" target="_blank" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">work</span> LinkedIn</a>
-</div>
-</div>
-<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
-<p class="mb-2">© 2026 Zorex. All rights reserved.</p>
-<p>Custom AI software for growing businesses.</p>
-</div>
-<div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="solutions.html">Solutions</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="blog.html">Blog</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="about.html">About Us</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="/privacy.html">Privacy Policy</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="/terms.html">Terms of Service</a>
-</div>
-</div>
-</footer>
-<script>
-(function(){
-var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
-if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}
-var page=window.location.pathname.split('/').pop()||'index.html';
-document.querySelectorAll('.nav-link').forEach(function(l){var d=l.getAttribute('data-page'),a=false;
-if(d==='services'&&page==='services.html')a=true;
-if(d==='solutions'&&page==='solutions.html')a=true;
-if(d==='case-studies'&&(page.startsWith('case-study')||page==='case-studies.html'))a=true;
-if(d==='process'&&page==='process.html')a=true;
-if(d==='blog'&&page==='blog.html')a=true;
-if(d==='contact'&&page==='contact.html')a=true;
-if(d==='about'&&page==='about.html')a=true;
-if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
-});
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Unified Footer -->
+    <footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+        <div
+            class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex</a>
+                <div class="flex flex-col gap-2">
+                    <a href="mailto:hello@zorex.com"
+                        class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span
+                            class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
+                    <a href="tel:+18005550199"
+                        class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span
+                            class="material-symbols-outlined text-[18px]">call</span> +1 (800) 555-0199</a>
+                    <a href="https://calendly.com/zorex-strategy" target="_blank"
+                        class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span
+                            class="material-symbols-outlined text-[18px]">event_available</span> Calendly</a>
+                    <a href="https://linkedin.com/company/zorex-ai" target="_blank"
+                        class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span
+                            class="material-symbols-outlined text-[18px]">work</span> LinkedIn</a>
+                </div>
+            </div>
+            <div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
+                <p class="mb-2">© 2026 Zorex. All rights reserved.</p>
+                <p>Custom AI software for growing businesses.</p>
+            </div>
+            <div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="services.html">Services</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="solutions.html">Solutions</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="case-studies.html">Case Studies</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="blog.html">Blog</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="about.html">About Us</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="contact.html">Contact Us</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="/privacy.html">Privacy Policy</a>
+                <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
+                    href="/terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+            (function () {
+                var btn = document.getElementById('mobile-menu-btn'), menu = document.getElementById('mobile-menu');
+                if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle('hidden'); btn.querySelector('.material-symbols-outlined').textContent = menu.classList.contains('hidden') ? 'menu' : 'close'; }); }
+                var page = window.location.pathname.split('/').pop() || 'index.html';
+                document.querySelectorAll('.nav-link').forEach(function (l) {
+                    var d = l.getAttribute('data-page'), a = false;
+                    if (d === 'services' && page === 'services.html') a = true;
+                    if (d === 'solutions' && page === 'solutions.html') a = true;
+                    if (d === 'case-studies' && (page.startsWith('case-study') || page === 'case-studies.html')) a = true;
+                    if (d === 'process' && page === 'process.html') a = true;
+                    if (d === 'blog' && page === 'blog.html') a = true;
+                    if (d === 'contact' && page === 'contact.html') a = true;
+                    if (d === 'about' && page === 'about.html') a = true;
+                    if (a) { l.classList.remove('text-slate-600'); l.classList.add('text-amber-600', 'border-b-2', 'border-amber-600', 'pb-1'); }
+                });
 
-// Marquee Clone Logic
-var marqueeTrack = document.getElementById('marquee-track');
-var marqueeInner = document.getElementById('marquee-inner');
-if(marqueeTrack && marqueeInner) {
-    var clone = marqueeInner.cloneNode(true);
-    clone.id = 'marquee-inner-clone';
-    clone.setAttribute('aria-hidden', 'true');
-    marqueeTrack.appendChild(clone);
-}
-
-// Number Counter Animation Logic
-var counters = document.querySelectorAll('.stat-counter');
-var observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 };
-var observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            var target = entry.target;
-            var finalValue = parseInt(target.getAttribute('data-target'), 10);
-            var duration = 2000; // ms
-            var stepTime = Math.max(Math.abs(Math.floor(duration / finalValue)), 10);
-            var current = 0;
-            var increment = Math.ceil(finalValue / (duration / stepTime));
-
-            var timer = setInterval(function() {
-                current += increment;
-                if (current >= finalValue) {
-                    target.innerText = finalValue.toLocaleString();
-                    clearInterval(timer);
-                } else {
-                    target.innerText = current.toLocaleString();
+                // Marquee Clone Logic
+                var marqueeTrack = document.getElementById('marquee-track');
+                var marqueeInner = document.getElementById('marquee-inner');
+                if (marqueeTrack && marqueeInner) {
+                    var clone = marqueeInner.cloneNode(true);
+                    clone.id = 'marquee-inner-clone';
+                    clone.setAttribute('aria-hidden', 'true');
+                    marqueeTrack.appendChild(clone);
                 }
-            }, stepTime);
-            
-            observer.unobserve(target); // Only animate once
+
+                // Number Counter Animation Logic
+                var counters = document.querySelectorAll('.stat-counter');
+                var observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 };
+                var observer = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            var target = entry.target;
+                            var finalValue = parseInt(target.getAttribute('data-target'), 10);
+                            var duration = 2000; // ms
+                            var stepTime = Math.max(Math.abs(Math.floor(duration / finalValue)), 10);
+                            var current = 0;
+                            var increment = Math.ceil(finalValue / (duration / stepTime));
+
+                            var timer = setInterval(function () {
+                                current += increment;
+                                if (current >= finalValue) {
+                                    target.innerText = finalValue.toLocaleString();
+                                    clearInterval(timer);
+                                } else {
+                                    target.innerText = current.toLocaleString();
+                                }
+                            }, stepTime);
+
+                            observer.unobserve(target); // Only animate once
+                        }
+                    });
+                }, observerOptions);
+
+                counters.forEach(function (c) { observer.observe(c); });
+
+            })();
+    </script>
+    <!-- ============================================================ -->
+    <!-- JSON-LD Structured Data: SEO + AEO Infrastructure             -->
+    <!-- Schema.org @graph: Organization, WebSite, ProfessionalService,-->
+    <!-- FAQPage, BreadcrumbList                                       -->
+    <!-- ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://zelqar.vercel.app/#organization",
+      "name": "Zorex",
+      "alternateName": "Zorex AI",
+      "url": "https://zelqar.vercel.app/",
+      "description": "Zorex builds custom AI software, agentic systems, and LLM-powered applications for growing businesses. We design, deploy, and manage AI that thinks, decides, and acts.",
+      "email": "hello@zorex.com",
+      "telephone": "+18005550199",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+18005550199",
+          "email": "hello@zorex.com",
+          "contactType": "sales",
+          "availableLanguage": ["English"]
         }
-    });
-}, observerOptions);
-
-counters.forEach(function(c) { observer.observe(c); });
-
-})();
+      ],
+      "sameAs": [
+        "https://linkedin.com/company/zorex-ai",
+        "https://calendly.com/zorex-strategy"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Agentic AI Systems",
+        "Large Language Models",
+        "LLM Application Development",
+        "AI Automation",
+        "Retrieval-Augmented Generation",
+        "AI Integration",
+        "Custom AI Software",
+        "Intelligent Process Automation",
+        "Enterprise AI Deployment"
+      ],
+      "areaServed": [
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "AdministrativeArea", "name": "European Union" },
+        { "@type": "AdministrativeArea", "name": "Middle East" }
+      ],
+      "slogan": "AI that thinks, decides, and acts.",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 2,
+        "maxValue": 50
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zelqar.vercel.app/#website",
+      "url": "https://zelqar.vercel.app/",
+      "name": "Zorex",
+      "description": "Custom AI software, agentic systems, and LLM-powered applications for growing businesses.",
+      "publisher": { "@id": "https://zelqar.vercel.app/#organization" },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zelqar.vercel.app/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://zelqar.vercel.app/#professional-service",
+      "name": "Zorex AI Software Agency",
+      "url": "https://zelqar.vercel.app/",
+      "description": "Zorex is a specialist AI software agency that builds bespoke agentic AI systems, custom LLM applications, and enterprise-grade automation workflows for growing businesses.",
+      "provider": { "@id": "https://zelqar.vercel.app/#organization" },
+      "serviceType": "AI Software Development",
+      "areaServed": [
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "AdministrativeArea", "name": "European Union" },
+        { "@type": "AdministrativeArea", "name": "Middle East" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Zorex AI Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Agentic AI Systems",
+              "description": "AI agents with real reasoning capability — agents that evaluate context, qualify leads, make decisions, and take multi-step actions across your systems. Multi-step reasoning, tool use & API actions, custom decision logic.",
+              "url": "https://zelqar.vercel.app/services.html",
+              "provider": { "@id": "https://zelqar.vercel.app/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom LLM Applications",
+              "description": "LLM-powered software tailored to your specific data, workflows, and users. Internal AI copilots, knowledge retrieval systems (RAG pipelines), fine-tuned models, and domain-specific tools.",
+              "url": "https://zelqar.vercel.app/services.html",
+              "provider": { "@id": "https://zelqar.vercel.app/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Integration",
+              "description": "Connect AI capabilities into the systems you already use — CRM, ERP, support platform, or internal tools — without requiring a full stack rebuild. REST & Webhooks, existing stack compatibility.",
+              "url": "https://zelqar.vercel.app/services.html",
+              "provider": { "@id": "https://zelqar.vercel.app/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Intelligent Process Systems",
+              "description": "AI-assisted systems for repeatable business processes that currently require human judgment, handling decision logic so your team can focus on closing and high-value strategy.",
+              "url": "https://zelqar.vercel.app/services.html",
+              "provider": { "@id": "https://zelqar.vercel.app/#organization" }
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Marcus T." },
+          "reviewBody": "Zorex didn't just give us a tool; they re-engineered our entire sales pipeline. We're closing 30% more deals simply because the automated follow-ups never miss a beat. Best ROI of the year.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Aisha M." },
+          "reviewBody": "We were drowning in administrative tasks during client onboarding. The system Zorex built reduced a 4-hour manual process down to 3 minutes of automated data routing.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "David L." },
+          "reviewBody": "I was skeptical about AI Software, but the custom LLM agent they deployed for our Tier 1 support handles 60% of our tickets flawlessly. It's like hiring a team of experts that never sleep.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://zelqar.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Zorex build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zorex builds custom AI software for growing businesses. Our core offerings include agentic AI systems with multi-step reasoning and tool use, custom LLM applications with RAG pipelines and fine-tuned models, AI integration into existing CRM/ERP/support platforms, and intelligent process systems that handle decision logic autonomously."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical Zorex AI deployment take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Zorex deployments are completed in under 30 days. Our structured build process covers discovery, architecture, engineering, testing, and deployment with full documentation and handoff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries does Zorex serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zorex serves growing businesses across B2B e-commerce, B2B financial services, medical practices and healthcare, commercial real estate, law firms, and B2B SaaS companies in the United States, United Kingdom, European Union, and Middle East."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What results have Zorex clients achieved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zorex clients have achieved 60–98% efficiency gains, 98% data accuracy improvement, 60% support cost reduction, 400% patient engagement increase, and $2.4M in annual savings. Average deployments complete in under 30 days."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zelqar.vercel.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zelqar.vercel.app/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zelqar.vercel.app/#webpage",
+      "url": "https://zelqar.vercel.app/",
+      "name": "Zorex | High-Leverage AI Engineering",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#hero-headline", "#hero-description"]
+      }
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://zelqar.vercel.app/#navigation",
+      "name": "Primary Navigation",
+      "hasPart": [
+        { "@type": "WebPage", "name": "Services", "url": "https://zelqar.vercel.app/services.html" },
+        { "@type": "WebPage", "name": "Solutions", "url": "https://zelqar.vercel.app/solutions.html" },
+        { "@type": "WebPage", "name": "Case Studies", "url": "https://zelqar.vercel.app/case-studies.html" },
+        { "@type": "WebPage", "name": "How we work", "url": "https://zelqar.vercel.app/process.html" },
+        { "@type": "WebPage", "name": "Blog", "url": "https://zelqar.vercel.app/blog.html" },
+        { "@type": "WebPage", "name": "About Us", "url": "https://zelqar.vercel.app/about.html" },
+        { "@type": "WebPage", "name": "Contact Us", "url": "https://zelqar.vercel.app/contact.html" }
+      ]
+    }
+  ]
+}
 </script>
-</body></html>
+</body>
+
+</html>
