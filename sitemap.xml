@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
   <url>
-    <loc>https://zelqar.vercel.app/</loc>
+    <loc>https://zorexai.vercel.app/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/services.html</loc>
+    <loc>https://zorexai.vercel.app/services.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/solutions.html</loc>
+    <loc>https://zorexai.vercel.app/solutions.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/case-studies.html</loc>
+    <loc>https://zorexai.vercel.app/case-studies.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/process.html</loc>
+    <loc>https://zorexai.vercel.app/process.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/about.html</loc>
+    <loc>https://zorexai.vercel.app/about.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/blog.html</loc>
+    <loc>https://zorexai.vercel.app/blog.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/contact.html</loc>
+    <loc>https://zorexai.vercel.app/contact.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -52,19 +52,19 @@
 
   <!-- Case Study Detail Pages -->
   <url>
-    <loc>https://zelqar.vercel.app/case-study-novus.html</loc>
+    <loc>https://zorexai.vercel.app/case-study-novus.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/case-study-echocommerce.html</loc>
+    <loc>https://zorexai.vercel.app/case-study-echocommerce.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/case-study-viralgrowth.html</loc>
+    <loc>https://zorexai.vercel.app/case-study-viralgrowth.html</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -72,13 +72,13 @@
 
   <!-- Blog Article Pages -->
   <url>
-    <loc>https://zelqar.vercel.app/blog-agentic-systems.html</loc>
+    <loc>https://zorexai.vercel.app/blog-agentic-systems.html</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/blog-ai-commerce.html</loc>
+    <loc>https://zorexai.vercel.app/blog-ai-commerce.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -86,13 +86,13 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://zelqar.vercel.app/privacy.html</loc>
+    <loc>https://zorexai.vercel.app/privacy.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://zelqar.vercel.app/terms.html</loc>
+    <loc>https://zorexai.vercel.app/terms.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

@@ -108,6 +108,14 @@
             font-variation-settings: 'FILL' 1;
         }
     </style>
+
+  <!-- SEO & AEO Metadata -->
+  <meta name="description" content="Read the Zorex AI Privacy Policy. We maintain uncompromising governance and data sovereignty, ensuring your proprietary information is protected and secure.">
+  <link rel="canonical" href="https://zorexai.vercel.app/privacy.html">
+  <meta property="og:title" content="Privacy Policy - Zorex AI">
+  <meta property="og:description" content="Read the Zorex AI Privacy Policy. We maintain uncompromising governance and data sovereignty, ensuring your proprietary information is protected and secure.">
+  <meta property="og:url" content="https://zorexai.vercel.app/privacy.html">
+  <meta property="og:type" content="website">
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
 <!-- Unified TopNavBar -->
@@ -231,4 +239,60 @@ if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','bor
 });
 })();
 </script>
+
+    <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://zorexai.vercel.app/#organization",
+      "name": "Zorex AI",
+      "url": "https://zorexai.vercel.app/",
+      "logo": "https://zorexai.vercel.app/assets/images/logo.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zorexai.vercel.app/#website",
+      "url": "https://zorexai.vercel.app/",
+      "name": "Zorex AI",
+      "publisher": {
+        "@id": "https://zorexai.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zorexai.vercel.app/privacy.html#webpage",
+      "url": "https://zorexai.vercel.app/privacy.html",
+      "name": "Privacy Policy - Zorex AI",
+      "description": "Read the Zorex AI Privacy Policy. We maintain uncompromising governance and data sovereignty, ensuring your proprietary information is protected and secure.",
+      "isPartOf": {
+        "@id": "https://zorexai.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://zorexai.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zorexai.vercel.app/privacy.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zorexai.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy",
+          "item": "https://zorexai.vercel.app/privacy.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
 </body></html>
