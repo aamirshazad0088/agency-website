@@ -129,6 +129,138 @@
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
   </style>
+
+<!-- JSON-LD: SEO + AEO — Organization, WebSite, ItemList, FAQPage, BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://zorexai.vercel.app/#organization",
+      "name": "Zorex",
+      "url": "https://zorexai.vercel.app/",
+      "email": "hello@zorex.com",
+      "telephone": "+923417571401",
+      "sameAs": ["https://linkedin.com/company/zorex-ai", "https://calendly.com/amiralicomsats3/30min"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zorexai.vercel.app/#website",
+      "url": "https://zorexai.vercel.app/",
+      "name": "Zorex",
+      "publisher": { "@id": "https://zorexai.vercel.app/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zorexai.vercel.app/services.html",
+      "url": "https://zorexai.vercel.app/services.html",
+      "name": "AI Software Services — Agentic Systems & LLM Apps | Zorex",
+      "description": "Zorex delivers custom AI software services: agentic AI system development, LLM applications, custom API integrations, and intelligent automation for growing businesses.",
+      "isPartOf": { "@id": "https://zorexai.vercel.app/#website" },
+      "about": { "@id": "https://zorexai.vercel.app/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://zorexai.vercel.app/services.html#service-list",
+      "name": "Zorex AI Software Services",
+      "description": "Core strategic capabilities: deep-tech engineering designed for operational dominance.",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Custom API Integrations",
+            "description": "Your tools don't talk to each other — so your team fills the gap manually. We connect your CRM, ERP, billing, and support systems into one cohesive ecosystem where data moves automatically, not by hand.",
+            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
+            "serviceType": "API Integration & Data Orchestration",
+            "areaServed": [
+              { "@type": "Country", "name": "United States" },
+              { "@type": "Country", "name": "United Kingdom" },
+              { "@type": "AdministrativeArea", "name": "European Union" },
+              { "@type": "AdministrativeArea", "name": "Middle East" }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "Intelligent Automation",
+            "description": "Beyond \"if-this-then-that.\" We build AI-driven workflows that read emails, classify intent, extract data, and make complex decisions — handling the judgment calls your team shouldn't be making manually.",
+            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
+            "serviceType": "AI-Powered Workflow Automation"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "LLM Applications",
+            "description": "We build AI-powered software trained on your company's proprietary data — so it actually knows your business, your products, and your customers. Not a generic chatbot. A system built for your specific context.",
+            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
+            "serviceType": "LLM Application Development"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Agentic AI Systems",
+            "description": "We design and deploy AI agents that evaluate context, make decisions, and execute multi-step actions across your tools — automatically, without hand-holding.",
+            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
+            "serviceType": "Agentic AI System Development"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://zorexai.vercel.app/services.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do we need to rip and replace our current software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Zorex builds custom API middlewares and integration layers that sit on top of your existing tech stack. We modernize your infrastructure without disrupting your daily operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical deployment take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While complex orchestrations can take longer, the average time from strategic mapping to first live automation deployment is under 45 days. Zorex prioritizes quick wins to deliver immediate ROI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is our proprietary data secure with AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Zorex deploys enterprise-grade, closed-loop systems. Your data is never used to train public models, and rigorous encryption standards are enforced across all automated data pipelines."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zorexai.vercel.app/services.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zorexai.vercel.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://zorexai.vercel.app/services.html" }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="bg-background text-on-background font-body-lg antialiased">
@@ -590,137 +722,7 @@
         });
       })();
   </script>
-  <!-- JSON-LD: SEO + AEO — Organization, WebSite, ItemList, FAQPage, BreadcrumbList -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://zorexai.vercel.app/#organization",
-      "name": "Zorex",
-      "url": "https://zorexai.vercel.app/",
-      "email": "hello@zorex.com",
-      "telephone": "+923417571401",
-      "sameAs": ["https://linkedin.com/company/zorex-ai", "https://calendly.com/amiralicomsats3/30min"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://zorexai.vercel.app/#website",
-      "url": "https://zorexai.vercel.app/",
-      "name": "Zorex",
-      "publisher": { "@id": "https://zorexai.vercel.app/#organization" }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://zorexai.vercel.app/services.html",
-      "url": "https://zorexai.vercel.app/services.html",
-      "name": "AI Software Services — Agentic Systems & LLM Apps | Zorex",
-      "description": "Zorex delivers custom AI software services: agentic AI system development, LLM applications, custom API integrations, and intelligent automation for growing businesses.",
-      "isPartOf": { "@id": "https://zorexai.vercel.app/#website" },
-      "about": { "@id": "https://zorexai.vercel.app/#organization" },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://zorexai.vercel.app/services.html#service-list",
-      "name": "Zorex AI Software Services",
-      "description": "Core strategic capabilities: deep-tech engineering designed for operational dominance.",
-      "numberOfItems": 4,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Service",
-            "name": "Custom API Integrations",
-            "description": "Your tools don't talk to each other — so your team fills the gap manually. We connect your CRM, ERP, billing, and support systems into one cohesive ecosystem where data moves automatically, not by hand.",
-            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
-            "serviceType": "API Integration & Data Orchestration",
-            "areaServed": [
-              { "@type": "Country", "name": "United States" },
-              { "@type": "Country", "name": "United Kingdom" },
-              { "@type": "AdministrativeArea", "name": "European Union" },
-              { "@type": "AdministrativeArea", "name": "Middle East" }
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Service",
-            "name": "Intelligent Automation",
-            "description": "Beyond \"if-this-then-that.\" We build AI-driven workflows that read emails, classify intent, extract data, and make complex decisions — handling the judgment calls your team shouldn't be making manually.",
-            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
-            "serviceType": "AI-Powered Workflow Automation"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Service",
-            "name": "LLM Applications",
-            "description": "We build AI-powered software trained on your company's proprietary data — so it actually knows your business, your products, and your customers. Not a generic chatbot. A system built for your specific context.",
-            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
-            "serviceType": "LLM Application Development"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Service",
-            "name": "Agentic AI Systems",
-            "description": "We design and deploy AI agents that evaluate context, make decisions, and execute multi-step actions across your tools — automatically, without hand-holding.",
-            "provider": { "@id": "https://zorexai.vercel.app/#organization" },
-            "serviceType": "Agentic AI System Development"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://zorexai.vercel.app/services.html#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do we need to rip and replace our current software?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Zorex builds custom API middlewares and integration layers that sit on top of your existing tech stack. We modernize your infrastructure without disrupting your daily operations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a typical deployment take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While complex orchestrations can take longer, the average time from strategic mapping to first live automation deployment is under 45 days. Zorex prioritizes quick wins to deliver immediate ROI."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is our proprietary data secure with AI?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Zorex deploys enterprise-grade, closed-loop systems. Your data is never used to train public models, and rigorous encryption standards are enforced across all automated data pipelines."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://zorexai.vercel.app/services.html#breadcrumb",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zorexai.vercel.app/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://zorexai.vercel.app/services.html" }
-      ]
-    }
-  ]
-}
-</script>
+  
 </body>
 
 </html>

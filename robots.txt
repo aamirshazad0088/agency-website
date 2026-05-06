@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zorexai.vercel.app/sitemap.xml
