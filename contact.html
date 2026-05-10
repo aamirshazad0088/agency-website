@@ -3,11 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Book a Discovery Call — Zorex</title>
-<meta name="description" content="Schedule a free 45-minute discovery call with Zorex. We'll review your current systems and identify your highest-value AI opportunities — no pitch, no pressure.">
+<title>Book a Strategy Call — Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -110,13 +109,14 @@
         }
     </style>
 
-  <!-- SEO & AEO Metadata -->
-  <meta name="description" content="Schedule a private briefing with Zorex AI's senior architects. Let's discuss your operational challenges and discover how to deploy precise, enterprise-grade AI automation.">
+  <meta name="description" content="Schedule a free 45-minute strategy call with Zorex AI. We'll review your current systems and identify your highest-value AI opportunities — no pitch, no pressure.">
   <link rel="canonical" href="https://zorex.ai/contact.html">
-  <meta property="og:title" content="Contact Us - Zorex AI Software Agency">
-  <meta property="og:description" content="Schedule a private briefing with Zorex AI's senior architects. Let's discuss your operational challenges and discover how to deploy precise, enterprise-grade AI automation.">
+  <meta property="og:title" content="Book a Strategy Call - Zorex AI">
+  <meta property="og:description" content="Schedule a free strategy call with Zorex AI’s senior architects. Let's discuss your operational challenges and discover how to deploy precise, enterprise-grade AI automation.">
   <meta property="og:url" content="https://zorex.ai/contact.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
 
 <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
     <script type="application/ld+json">
@@ -173,6 +173,11 @@
   ]
 }
     </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
 <nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
@@ -205,15 +210,23 @@
 </nav>
 <div class="pt-20">
 <main class="flex-grow">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Contact</li>
+</ol>
+</nav>
 <!-- Hero Section -->
-<section class="max-w-[1280px] mx-auto px-8 pt-24 pb-16">
+<section class="max-w-[1280px] mx-auto px-8 pt-8 pb-16">
 <div class="max-w-3xl">
 <div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container rounded-full mb-8">
 <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
-<span class="font-label-sm text-on-secondary-container">FREE DISCOVERY CALL</span>
+<span class="font-label-sm text-on-secondary-container">FREE STRATEGY CALL</span>
 </div>
 <h1 class="font-headline-xl text-headline-xl text-primary-container mb-6">Let's Figure Out What's Worth Building</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">In 45 minutes, we'll look at your current stack and operations, identify where AI can create the most leverage to acquire and retain clients, and give you an honest read on what's worth building — and what's not. No pitch deck. No obligation.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">In 45 minutes, we'll look at your current stack and operations, identify where AI can create the most leverage, and give you an honest read on what's worth building — and what's not. No pitch deck. No obligation.</p>
+
 </div>
 </section>
 <!-- Main Content Area -->
@@ -225,22 +238,22 @@
 <div class="flex items-center justify-between mb-8 pb-6 border-b border-surface-container-highest">
 <h2 class="font-headline-md text-headline-md text-primary-container">Strategy Session Request</h2>
 </div>
-<form class="space-y-10">
+<form id="strategy-form" class="space-y-10" action="https://formspree.io/f/xpwdjqgz" method="POST">
 <!-- Section 1: Contact Details -->
 <div class="space-y-6">
 <h3 class="font-label-sm text-outline uppercase tracking-wider">01. Contact Details</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
-<label class="block font-label-sm text-on-surface">Full Name</label>
-<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text"/>
+<label class="block font-label-sm text-on-surface">Full Name *</label>
+<input name="name" required class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text"/>
 </div>
 <div class="space-y-2">
-<label class="block font-label-sm text-on-surface">Business Email</label>
-<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="j.doe@company.com" type="email"/>
+<label class="block font-label-sm text-on-surface">Business Email *</label>
+<input name="email" required class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="j.doe@company.com" type="email"/>
 </div>
 <div class="space-y-2">
 <label class="block font-label-sm text-on-surface">Company Name</label>
-<input class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Your Company" type="text"/>
+<input name="company" class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Your Company" type="text"/>
 </div>
 </div>
 </div>
@@ -250,12 +263,12 @@
 <div class="space-y-6">
 <div class="space-y-2">
 <label class="block font-label-sm text-on-surface">What is the primary operational bottleneck you're looking to solve with AI?</label>
-<textarea class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none" placeholder="Describe your current challenges and goals..." rows="4"></textarea>
+<textarea name="bottleneck" class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none" placeholder="Describe your current challenges and goals..." rows="4"></textarea>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
 <div class="space-y-2">
 <label class="block font-label-sm text-on-surface">Current AI adoption</label>
-<select class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none">
+<select name="ai_adoption" class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none">
 <option value="none">We haven't used AI yet</option>
 <option value="some">We use some AI tools but nothing custom</option>
 <option value="advanced">We have AI in place and want to go further</option>
@@ -263,7 +276,7 @@
 </div>
 <div class="space-y-2">
 <label class="block font-label-sm text-on-surface">When are you looking to move?</label>
-<select class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none">
+<select name="timeline" class="w-full px-4 py-3 rounded-lg border border-surface-container-highest bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none">
 <option value="immediate">As soon as possible</option>
 <option value="1-3">Next 1–3 months</option>
 <option value="3-6">3–6 months</option>
@@ -275,13 +288,25 @@
 </div>
 <!-- Submission -->
 <div class="pt-8 border-t border-surface-container-highest">
-<button class="w-full bg-primary-container text-on-primary font-label-sm uppercase py-4 rounded-lg hover:bg-primary-container/90 transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<button id="submit-btn" class="w-full bg-primary-container text-on-primary font-label-sm uppercase py-4 rounded-lg hover:bg-primary-container/90 transition-all shadow-md flex items-center justify-center gap-2" type="submit">
             Confirm Strategy Call
             <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 <p class="text-center text-xs text-outline mt-4">By submitting, you agree to our terms. All conversations are confidential.</p>
 </div>
 </form>
+<!-- Success State -->
+<div id="form-success" class="hidden text-center py-16">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-4">Request Received!</h3>
+<p class="font-body-lg text-on-surface-variant max-w-md mx-auto mb-6">We'll be in touch within 24 hours to schedule your strategy call. In the meantime, feel free to book directly:</p>
+<a href="https://calendly.com/amiralicomsats3/30min" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform no-underline shadow-md">
+Book Directly on Calendly
+<span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
 </div>
 </div>
 <!-- Right Column: Info -->
@@ -358,6 +383,17 @@
 </div>
 </div>
 </section>
+<!-- Calendly Inline Embed -->
+<section class="max-w-[1280px] mx-auto px-8 pb-section-padding">
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-surface-container-highest shadow-sm">
+<div class="flex flex-col md:flex-row items-center justify-between mb-8 pb-6 border-b border-surface-container-highest gap-4">
+<h2 class="font-headline-md text-headline-md text-primary-container">Or Book Directly</h2>
+<span class="font-label-sm text-secondary uppercase tracking-wider">Skip the form — pick a time</span>
+</div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/amiralicomsats3/30min?hide_gdpr_banner=1&background_color=fcf9f8&text_color=1b1c1c&primary_color=193868" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>
+</section>
 </main>
 </div>
 <footer class="w-full py-16 bg-[#193868] border-t border-white/10">
@@ -402,6 +438,38 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+// Form submission handler
+var form=document.getElementById('strategy-form');
+var successDiv=document.getElementById('form-success');
+var submitBtn=document.getElementById('submit-btn');
+if(form&&successDiv){
+form.addEventListener('submit',function(e){
+e.preventDefault();
+submitBtn.disabled=true;
+submitBtn.innerHTML='<span class="material-symbols-outlined animate-spin text-sm">progress_activity</span> Sending...';
+var formData=new FormData(form);
+fetch(form.action,{method:'POST',body:formData,headers:{'Accept':'application/json'}})
+.then(function(response){
+if(response.ok){
+form.style.display='none';
+successDiv.classList.remove('hidden');
+successDiv.scrollIntoView({behavior:'smooth',block:'center'});
+}else{
+alert('Something went wrong. Please try booking directly via Calendly.');
+submitBtn.disabled=false;
+submitBtn.innerHTML='Confirm Strategy Call <span class="material-symbols-outlined text-sm">arrow_forward</span>';
+}
+}).catch(function(){
+alert('Network error. Please try booking directly via Calendly.');
+submitBtn.disabled=false;
+submitBtn.innerHTML='Confirm Strategy Call <span class="material-symbols-outlined text-sm">arrow_forward</span>';
+});
+});
+}
+// Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
 })();
 </script>
 

@@ -4,21 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Zorex — AI Software Agency | Agentic Systems & LLM Apps</title>
+    <title>About Zorex AI — Custom AI Software Agency</title>
     <meta name="description"
         content="Zorex is an AI software agency that designs and deploys custom agentic systems, LLM applications, and AI integrations for growing businesses. Learn how we work and why we build.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="author" content="Zorex">
+    <meta name="author" content="Zorex AI">
     <meta name="theme-color" content="#193868">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
     <link rel="canonical" href="https://zorex.ai/about.html">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <meta property="og:site_name" content="Zorex">
-    <meta property="og:title" content="About Zorex — AI Software Agency">
+    <meta property="og:site_name" content="Zorex AI">
+    <meta property="og:title" content="About Zorex AI — Custom AI Software Agency">
     <meta property="og:description"
-        content="We design and deploy custom agentic AI systems, LLM applications, and AI integrations for growing businesses.">
+        content="Zorex AI designs and deploys custom agentic AI systems, LLM applications, and AI integrations for growing businesses.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zorex.ai/about.html">
     <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Zorex — AI Software Agency">
     <meta name="twitter:description"
@@ -29,9 +31,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -176,6 +176,11 @@
   ]
 }
 </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 
 <body
@@ -232,8 +237,15 @@
     </nav>
     <div class="pt-20">
         <main class="flex-grow">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">About</li>
+</ol>
+</nav>
             <!-- Hero Section -->
-            <header class="py-section-padding px-8 relative overflow-hidden">
+            <header class="pt-8 pb-section-padding px-8 relative overflow-hidden">
                 <div class="absolute inset-0 z-0 opacity-10 pointer-events-none flex justify-center items-center">
                     <div
                         class="w-[800px] h-[800px] border border-primary rounded-full absolute mix-blend-multiply transition-transform duration-1000 hover:scale-105">
@@ -368,8 +380,8 @@
                         seek those who understand that the true power of AI lies in its disciplined application.
                     </p>
                     <a class="inline-flex items-center gap-2 text-secondary font-bold hover:text-primary transition-colors"
-                        href="#">
-                        <span>View Open Positions</span>
+                        href="mailto:hello@zorex.com">
+                        <span>Get in Touch</span>
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
                 </div>
@@ -386,7 +398,7 @@
                         </p>
                         <a href="contact.html"
                             class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-md no-underline">
-                            Schedule a Strategy Call
+                            Book a Strategy Call
                         </a>
                     </div>
                 </div>
@@ -415,7 +427,7 @@
             </div>
             <div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
                 <p class="mb-2">© 2026 Zorex AI. All rights reserved.</p>
-                <p>Custom AI Agentic system for growing businesses.</p>
+                <p>Custom AI software for growing businesses.</p>
             </div>
             <div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
                 <a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline"
@@ -453,8 +465,12 @@
                     if (d === 'about' && page === 'about.html') a = true;
                     if (a) { l.classList.remove('text-slate-600'); l.classList.add('text-amber-600', 'border-b-2', 'border-amber-600', 'pb-1'); }
                 });
-            })();
-    </script>
+            // Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
+})();
+</script>
     
 </body>
 

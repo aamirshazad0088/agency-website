@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI for Logistics & Supply Chain | Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#193868",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-primary-container": "#87a2d9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "primary-fixed": "#d7e2ff",
+                        "secondary-fixed": "#ffdea4",
+                        "secondary-container": "#fedb9b",
+                        "on-surface-variant": "#44474f",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00224e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1b1c1c",
+                        "secondary": "#745a27",
+                        "surface": "#fcf9f8",
+                        "accent-gold": "#E2C08D",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-md": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .gs { background-image: linear-gradient(to right,rgba(116,119,128,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(116,119,128,.05) 1px,transparent 1px); background-size: 40px 40px; }
+</style>
+<meta name="description" content="Discover how Zorex AI engineers bespoke agentic systems and LLM applications for the AI for Logistics & Supply Chain sector.">
+<link rel="canonical" href="https://zorex.ai/industry-logistics.html">
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex AI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors text-amber-600 border-b-2 border-amber-600 pb-1" href="industries.html" data-page="industries">Industries</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div></div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="industries.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-amber-600 transition-colors no-underline">Industries</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+</div></nav>
+
+<main class="pt-20">
+<!-- Breadcrumbs -->
+<div class="bg-surface border-b border-outline-variant/20 py-4"><div class="max-w-[1280px] mx-auto px-8">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li><a href="industries.html" class="hover:text-primary transition-colors no-underline">Industries</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Logistics & Supply Chain</li>
+</ol></div></div>
+
+<!-- Hero -->
+<section class="relative pt-8 pb-24 lg:py-32 px-6 overflow-hidden">
+<div class="absolute inset-0 gs pointer-events-none"></div>
+<div class="absolute top-20 right-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm text-xs uppercase tracking-widest border border-secondary/20"><span class="material-symbols-outlined text-[14px]">local_shipping</span>Industry Deep Dive</span>
+<span class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Freight &bull; 3PL &bull; Warehousing</span>
+</div>
+<h1 class="font-headline-xl text-5xl lg:text-6xl text-primary-container mb-6 leading-tight font-extrabold">Autonomous Operations for Complex Supply Chains</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">Supply chains run on a fragile web of fragmented data. We engineer agentic systems that unify EDI feeds, automate unstructured document parsing, and resolve routing exceptions autonomously.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">92%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">BOL Extraction Accuracy</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">3x</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Faster Exception Handling</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-secondary font-bold">-18%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Expedited Freight Costs</div></div>
+</div>
+</div>
+<div class="relative h-[420px] rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
+<img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c663be?auto=format&fit=crop&q=80&w=1200" alt="Logistics warehouse operations" class="w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6"><span class="bg-white/90 backdrop-blur-sm text-primary-container font-label-sm text-xs uppercase tracking-wider px-3 py-1.5 rounded-full">Resilient Logistics &mdash; Agentic Exception Routing</span></div>
+</div>
+</div></div>
+</section>
+
+<!-- Landscape -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-3xl mx-auto">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">The 2026 Landscape</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6">The Fragmentation of Logistics Data</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">By 2026, the sheer volume of data generated by telematics, IoT sensors, and EDI feeds has overwhelmed human capacity. Yet, ironically, the logistics industry still operates largely on email threads, PDFs, and manual data entry. The problem isn't a lack of data; it's a lack of intelligent orchestration between siloed systems.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>The Paperwork Choke Point.</strong> Bills of Lading (BOLs), customs declarations, and packing slips are unstructured documents. When a truck arrives at a warehouse, the physical paperwork must be manually keyed into the WMS. This creates immediate blind spots in inventory visibility and delays cross-docking operations. Legacy OCR systems fail because every shipper uses a different format.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>Reactive Exception Management.</strong> Supply chains are designed for the "happy path," but in reality, exceptions are the norm. Weather delays, port congestion, or a missed LTL pickup require dispatchers to make 5-10 phone calls to find alternative routing. While they investigate, the delay cascades downstream to the final customer.</p>
+<p class="font-body-md text-on-surface-variant mb-6"><strong>The shift to Agentic Operations.</strong> Leading 3PLs and freight forwarders are abandoning "visibility dashboards" that just show where a truck is. They are investing in Agentic AI that understands *what to do* when that truck is going to be late.</p>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 mt-8">
+<p class="font-body-md text-on-surface-variant italic border-l-4 border-secondary pl-4">"Our dispatchers were spending 70% of their day just responding to 'where is my freight' emails and manually typing BOL data from PDFs into our TMS. Zorex built a system that automated both. Our dispatchers now handle 3x the load volume because they only deal with actual emergencies, not routine data entry."</p>
+<p class="font-label-sm text-xs text-secondary uppercase tracking-widest mt-3">&mdash; VP of Operations, National 3PL (Zorex Client)</p>
+</div>
+</div>
+</section>
+
+<!-- Problems -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Diagnosis</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">The Friction Points in Supply Chains</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">document_scanner</span></div><h3 class="font-headline-md text-lg text-primary-container">Unstructured Document Hell</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Logistics runs on PDFs and paper. A mid-sized 3PL processes 5,000+ BOLs, delivery receipts, and invoices weekly. Because every shipper's format differs, traditional OCR fails. Staff manually re-key this data into the TMS/WMS, introducing errors and creating a 24-48 hour lag in inventory visibility that causes cascading stockouts for clients.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">warning</span></div><h3 class="font-headline-md text-lg text-primary-container">Manual Exception Resolution</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">When a driver is delayed by 4 hours, a human dispatcher must notice the delay, calculate if the appointment will be missed, email the receiving warehouse to reschedule, notify the customer, and potentially reroute subsequent pickups. This manual "telephone game" is too slow, often resulting in detention fees, missed SLAs, and expensive expedited freight to fix the error.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">email</span></div><h3 class="font-headline-md text-lg text-primary-container">"Where is my freight?" Volume</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Despite having tracking portals, customers still email support demanding ETA updates because portals lack context. "The portal says 'In Transit - Chicago', but what does that mean for my Friday production run?" Answering these emails consumes up to 40% of customer service bandwidth, providing zero margin value to the business.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">inventory_2</span></div><h3 class="font-headline-md text-lg text-primary-container">Siloed System Routing</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Your ERP knows the customer order, your TMS knows the freight rates, and your WMS knows the inventory position. But because these systems don't talk intelligently in real-time, order routing decisions are suboptimal. Shipping from a closer warehouse might save $50 in freight, but if it causes a split shipment tomorrow, you lose $150. Humans cannot calculate this multidimensional math at scale.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Architecture -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Architecture</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">The Autonomous Logistics Engine</h2>
+<p class="font-body-md text-on-surface-variant">We build AI agents that sit above your legacy systems, acting as an intelligent orchestration layer.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-8 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-primary-container">storage</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Data Sources</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>TMS / WMS / ERP</p><p>Telematics (Samsara/Motive)</p><p>EDI Feeds (204/214/990)</p><p>Unstructured PDFs/Emails</p></div>
+</div>
+<div class="text-center p-6 bg-primary-container rounded-xl border border-secondary/30 shadow-lg relative">
+<div class="absolute -top-2 -right-2 w-5 h-5 bg-secondary rounded-full animate-pulse"></div>
+<div class="w-14 h-14 bg-surface-tint/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/30"><span class="material-symbols-outlined text-accent-gold">hub</span></div>
+<h4 class="font-headline-md text-base text-on-primary mb-2">Zorex Logistics Agents</h4>
+<div class="space-y-1 font-body-md text-xs text-on-primary-container"><p>Intelligent Document Extractor</p><p>Exception Routing Agent</p><p>Contextual ETA Responder</p><p>Multi-Node Optimizer</p></div>
+</div>
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary">insights</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Outputs</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>Auto-populated TMS/WMS</p><p>Autonomous Rescheduling</p><p>Proactive Customer Alerts</p><p>Cost-optimized Load Plans</p></div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-xs text-on-surface-variant font-label-sm uppercase tracking-widest"><span class="material-symbols-outlined text-secondary text-sm">precision_manufacturing</span> API-First Integration &bull; Computer Vision &bull; 24/7 Processing SLA</div>
+</div>
+</div>
+</section>
+
+<!-- Use Cases -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Use Cases</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Agentic Workflows We Deploy</h2>
+</div>
+<div class="space-y-6 max-w-3xl mx-auto">
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 1</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Intelligent Document Processing (IDP)</h4>
+<p class="font-body-md text-sm text-on-surface-variant">We deploy multimodal LLMs that "read" BOLs, packing slips, and customs forms just like a human does—understanding the context regardless of the layout. It extracts PO numbers, piece counts, weights, hazmat flags, and accessorial requirements, pushing structured JSON directly into your TMS via API. A stack of 50 delivery receipts that took a clerk 2 hours to process is now fully digitized and synced to your system in 45 seconds, with 98%+ accuracy.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 2</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Autonomous Exception Orchestration</h4>
+<p class="font-body-md text-sm text-on-surface-variant">When telematics data indicates a truck is 2 hours behind schedule, our agent wakes up. It checks the receiving warehouse's appointment system via API. If the dock time will be missed, it automatically requests a new appointment slot based on the revised ETA. Once confirmed, it drafts and sends a contextual email to the customer ("Your shipment is delayed by weather in OH, but we've successfully secured a new dock time for 2 PM"). The dispatcher does nothing but monitor the dashboard; the crisis is resolved autonomously.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 3</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Contextual ETA Support Responder</h4>
+<p class="font-body-md text-sm text-on-surface-variant">We connect a secure LLM directly to your support inbox and TMS. When a customer emails "Where is PO #12345?", the agent instantly identifies the customer, queries the TMS for that specific PO, analyzes the current GPS ping of the truck, and writes a human-sounding reply providing the exact ETA and current status. It handles 80% of routine tracking inquiries instantly, freeing your track-and-trace team to focus on actual distressed loads.</p>
+</div></div>
+</div>
+</div>
+</section>
+
+<!-- Results -->
+<section class="py-24 bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 gs opacity-20 pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10">
+<div class="text-center mb-14"><h2 class="font-headline-md text-headline-md text-white mb-4">Typical Logistics Outcomes</h2></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">98%</div><div class="font-body-md text-on-primary font-semibold mb-2">Data Extraction Accuracy</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[98%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">From unstructured, un-templated PDFs into TMS.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">3x</div><div class="font-body-md text-on-primary font-semibold mb-2">Dispatcher Capacity</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[80%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Loads managed per dispatcher by eliminating manual tracing.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">45s</div><div class="font-body-md text-on-primary font-semibold mb-2">Exception Resolution</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[95%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Automated rescheduling of missed appointments.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">-18%</div><div class="font-body-md text-on-primary font-semibold mb-2">Expedited Costs</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[85%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Through proactive exception management before failures cascade.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-6 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
+<div class="max-w-[1280px] mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-3xl md:text-4xl text-on-primary mb-4 font-bold">Stop running your supply chain on emails and PDFs.</h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Let's audit your data flow and show you exactly where autonomous agents can eliminate data entry and orchestrate exception handling.</p>
+<a href="contact.html" class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">Book Your Free Audit<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span></a>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
+<div class="flex flex-col gap-4">
+<a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex AI</a>
+<div class="flex flex-col gap-2">
+<a href="mailto:hello@zorex.com" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
+<a href="tel:+923417571401" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +92 3417571401</a>
+</div></div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
+<p class="mb-2">&copy; 2026 Zorex AI.</p>
+<p>Precision-engineered growth.</p>
+</div>
+<div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="industries.html">Industries</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+</div></div></footer>
+<script>
+    (function(){var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}}();
+</script>
+</body></html>

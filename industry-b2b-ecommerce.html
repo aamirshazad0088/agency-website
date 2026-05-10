@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI for B2B E-commerce | Zorex</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#193868",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-primary-container": "#87a2d9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "primary-fixed": "#d7e2ff",
+                        "secondary-fixed": "#ffdea4",
+                        "secondary-container": "#fedb9b",
+                        "on-surface-variant": "#44474f",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00224e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1b1c1c",
+                        "secondary": "#745a27",
+                        "surface": "#fcf9f8",
+                        "accent-gold": "#E2C08D",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-md": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .gs { background-image: linear-gradient(to right,rgba(116,119,128,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(116,119,128,.05) 1px,transparent 1px); background-size: 40px 40px; }
+</style>
+<meta name="description" content="Discover how Zorex AI engineers bespoke agentic systems and LLM applications for B2B E-commerce, optimizing inventory and automating order routing.">
+<link rel="canonical" href="https://zorex.ai/industry-b2b-ecommerce.html">
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex AI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors text-amber-600 border-b-2 border-amber-600 pb-1" href="industries.html" data-page="industries">Industries</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div></div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="industries.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-amber-600 transition-colors no-underline">Industries</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+</div></nav>
+
+<main class="pt-20">
+<!-- Breadcrumbs -->
+<div class="bg-surface border-b border-outline-variant/20 py-4">
+<div class="max-w-[1280px] mx-auto px-8">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li><a href="industries.html" class="hover:text-primary transition-colors no-underline">Industries</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">B2B E-commerce</li>
+</ol></div></div>
+
+<!-- Hero -->
+<section class="relative pt-8 pb-24 lg:py-32 px-6 overflow-hidden">
+<div class="absolute inset-0 gs pointer-events-none"></div>
+<div class="absolute top-20 right-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm text-xs uppercase tracking-widest border border-secondary/20"><span class="material-symbols-outlined text-[14px]">shopping_cart</span>Industry Deep Dive</span>
+<span class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Wholesale &bull; Distribution &bull; B2B Portals</span>
+</div>
+<h1 class="font-headline-xl text-5xl lg:text-6xl text-primary-container mb-6 leading-tight font-extrabold">How AI Is Reshaping B2B E-commerce in 2026</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">Wholesale operations are fundamentally different from DTC. Complex contract pricing, multi-stage procurement approvals, and unpredictable bulk ordering cycles require AI systems engineered specifically for B2B complexity&mdash;not consumer-grade chatbots.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">$2.3T</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">B2B E-com Market 2026</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">73%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Buyers Prefer Self-Serve</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-secondary font-bold">4.2%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Avg Margin Loss to Manual Ops</div></div>
+</div>
+</div>
+<div class="relative h-[420px] rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
+<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200" alt="B2B warehouse operations" class="w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6"><span class="bg-white/90 backdrop-blur-sm text-primary-container font-label-sm text-xs uppercase tracking-wider px-3 py-1.5 rounded-full">Modern B2B Fulfillment &mdash; AI-Optimized Operations</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Industry Landscape -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-3xl mx-auto">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">The 2026 Landscape</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6">B2B E-commerce Has Outgrown Its Infrastructure</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">The global B2B e-commerce market is projected to surpass $2.3 trillion in 2026, according to Forrester Research. Yet most wholesale platforms still run on architecture designed for simple catalog browsing. The gap between what B2B buyers expect&mdash;instant custom pricing, real-time inventory visibility, and self-serve reordering&mdash;and what legacy systems can deliver is widening every quarter.</p>
+<p class="font-body-md text-on-surface-variant mb-6">Three forces are converging to make AI not optional, but essential for B2B commerce operations:</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>1. Buyer expectations have shifted permanently.</strong> A 2025 McKinsey survey found that 73% of B2B procurement officers now prefer digital self-service channels over sales rep interactions for reorders. They expect the same speed and personalization they experience as consumers&mdash;but with the complexity of tiered pricing, volume discounts, and contractual terms.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>2. SKU complexity is exploding.</strong> Modern distributors manage 50,000+ SKUs across multiple warehouses, with demand patterns that vary wildly by region, season, and customer segment. Traditional inventory planning based on historical averages fails catastrophically when a single large account shifts ordering patterns.</p>
+<p class="font-body-md text-on-surface-variant mb-6"><strong>3. Margin pressure demands operational precision.</strong> With average B2B wholesale margins sitting between 15-25%, every manual pricing override, shipping miscalculation, or delayed fulfillment directly erodes profitability. Companies losing 4.2% of net margin to operational inefficiency cannot compete with AI-optimized rivals.</p>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 mt-8">
+<p class="font-body-md text-on-surface-variant italic border-l-4 border-secondary pl-4">"We were processing 800 orders a day with a team of 12, and our error rate was climbing every month. The worst part wasn't the errors themselves&mdash;it was the 3-4 hours each account manager spent daily just cross-referencing contract pricing against our ERP. That's $400K in annual labor doing work a machine should handle."</p>
+<p class="font-label-sm text-xs text-secondary uppercase tracking-widest mt-3">&mdash; VP of Operations, Mid-Market Distributor (Zorex Client)</p>
+</div>
+</div>
+</section>
+
+<!-- The Problem In Detail -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Diagnosis</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">The Four Bottlenecks Killing B2B Margins</h2>
+<p class="font-body-md text-on-surface-variant">Our discovery audits across 15+ B2B e-commerce clients reveal the same systemic friction points, regardless of industry vertical.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">calculate</span></div><h3 class="font-headline-md text-lg text-primary-container">Manual Contract Pricing</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Every enterprise buyer has negotiated unique pricing tiers, volume discounts, and contractual terms. When a procurement officer places an order, your account manager must manually verify pricing against their specific contract&mdash;a process that takes 15-30 minutes per order. At 200+ daily orders, this consumes your entire inside sales team's capacity. Pricing errors from this manual process average 2.8% of revenue in mid-market distributors.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">inventory</span></div><h3 class="font-headline-md text-lg text-primary-container">Inventory Blind Spots</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Your WMS says you have 2,400 units in Phoenix, but 300 are committed to a scheduled shipment, 150 are in quality hold, and 80 are in a return-processing queue. The "available to promise" number your sales portal shows is fiction. This phantom inventory problem causes 12-18% of B2B orders to experience unexpected backorders&mdash;destroying buyer confidence and triggering penalty clauses in enterprise contracts.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">request_quote</span></div><h3 class="font-headline-md text-lg text-primary-container">48-Hour Quoting Cycles</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">When a new prospect requests a custom quote for 15 SKUs across 3 delivery locations with split-shipment requirements, your team needs 24-48 hours to compile pricing, check inventory across warehouses, calculate freight, and build the proposal. Meanwhile, your AI-equipped competitor responds in 4 minutes. A 2025 Gartner study found that B2B vendors who respond to RFQs within 1 hour are 7x more likely to win the deal than those who respond in 24 hours.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">local_shipping</span></div><h3 class="font-headline-md text-lg text-primary-container">Suboptimal Order Routing</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Multi-line B2B orders with items spread across 3 warehouses require split-shipment decisions. Should you ship 2 packages from 2 closer warehouses, or consolidate into 1 shipment from the warehouse with full stock (but 800 miles further)? Your team makes this call manually based on gut feel. The difference between optimal and suboptimal routing decisions averages $8-15 per order&mdash;compounding to hundreds of thousands in annual margin erosion at scale.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Architecture / Solution -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Architecture</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">The Agentic Commerce Engine We Build</h2>
+<p class="font-body-md text-on-surface-variant">A multi-agent system that replaces manual workflows with autonomous, intelligent processes across the entire order lifecycle.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-8 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-primary-container">storage</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Data Sources</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>ERP (NetSuite / SAP)</p><p>WMS (ShipStation / 3PL APIs)</p><p>CRM (Salesforce / HubSpot)</p><p>Procurement Portals (Ariba / Coupa)</p></div>
+</div>
+<div class="text-center p-6 bg-primary-container rounded-xl border border-secondary/30 shadow-lg relative">
+<div class="absolute -top-2 -right-2 w-5 h-5 bg-secondary rounded-full animate-pulse"></div>
+<div class="w-14 h-14 bg-surface-tint/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/30"><span class="material-symbols-outlined text-accent-gold">hub</span></div>
+<h4 class="font-headline-md text-base text-on-primary mb-2">Zorex Agentic Layer</h4>
+<div class="space-y-1 font-body-md text-xs text-on-primary-container"><p>Pricing Agent (Contract-aware LLM)</p><p>Inventory Agent (Real-time ATP)</p><p>Routing Agent (Cost-optimized)</p><p>Quoting Agent (RAG + Templates)</p></div>
+</div>
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary">dashboard</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Output Layer</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>Instant Custom Quotes</p><p>Autonomous Order Processing</p><p>Real-time Margin Dashboards</p><p>Predictive Reorder Alerts</p></div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-xs text-on-surface-variant font-label-sm uppercase tracking-widest"><span class="material-symbols-outlined text-secondary text-sm">sync</span> Sub-second pricing lookups &bull; 99.9% uptime SLA &bull; SOC 2 Type II compliant</div>
+</div>
+</div>
+</section>
+
+<!-- Use Cases Deep Dive -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Use Cases</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Real-World Applications We Deploy</h2>
+<p class="font-body-md text-on-surface-variant">Each system is custom-engineered to your specific tech stack, product catalog, and buyer workflows.</p>
+</div>
+<div class="space-y-6 max-w-3xl mx-auto">
+<div class="flex gap-6 items-start">
+<div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 1</span></div>
+<div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Dynamic Contract Pricing Engine</h4>
+<p class="font-body-md text-sm text-on-surface-variant">We build an LLM-powered pricing agent that ingests your customer contract PDFs using Retrieval-Augmented Generation (RAG). When a buyer adds items to cart, the agent instantly retrieves their specific negotiated rates, applies volume tier logic, calculates applicable rebates, and validates against current supplier cost feeds via API&mdash;all in under 200 milliseconds. The system guarantees minimum margin floors while automatically honoring every contractual commitment. No more manual price lookups. No more margin leakage from overrides.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 2</span></div>
+<div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Intelligent Available-to-Promise (ATP) System</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Traditional inventory counts are misleading. Our ATP agent connects to your WMS, ERP, and 3PL systems in real-time, calculating true available inventory by subtracting committed allocations, quality holds, return-in-process units, and in-transit stock. It then projects future availability based on inbound PO schedules and historical lead times. When a buyer checks stock, they see a delivery date they can trust&mdash;not a number that triggers a backorder 48 hours later. This alone reduces order cancellation rates by 40-60% for our clients.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 3</span></div>
+<div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">RFQ Auto-Response System</h4>
+<p class="font-body-md text-sm text-on-surface-variant">When a procurement officer submits an RFQ for 30 line items across multiple product categories, our agentic system parses the request, retrieves product specifications from your PIM, checks real-time inventory and lead times, calculates optimized freight for the buyer's delivery locations, and generates a professionally formatted quote document&mdash;all within minutes. The system learns from your sales team's historical win/loss data to optimize discount levels, maximizing both win probability and margin. Sales reps review and send; they don't build from scratch.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 4</span></div>
+<div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary-container rounded-full border-2 border-secondary"></div></div>
+<div class="bg-primary-container border border-secondary/30 rounded-xl p-6 flex-1 shadow-lg">
+<h4 class="font-headline-md text-base text-on-primary mb-2">Predictive Reorder Intelligence</h4>
+<p class="font-body-md text-sm text-on-primary-container">Using time-series analysis on each buyer's historical order patterns, seasonality data, and industry demand signals, our system predicts when a customer is likely to reorder&mdash;and proactively generates a suggested PO with their typical SKUs, quantities, and preferred delivery schedule. The suggested order is sent to the buyer for one-click approval. This transforms your commerce platform from a passive catalog into an active revenue engine, increasing repeat order frequency by 25-35% for clients who deploy it.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Results -->
+<section class="py-24 bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 gs opacity-20 pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10">
+<div class="text-center mb-14"><h2 class="font-headline-md text-headline-md text-white mb-4">Typical Results Across Our B2B E-commerce Clients</h2><p class="font-body-md text-primary-fixed-dim max-w-2xl mx-auto">Measured outcomes from deployments across wholesale distribution, industrial supply, and specialty B2B verticals.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">90%</div><div class="font-body-md text-on-primary font-semibold mb-2">Faster Quoting</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[90%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Custom quotes generated in minutes instead of days. Sales reps review, not build.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">40%</div><div class="font-body-md text-on-primary font-semibold mb-2">Fewer Backorders</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[85%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Real-time ATP calculations eliminate phantom inventory promises.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">$12</div><div class="font-body-md text-on-primary font-semibold mb-2">Saved Per Order</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[75%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Optimized routing and automated processing reduce per-order operational cost.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">30%</div><div class="font-body-md text-on-primary font-semibold mb-2">More Repeat Orders</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[80%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Predictive reorder suggestions increase buyer frequency and lifetime value.</p></div>
+</div>
+</div>
+</section>
+
+<!-- Testimonial -->
+<section class="py-20 px-6">
+<div class="max-w-3xl mx-auto">
+<div class="bg-surface-container-lowest p-10 md:p-14 rounded-3xl shadow-sm border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-5xl text-secondary/40 mb-6 block">format_quote</span>
+<blockquote class="font-headline-md text-2xl md:text-3xl text-primary-container leading-relaxed mb-8 italic">"Zorex didn't just automate our order processing&mdash;they rebuilt the entire commercial engine. Our quoting time went from 2 days to 8 minutes. Our account managers went from data entry clerks back to being actual salespeople. That shift alone added $1.2M in net-new revenue in the first year."</blockquote>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center font-bold">RK</div>
+<div class="text-left"><div class="font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold">Raj K.</div><div class="text-sm text-on-surface-variant">VP of Operations, EchoCommerce (Zorex Client)</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-6 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
+<div class="max-w-[1280px] mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-3xl md:text-4xl text-on-primary mb-4 font-bold">Still running your B2B portal on manual workflows?</h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Let's map out exactly how much margin and time an agentic commerce engine could reclaim for your operation. 45 minutes. No obligation.</p>
+<a href="contact.html" class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">Book Your Free Audit<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span></a>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
+<div class="flex flex-col gap-4">
+<a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex AI</a>
+<div class="flex flex-col gap-2">
+<a href="mailto:hello@zorex.com" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
+<a href="tel:+923417571401" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +92 3417571401</a>
+</div></div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
+<p class="mb-2">&copy; 2026 Zorex AI.</p>
+<p>Precision-engineered growth.</p>
+</div>
+<div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="industries.html">Industries</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+</div></div></footer>
+<script>
+    (function(){var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}})();
+</script>
+</body></html>

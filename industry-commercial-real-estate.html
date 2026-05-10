@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI for Commercial Real Estate | Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#193868",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-primary-container": "#87a2d9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "primary-fixed": "#d7e2ff",
+                        "secondary-fixed": "#ffdea4",
+                        "secondary-container": "#fedb9b",
+                        "on-surface-variant": "#44474f",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00224e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1b1c1c",
+                        "secondary": "#745a27",
+                        "surface": "#fcf9f8",
+                        "accent-gold": "#E2C08D",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-md": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .gs { background-image: linear-gradient(to right,rgba(116,119,128,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(116,119,128,.05) 1px,transparent 1px); background-size: 40px 40px; }
+</style>
+<meta name="description" content="Discover how Zorex AI engineers bespoke agentic systems and LLM applications for the AI for Commercial Real Estate sector.">
+<link rel="canonical" href="https://zorex.ai/industry-commercial-real-estate.html">
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex AI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors text-amber-600 border-b-2 border-amber-600 pb-1" href="industries.html" data-page="industries">Industries</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div></div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="industries.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-amber-600 transition-colors no-underline">Industries</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+</div></nav>
+
+<main class="pt-20">
+<!-- Breadcrumbs -->
+<div class="bg-surface border-b border-outline-variant/20 py-4"><div class="max-w-[1280px] mx-auto px-8">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li><a href="industries.html" class="hover:text-primary transition-colors no-underline">Industries</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Commercial Real Estate</li>
+</ol></div></div>
+
+<!-- Hero -->
+<section class="relative pt-8 pb-24 lg:py-32 px-6 overflow-hidden">
+<div class="absolute inset-0 gs pointer-events-none"></div>
+<div class="absolute top-20 right-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm text-xs uppercase tracking-widest border border-secondary/20"><span class="material-symbols-outlined text-[14px]">real_estate_agent</span>Industry Deep Dive</span>
+<span class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Brokerage &bull; Underwriting &bull; Asset Management</span>
+</div>
+<h1 class="font-headline-xl text-5xl lg:text-6xl text-primary-container mb-6 leading-tight font-extrabold">How AI Is Accelerating Deal Velocity in Commercial Real Estate</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">CRE analysts spend 80% of their time gathering data and 20% analyzing it. We flip that ratio by engineering AI systems that automate lease abstraction, underwriting data extraction, and off-market deal sourcing.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">80%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Time on Data Gathering</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">3 Days</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Avg Underwriting Time</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-secondary font-bold">$3.2T</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">US CRE Market Size</div></div>
+</div>
+</div>
+<div class="relative h-[420px] rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="Commercial real estate skyline" class="w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6"><span class="bg-white/90 backdrop-blur-sm text-primary-container font-label-sm text-xs uppercase tracking-wider px-3 py-1.5 rounded-full">AI-Powered Deal Intelligence &mdash; From Sourcing to Close</span></div>
+</div>
+</div></div>
+</section>
+
+<!-- Landscape -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-3xl mx-auto">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">The 2026 Landscape</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6">CRE Is Drowning in Unstructured Data</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Commercial Real Estate generates enormous volumes of unstructured data&mdash;lease documents, offering memorandums, rent rolls, zoning filings, environmental reports, and property condition assessments. A single acquisition target might require reviewing 500+ pages of documentation. Yet the industry's analytical workflows still revolve around Excel models populated by analysts manually reading PDFs.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>The speed gap is widening.</strong> Institutional buyers and PE-backed platforms are deploying AI to screen 100 deals in the time it takes a traditional brokerage to underwrite one. A 2025 CBRE Technology Survey found that firms using AI-assisted underwriting close deals 40% faster than those relying on manual processes. In a market where off-market deal flow determines success, speed is not a luxury&mdash;it's survival.</p>
+<p class="font-body-md text-on-surface-variant mb-6"><strong>Lease complexity is increasing.</strong> Modern commercial leases contain hundreds of clauses covering escalation schedules, co-tenancy triggers, SNDA agreements, CAM reconciliation methodologies, and force majeure provisions. Missing a single clause during due diligence can cost millions. Yet lease abstraction is still performed manually by paralegals, taking 2-4 hours per lease.</p>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 mt-8">
+<p class="font-body-md text-on-surface-variant italic border-l-4 border-secondary pl-4">"We were looking at a 340-unit multifamily acquisition. The rent roll had 340 individual leases to abstract. My team of three analysts spent 2 weeks just extracting the data before we could even begin modeling. By the time we had our offer ready, a competitor had already gone hard. We lost the deal to speed."</p>
+<p class="font-label-sm text-xs text-secondary uppercase tracking-widest mt-3">&mdash; VP of Acquisitions, Regional CRE Fund (Zorex Client)</p>
+</div>
+</div>
+</section>
+
+<!-- Problems -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Diagnosis</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Four Bottlenecks Costing CRE Firms Millions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">description</span></div><h3 class="font-headline-md text-lg text-primary-container">Manual Lease Abstraction</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Each commercial lease requires extraction of 40-60 key data points: base rent, escalation schedules, option dates, CAM provisions, co-tenancy clauses, and termination rights. At 2-4 hours per lease, a 200-unit acquisition requires 400-800 analyst hours just for abstraction. Errors in this process&mdash;a missed escalation date or misread co-tenancy trigger&mdash;can result in six-figure valuation mistakes that aren't discovered until post-acquisition, when they directly impact returns.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">table_chart</span></div><h3 class="font-headline-md text-lg text-primary-container">Slow Underwriting Cycles</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">The typical CRE underwriting process takes 3-5 days per deal: 2 days gathering data from the OM and rent roll, half a day entering it into the Excel model, and another day running scenarios and sensitivity analyses. This pace means your acquisitions team can evaluate perhaps 8-10 deals per month, while AI-equipped competitors are screening 50+. In competitive bid situations, the firm that can submit a credible LOI within 48 hours of receiving the OM has a decisive advantage.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">search_off</span></div><h3 class="font-headline-md text-lg text-primary-container">Missed Off-Market Signals</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">The best CRE deals never hit the open market. They're signaled by permit filings for major renovations, corporate layoff announcements that suggest office space dispositions, tax delinquency notices, and ownership entity changes in county records. These signals are publicly available but scattered across dozens of municipal databases and filing systems. Without automated surveillance, brokers rely on personal networks and word-of-mouth&mdash;a fundamentally unscalable approach to deal origination.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">trending_down</span></div><h3 class="font-headline-md text-lg text-primary-container">Asset Management Blind Spots</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Once acquired, asset managers must track lease expirations, tenant credit quality, market comp movements, and capital expenditure budgets across their entire portfolio. This data lives in disconnected property management software, accounting systems, and personal spreadsheets. Without a unified view, asset managers miss early warning signs of tenant distress, fail to initiate lease renewal negotiations at optimal timing, and cannot quickly model the portfolio-level impact of market shifts like rising cap rates or tenant defaults.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Use Cases -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Agentic Architecture</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Systems We Deploy for CRE Firms</h2>
+</div>
+<div class="space-y-6 max-w-3xl mx-auto">
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 1</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Automated Lease Abstraction Engine</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Our LLM, fine-tuned on CRE legal language, reads entire lease documents and extracts all critical data points: base rent, percentage rent triggers, escalation schedules, option exercise dates, co-tenancy provisions, SNDA clauses, CAM reconciliation methods, and termination rights. The system handles amendments and addendums, linking modifications to the original lease terms. It outputs structured data directly into your underwriting model or asset management database. What took 2-4 hours per lease now takes under 3 minutes, with 97% accuracy on key financial terms.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 2</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Algorithmic Underwriting Assistant</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Feed our system an Offering Memorandum PDF and a rent roll, and within minutes it extracts all financial data, normalizes it to your firm's format, populates your proprietary Excel underwriting model, and generates a preliminary investment memo with key assumptions, risk flags, and comparable transaction analysis. The analyst then reviews and adjusts assumptions rather than spending 2 days on data entry. This increases deal evaluation capacity by 5-8x, allowing your team to pursue opportunities they would have previously passed on due to bandwidth constraints.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 3</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Off-Market Deal Signal Engine</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Autonomous agents continuously monitor zoning board minutes, building permit applications, tax assessment changes, corporate SEC filings, bankruptcy court records, and commercial listing databases across your target markets. When signals converge&mdash;a major tenant announces layoffs AND the building owner files for a tax reassessment AND a renovation permit was recently pulled&mdash;the system identifies high-probability disposition opportunities and alerts your acquisitions team with a pre-built property profile including ownership history, debt maturity estimates, and comparable sales data.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 4</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary-container rounded-full border-2 border-secondary"></div></div>
+<div class="bg-primary-container border border-secondary/30 rounded-xl p-6 flex-1 shadow-lg">
+<h4 class="font-headline-md text-base text-on-primary mb-2">Portfolio Intelligence Dashboard</h4>
+<p class="font-body-md text-sm text-on-primary-container">A unified control center that aggregates data from Yardi, MRI, or AppFolio with market data feeds to provide real-time portfolio analytics. Track weighted average lease term (WALT), tenant credit risk scores, occupancy trends, and NOI performance across your entire portfolio on a single screen. The system automatically flags upcoming lease expirations 12 months in advance, alerts to market rent movements that create above-market or below-market exposure, and models the impact of rising cap rates or tenant defaults on portfolio valuation.</p>
+</div></div>
+</div>
+</div>
+</section>
+
+<!-- Results -->
+<section class="py-24 bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 gs opacity-20 pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10">
+<div class="text-center mb-14"><h2 class="font-headline-md text-headline-md text-white mb-4">Typical Results for CRE Deployments</h2></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">97%</div><div class="font-body-md text-on-primary font-semibold mb-2">Abstraction Accuracy</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[97%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">3 minutes per lease instead of 3 hours.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">5x</div><div class="font-body-md text-on-primary font-semibold mb-2">Deal Throughput</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[85%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Evaluate 50 deals/month instead of 10.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">48 hrs</div><div class="font-body-md text-on-primary font-semibold mb-2">LOI Turnaround</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[80%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">From OM receipt to credible Letter of Intent.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">3x</div><div class="font-body-md text-on-primary font-semibold mb-2">Off-Market Leads</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[75%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Automated signal detection surfaces deals your network misses.</p></div>
+</div>
+</div>
+</section>
+
+<!-- Testimonial -->
+<section class="py-20 px-6">
+<div class="max-w-3xl mx-auto">
+<div class="bg-surface-container-lowest p-10 md:p-14 rounded-3xl shadow-sm border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-5xl text-secondary/40 mb-6 block">format_quote</span>
+<blockquote class="font-headline-md text-2xl md:text-3xl text-primary-container leading-relaxed mb-8 italic">"We closed a $28M multifamily acquisition where we beat 6 other bidders solely because we submitted a fully underwritten LOI within 36 hours of receiving the OM. Without the Zorex underwriting system, that deal would have taken us 2 weeks. Speed won."</blockquote>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center font-bold">MR</div>
+<div class="text-left"><div class="font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold">Marcus R.</div><div class="text-sm text-on-surface-variant">VP of Acquisitions, NorthPeak Capital (Zorex Client)</div></div>
+</div></div></div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-6 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
+<div class="max-w-[1280px] mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-3xl md:text-4xl text-on-primary mb-4 font-bold">Losing deals to faster competitors?</h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Let's show you how an AI-powered underwriting and abstraction system could transform your deal velocity.</p>
+<a href="contact.html" class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">Book Your Free Audit<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span></a>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
+<div class="flex flex-col gap-4">
+<a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex AI</a>
+<div class="flex flex-col gap-2">
+<a href="mailto:hello@zorex.com" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
+<a href="tel:+923417571401" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +92 3417571401</a>
+</div></div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
+<p class="mb-2">&copy; 2026 Zorex AI.</p>
+<p>Precision-engineered growth.</p>
+</div>
+<div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="industries.html">Industries</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+</div></div></footer>
+<script>
+    (function(){var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}}();
+</script>
+</body></html>

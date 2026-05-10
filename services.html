@@ -5,12 +5,13 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>AI Software Services — Agentic Systems & LLM Apps | Zorex</title>
+  <title>AI Software Services — Agentic Systems & LLM Apps | Zorex AI</title>
   <meta name="description"
     content="Zorex delivers custom AI software services: agentic AI system development, LLM applications, custom API integrations, and intelligent automation for growing businesses.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="author" content="Zorex">
   <meta name="theme-color" content="#193868">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
   <link rel="canonical" href="https://zorex.ai/services.html">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <!-- Open Graph -->
@@ -21,6 +22,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zorex.ai/services.html">
   <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AI Software Services — Agentic Systems & LLM Apps | Zorex">
@@ -32,9 +35,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
+
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -173,8 +174,8 @@
           "position": 1,
           "item": {
             "@type": "Service",
-            "name": "Custom API Integrations",
-            "description": "Your tools don't talk to each other — so your team fills the gap manually. We connect your CRM, ERP, billing, and support systems into one cohesive ecosystem where data moves automatically, not by hand.",
+            "name": "AI Integration",
+            "description": "We connect AI capabilities into the systems you already use — so your team fills the gap manually. We connect your CRM, ERP, billing, and support systems into one cohesive ecosystem where data moves automatically, not by hand.",
             "provider": { "@id": "https://zorex.ai/#organization" },
             "serviceType": "API Integration & Data Orchestration",
             "areaServed": [
@@ -190,10 +191,10 @@
           "position": 2,
           "item": {
             "@type": "Service",
-            "name": "Intelligent Automation",
+            "name": "AI Automations",
             "description": "Beyond \"if-this-then-that.\" We build AI-driven workflows that read emails, classify intent, extract data, and make complex decisions — handling the judgment calls your team shouldn't be making manually.",
             "provider": { "@id": "https://zorex.ai/#organization" },
-            "serviceType": "AI-Powered Workflow Automation"
+            "serviceType": "AI Automations"
           }
         },
         {
@@ -201,8 +202,8 @@
           "position": 3,
           "item": {
             "@type": "Service",
-            "name": "LLM Applications",
-            "description": "We build AI-powered software trained on your company's proprietary data — so it actually knows your business, your products, and your customers. Not a generic chatbot. A system built for your specific context.",
+            "name": "Vertical AI Systems",
+            "description": "Industry-specific AI platforms purpose-built for your sector — Not generic chatbots. Vertical systems trained on your domain data, pre-compliant with your regulations, and integrated with your industry systems of record.",
             "provider": { "@id": "https://zorex.ai/#organization" },
             "serviceType": "LLM Application Development"
           }
@@ -261,6 +262,11 @@
   ]
 }
 </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 
 <body class="bg-background text-on-background font-body-lg antialiased">
@@ -316,9 +322,16 @@
     </div>
   </nav>
   <main class="pt-20">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Services</li>
+</ol>
+</nav>
     <!-- Hero Section (Buyer Focused) -->
     <section
-      class="py-section-padding px-gutter max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-card-gap mt-8">
+      class="pt-8 pb-section-padding px-gutter max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-card-gap mt-8">
       <div class="flex-1 space-y-stack-lg">
         <span
           class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm uppercase">Custom
@@ -332,7 +345,7 @@
         <div class="pt-4">
           <a href="contact.html"
             class="inline-flex items-center justify-center px-8 py-4 bg-[#193868] text-white rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline shadow-md">
-            Book a Strategy Audit
+            Book a Strategy Call
           </a>
         </div>
       </div>
@@ -510,35 +523,36 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <!-- Deliverable 1 -->
-          <div
-            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow">
+          <a href="service-ai-integration.html"
+            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow block no-underline group">
             <div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-6">
               <span class="material-symbols-outlined text-on-secondary-container">hub</span>
             </div>
-            <h3 class="font-headline-md text-2xl text-primary-container mb-3">Custom API Integrations</h3>
-            <p class="font-body-md text-on-surface-variant mb-6">Your tools don't talk to each other — so your team
-              fills the gap manually. We connect your CRM, ERP, billing, and support systems into one cohesive ecosystem
-              where data moves automatically, not by hand.</p>
+            <h3 class="font-headline-md text-2xl text-primary-container mb-3">AI Integration</h3>
+            <p class="font-body-md text-on-surface-variant mb-6">We connect AI capabilities into the systems you already use — your CRM, ERP, support platform, and internal tools. No rip-and-replace.
+              An intelligent adapter layer that makes your existing stack smarter.</p>
             <ul class="space-y-3">
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> Legacy software modernization
+                  class="material-symbols-outlined text-secondary text-sm">done</span> AI adapter layers for legacy systems
               </li>
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> Automated data reconciliation
+                  class="material-symbols-outlined text-secondary text-sm">done</span> Bidirectional real-time sync
               </li>
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> Real-time cross-platform sync
+                  class="material-symbols-outlined text-secondary text-sm">done</span> Unified intelligence dashboards
               </li>
             </ul>
-          </div>
+          
+            <div class="flex justify-end mt-6 pt-4 border-t border-outline-variant/20"><span class="inline-flex items-center gap-2 font-headline-md text-base text-secondary font-bold group-hover:gap-3 transition-all">Explore in Detail <span class="material-symbols-outlined text-base">arrow_forward</span></span></div>
+          </a>
 
           <!-- Deliverable 2 -->
-          <div
-            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow">
+          <a href="service-ai-automations.html"
+            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow block no-underline group">
             <div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center mb-6">
               <span class="material-symbols-outlined text-primary-container">psychology</span>
             </div>
-            <h3 class="font-headline-md text-2xl text-primary-container mb-3">Intelligent Automation</h3>
+            <h3 class="font-headline-md text-2xl text-primary-container mb-3">AI Automations</h3>
             <p class="font-body-md text-on-surface-variant mb-6">Beyond "if-this-then-that." We build AI-driven
               workflows that read emails, classify intent, extract data, and make complex decisions — handling the
               judgment calls your team shouldn't be making manually.</p>
@@ -551,32 +565,35 @@
                   class="material-symbols-outlined text-secondary text-sm">done</span> Intelligent exception handling
               </li>
             </ul>
-          </div>
+          
+            <div class="flex justify-end mt-6 pt-4 border-t border-outline-variant/20"><span class="inline-flex items-center gap-2 font-headline-md text-base text-secondary font-bold group-hover:gap-3 transition-all">Explore in Detail <span class="material-symbols-outlined text-base">arrow_forward</span></span></div>
+          </a>
 
           <!-- Deliverable 3 -->
-          <div
-            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow">
+          <a href="service-vertical-ai.html"
+            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow block no-underline group">
             <div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center mb-6">
-              <span class="material-symbols-outlined text-primary-container">support_agent</span>
+              <span class="material-symbols-outlined text-primary-container">category</span>
             </div>
-            <h3 class="font-headline-md text-2xl text-primary-container mb-3">LLM Applications</h3>
-            <p class="font-body-md text-on-surface-variant mb-6">We build AI-powered software trained on your company's
-              proprietary data — so it actually knows your business, your products, and your customers. Not a generic
-              chatbot. A system built for your specific context.</p>
+            <h3 class="font-headline-md text-2xl text-primary-container mb-3">Vertical AI Systems</h3>
+            <p class="font-body-md text-on-surface-variant mb-6">We build industry-specific AI platforms purpose-built for your sector's
+              terminology, regulations, and workflows — Not generic chatbots retrained on your FAQ. Vertical systems that understand your domain from day one.</p>
             <ul class="space-y-3">
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> 24/7 autonomous query resolution
+                  class="material-symbols-outlined text-secondary text-sm">done</span> Domain-specific AI models
               </li>
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> Seamless human handoff</li>
+                  class="material-symbols-outlined text-secondary text-sm">done</span> Pre-built regulatory compliance</li>
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
-                  class="material-symbols-outlined text-secondary text-sm">done</span> Multilingual capability</li>
+                  class="material-symbols-outlined text-secondary text-sm">done</span> Industry system integration</li>
             </ul>
-          </div>
+          
+            <div class="flex justify-end mt-6 pt-4 border-t border-outline-variant/20"><span class="inline-flex items-center gap-2 font-headline-md text-base text-secondary font-bold group-hover:gap-3 transition-all">Explore in Detail <span class="material-symbols-outlined text-base">arrow_forward</span></span></div>
+          </a>
 
           <!-- Deliverable 4 -->
-          <div
-            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow">
+          <a href="service-agentic-ai.html"
+            class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:shadow-md transition-shadow block no-underline group">
             <div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-6">
               <span class="material-symbols-outlined text-on-secondary-container">insights</span>
             </div>
@@ -592,8 +609,67 @@
               <li class="flex items-center gap-3 text-sm font-semibold text-on-surface"><span
                   class="material-symbols-outlined text-secondary text-sm">done</span> Autonomous task execution</li>
             </ul>
+          
+            <div class="flex justify-end mt-6 pt-4 border-t border-outline-variant/20"><span class="inline-flex items-center gap-2 font-headline-md text-base text-secondary font-bold group-hover:gap-3 transition-all">Explore in Detail <span class="material-symbols-outlined text-base">arrow_forward</span></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Engagement Model -->
+    <section class="bg-surface-bright py-section-padding border-y border-outline-variant/20">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center max-w-3xl mx-auto space-y-stack-md mb-16">
+          <h2 class="font-headline-lg text-headline-lg text-primary-container">Engagement Model</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">Every project is custom-scoped after a discovery call. Here's how we typically work together.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 text-center">
+            <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="material-symbols-outlined text-primary-container">rocket_launch</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary-container mb-2">Quick Win Sprint</h3>
+            <p class="text-sm text-on-surface-variant mb-4">Single automation or integration</p>
+            <p class="font-headline-md text-2xl text-primary-container mb-1">2-4 Weeks</p>
+            <p class="text-xs text-on-surface-variant mb-6">Scoped after discovery call</p>
+            <ul class="space-y-2 text-left text-sm text-on-surface-variant">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> One core automation</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> Full documentation</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> 30-day support</li>
+            </ul>
+          </div>
+          <div class="bg-primary-container p-8 rounded-2xl text-center relative overflow-hidden shadow-lg">
+            <div class="absolute top-4 right-4 bg-accent-gold text-primary-container text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Most Popular</div>
+            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="material-symbols-outlined text-accent-gold">psychology</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-on-primary mb-2">Full System Build</h3>
+            <p class="text-sm text-on-primary-container mb-4">End-to-end AI system deployment</p>
+            <p class="font-headline-md text-2xl text-on-primary mb-1">4-8 Weeks</p>
+            <p class="text-xs text-on-primary-container mb-6">Scoped after discovery call</p>
+            <ul class="space-y-2 text-left text-sm text-on-primary-container">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-accent-gold text-sm mt-0.5">check_circle</span> Multi-system integration</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-accent-gold text-sm mt-0.5">check_circle</span> Custom LLM / agentic system</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-accent-gold text-sm mt-0.5">check_circle</span> Training & handoff</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-accent-gold text-sm mt-0.5">check_circle</span> 90-day support</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 text-center">
+            <div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="material-symbols-outlined text-secondary">hub</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary-container mb-2">Ongoing Partnership</h3>
+            <p class="text-sm text-on-surface-variant mb-4">Retained AI engineering capacity</p>
+            <p class="font-headline-md text-2xl text-primary-container mb-1">Ongoing</p>
+            <p class="text-xs text-on-surface-variant mb-6">Monthly retainer, scoped to your needs</p>
+            <ul class="space-y-2 text-left text-sm text-on-surface-variant">
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> Dedicated AI architect</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> Continuous optimization</li>
+              <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm mt-0.5">check_circle</span> Priority response</li>
+            </ul>
           </div>
         </div>
+        <p class="text-center text-sm text-on-surface-variant mt-8">Every engagement is scoped to your exact needs after a discovery call. <a href="contact.html" class="text-secondary font-semibold hover:text-primary transition-colors">Book your free strategy call →</a></p>
       </div>
     </section>
 
@@ -626,7 +702,7 @@
             </h4>
             <p class="font-body-md text-on-surface-variant">Absolutely. We deploy enterprise-grade, closed-loop systems.
               Your data is never used to train public models, and we enforce rigorous encryption standards across all
-              automated data pipelines.</p>
+              automated data pipelines.</p> <a href="blog-llm-security.html" class="text-secondary font-semibold hover:text-primary transition-colors">Read our deep-dive on AI security</a>
           </div>
         </div>
       </div>
@@ -650,7 +726,7 @@
           <div class="pt-4">
             <a href="contact.html"
               class="inline-flex items-center justify-center px-8 py-4 bg-secondary-container text-on-secondary-container rounded-full font-label-sm uppercase tracking-wider hover:bg-secondary hover:text-white transition-all duration-300 no-underline shadow-lg hover:-translate-y-1">
-              Book a Strategy Consultation
+              Book a Strategy Call
             </a>
           </div>
         </div>
@@ -720,8 +796,12 @@
           if (d === 'about' && page === 'about.html') a = true;
           if (a) { l.classList.remove('text-slate-600'); l.classList.add('text-amber-600', 'border-b-2', 'border-amber-600', 'pb-1'); }
         });
-      })();
-  </script>
+      // Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
+})();
+</script>
   
 </body>
 

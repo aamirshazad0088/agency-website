@@ -3,13 +3,14 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AI Industries — Zorex</title>
+<title>AI Industries — Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -158,6 +159,8 @@
   <meta property="og:description" content="Explore bespoke AI solutions by Zorex AI. We build custom agentic systems, LLM-powered applications, and enterprise-grade automation tailored for growing businesses.">
   <meta property="og:url" content="https://zorex.ai/industries.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
 
 <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
     <script type="application/ld+json">
@@ -214,6 +217,11 @@
   ]
 }
     </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20">
 <!-- Unified TopNavBar -->
@@ -246,8 +254,15 @@
 </div>
 </nav>
 <main class="flex-grow">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Industries</li>
+</ol>
+</nav>
 <!-- Hero Section -->
-<section class="py-section-padding px-gutter max-w-container-max mx-auto text-center relative overflow-hidden">
+<section class="pt-8 pb-section-padding px-gutter max-w-container-max mx-auto text-center relative overflow-hidden">
 <!-- Subtle background abstract element -->
 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-96 bg-secondary-fixed/20 blur-3xl rounded-full -z-10 pointer-events-none"></div>
 <div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full font-label-sm mb-8">
@@ -260,12 +275,12 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
                 Driving business value through custom AI architectures. We engineer precision workflows that transform operational bottlenecks into scalable competitive advantages.
             </p>
-<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-sm tracking-wider hover:scale-[1.02] transition-transform shadow-sm">
+<a href="#verticals" class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-sm tracking-wider hover:scale-[1.02] transition-transform shadow-sm no-underline inline-block">
                 Explore Core Capabilities
-            </button>
+            </a>
 </section>
 <!-- Industry Verticals Grid -->
-<section class="py-section-padding px-gutter bg-surface-container-low">
+<section id="verticals" class="py-section-padding px-gutter bg-surface-container-low">
 <div class="max-w-container-max mx-auto">
 <div class="text-center mb-16">
 <h2 class="font-headline-md text-headline-md text-primary-container mb-4">Architected for Your Vertical</h2>
@@ -273,7 +288,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-card-gap">
 <!-- Card 1 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-b2b-ecommerce.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">shopping_cart</span>
 </div>
@@ -281,9 +296,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Scaling customer support and optimizing inventory management through predictive modeling and automated order routing.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 2 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-b2b-finance.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">account_balance</span>
 </div>
@@ -291,9 +308,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Automating invoice processing, account reconciliation, and establishing compliant reporting structures for real-time visibility.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 3 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-medical-practices.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">medical_services</span>
 </div>
@@ -301,9 +320,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Automating patient intake forms, intelligent appointment routing, and streamlining billing workflows within strict compliance parameters.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 4 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-commercial-real-estate.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">real_estate_agent</span>
 </div>
@@ -311,9 +332,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Intelligent lead qualification algorithms, automated property scheduling systems, and predictive market analysis.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 5 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-law-firms.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">gavel</span>
 </div>
@@ -321,9 +344,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Rapid document parsing, automated client intake, and streamlined contract generation to increase billable hours.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 6 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-b2b-saas.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">cloud</span>
 </div>
@@ -331,9 +356,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Predictive churn reduction models, dynamic onboarding flows, and automated customer success workflows.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 7 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-digital-marketing.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">campaign</span>
 </div>
@@ -341,9 +368,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Automating cross-channel performance reporting, predictive audience segmentation, and high-velocity programmatic content generation.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 8 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-logistics.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
 </div>
@@ -351,9 +380,11 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Predictive inventory modeling, automated vendor communications, and intelligent route optimization for complex delivery networks.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 <!-- Card 9 -->
-<div class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group">
+<a href="industry-manufacturing.html" class="bg-surface rounded-xl p-10 border border-outline-variant/30 hover:border-secondary transition-colors group block no-underline">
 <div class="w-14 h-14 bg-secondary-fixed/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-secondary text-3xl">factory</span>
 </div>
@@ -361,7 +392,9 @@
 <p class="font-body-md text-body-md text-on-surface-variant">
                             Real-time quality control analytics, predictive maintenance scheduling, and autonomous supply chain risk assessment.
                         </p>
-</div>
+
+<div class="mt-6 flex items-center font-label-sm text-xs text-primary-container uppercase tracking-widest font-bold group-hover:text-secondary transition-colors">Explore Use Cases <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></div>
+</a>
 </div>
 </div>
 </section>
@@ -410,8 +443,8 @@
 <p class="font-body-md text-on-surface-variant mb-6">
                             Transforming raw operational data into actionable strategic insights. Custom interfaces provide executive oversight of AI agent performance, ROI metrics, and system health.
                         </p>
-<a class="inline-flex items-center gap-2 font-label-sm text-primary-container hover:text-secondary transition-colors uppercase tracking-wide" href="#">
-                            View Dashboard Specs <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<a class="inline-flex items-center gap-2 font-label-sm text-primary-container hover:text-secondary transition-colors uppercase tracking-wide no-underline" href="services.html">
+                            View Service Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
 <div class="md:w-1/2 w-full h-64 rounded-lg border border-outline-variant/20 relative overflow-hidden shadow-inner group">
@@ -453,9 +486,9 @@
 <p class="font-body-md text-on-surface-variant mb-10 max-w-xl mx-auto relative z-10">
                     Schedule a consultation with our principal engineers to discuss architectural integration and operational impact for your enterprise.
                 </p>
-<button class="relative z-10 bg-primary-container text-on-primary px-10 py-4 rounded-full font-label-sm tracking-wider hover:bg-primary transition-colors shadow-md">
-                    Book Strategy Call
-                </button>
+<a href="contact.html" class="relative z-10 bg-primary-container text-on-primary px-10 py-4 rounded-full font-label-sm tracking-wider hover:bg-primary transition-colors shadow-md no-underline inline-block">
+                    Book a Strategy Call
+                </a>
 </div>
 </section>
 </main>
@@ -503,6 +536,10 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+// Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
 })();
 </script>
 

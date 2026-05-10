@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI for B2B SaaS | Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#193868",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-primary-container": "#87a2d9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "primary-fixed": "#d7e2ff",
+                        "secondary-fixed": "#ffdea4",
+                        "secondary-container": "#fedb9b",
+                        "on-surface-variant": "#44474f",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00224e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1b1c1c",
+                        "secondary": "#745a27",
+                        "surface": "#fcf9f8",
+                        "accent-gold": "#E2C08D",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-md": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .gs { background-image: linear-gradient(to right,rgba(116,119,128,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(116,119,128,.05) 1px,transparent 1px); background-size: 40px 40px; }
+</style>
+<meta name="description" content="Discover how Zorex AI engineers bespoke agentic systems and LLM applications for the AI for B2B SaaS sector.">
+<link rel="canonical" href="https://zorex.ai/industry-b2b-saas.html">
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
+<!-- Unified TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 bg-[#FDFCFB]/90 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex AI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="services.html" data-page="services">Services</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors text-amber-600 border-b-2 border-amber-600 pb-1" href="industries.html" data-page="industries">Industries</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="case-studies.html" data-page="case-studies">Case Studies</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="process.html" data-page="process">How we work</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="blog.html" data-page="blog">Blog</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="about.html" data-page="about">About Us</a>
+<a class="nav-link font-['Manrope'] text-sm font-semibold tracking-tight text-slate-600 hover:text-[#193868] transition-colors" href="contact.html" data-page="contact">Contact Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:scale-105 transition-transform duration-300 active:scale-95 no-underline" href="contact.html">Book Strategy Call</a>
+<button id="mobile-menu-btn" class="md:hidden text-primary-container"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div></div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-200 px-8 py-6 space-y-4">
+<a href="services.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Services</a>
+<a href="industries.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-amber-600 transition-colors no-underline">Industries</a>
+<a href="case-studies.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Case Studies</a>
+<a href="process.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">How we work</a>
+<a href="blog.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Blog</a>
+<a href="about.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">About Us</a>
+<a href="contact.html" class="block font-['Manrope'] text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-amber-600 transition-colors no-underline">Contact Us</a>
+</div></nav>
+
+<main class="pt-20">
+<!-- Breadcrumbs -->
+<div class="bg-surface border-b border-outline-variant/20 py-4"><div class="max-w-[1280px] mx-auto px-8">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li><a href="industries.html" class="hover:text-primary transition-colors no-underline">Industries</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">B2B SaaS</li>
+</ol></div></div>
+
+<!-- Hero -->
+<section class="relative pt-8 pb-24 lg:py-32 px-6 overflow-hidden">
+<div class="absolute inset-0 gs pointer-events-none"></div>
+<div class="absolute top-20 right-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm text-xs uppercase tracking-widest border border-secondary/20"><span class="material-symbols-outlined text-[14px]">cloud</span>Industry Deep Dive</span>
+<span class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Product Integration &bull; Churn Prediction &bull; Customer Success</span>
+</div>
+<h1 class="font-headline-xl text-5xl lg:text-6xl text-primary-container mb-6 leading-tight font-extrabold">Embedded AI Engineering for B2B SaaS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">Bolting a basic ChatGPT API wrapper onto your SaaS product doesn't create a competitive moat—it creates technical debt. We engineer deep, agentic features that fundamentally shift how users extract value from your platform.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">85%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Churn Prediction Accuracy</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-primary-container font-bold">3x</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Feature Adoption Rate</div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-3 text-center"><div class="font-headline-md text-xl text-secondary font-bold">-40%</div><div class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Support Ticket Volume</div></div>
+</div>
+</div>
+<div class="relative h-[420px] rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" alt="SaaS dashboard with AI analytics" class="w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6"><span class="bg-white/90 backdrop-blur-sm text-primary-container font-label-sm text-xs uppercase tracking-wider px-3 py-1.5 rounded-full">Intelligent Product Architecture</span></div>
+</div>
+</div></div>
+</section>
+
+<!-- Landscape -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-3xl mx-auto">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">The 2026 Landscape</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6">The Feature Parity Trap in Modern SaaS</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">In 2026, simply having a cloud-based web application is no longer a differentiator. B2B SaaS companies are engaged in an arms race to embed generative AI into their products. However, most companies are making the mistake of launching superficial "AI chat" features that don't deeply integrate with the user's underlying workflow.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>The Engineering Bottleneck:</strong> Your core engineering team is brilliant at building scalable web applications, but Machine Learning operations (MLOps), vector database management, and LLM orchestration require a completely different skill set. Diverting core engineers to learn AI often results in fragile implementations and neglected core product roadmaps.</p>
+<p class="font-body-md text-on-surface-variant mb-4"><strong>Reactive Customer Success:</strong> SaaS valuations depend entirely on Net Revenue Retention (NRR). Yet, most CS teams still rely on lagging indicators to spot churn risk. By the time a customer's login frequency drops, the decision to churn was made weeks ago. A reactive CS motion is a dying model.</p>
+<p class="font-body-md text-on-surface-variant mb-6"><strong>Support as a Cost Center:</strong> As your user base grows, support costs scale linearly. Tier 1 support agents spend their days answering queries that are fully documented in the knowledge base, frustrating users who want instant, contextual answers based on their specific account data.</p>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 mt-8">
+<p class="font-body-md text-on-surface-variant italic border-l-4 border-secondary pl-4">"We tried to build an AI feature internally using a basic OpenAI integration. It hallucinated constantly, users stopped engaging with it after two weeks, and our lead engineers burned a month of sprints on it. Zorex came in and built a deterministic, RAG-based microservice that actually understood our users' proprietary data."</p>
+<p class="font-label-sm text-xs text-secondary uppercase tracking-widest mt-3">&mdash; CTO, Enterprise SaaS Platform (Zorex Client)</p>
+</div>
+</div>
+</section>
+
+<!-- Problems -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Diagnosis</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Why Standard SaaS Architecture is Failing</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">code_off</span></div><h3 class="font-headline-md text-lg text-primary-container">Superficial AI Integrations</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Adding a chatbot widget that just queries OpenAI's standard API provides zero competitive advantage. It doesn't know the user's history, it doesn't understand your application's database schema, and it can't execute actions on the user's behalf. Users quickly realize it's a gimmick, leading to sub-5% adoption rates.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">timeline</span></div><h3 class="font-headline-md text-lg text-primary-container">Lagging Churn Indicators</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">Most SaaS platforms define "health scores" based on simple rule-based logic: if a user hasn't logged in for 14 days, mark them red. This ignores the nuanced reality of how value is derived from complex software. A user logging in daily just to export data might be at a higher risk of churning than a user who logs in weekly but utilizes your platform's stickiest core features.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">support_agent</span></div><h3 class="font-headline-md text-lg text-primary-container">Support Scaling Costs</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">As your MRR grows, your support team size must grow proportionally to handle "how do I do X" questions. Search-based help centers are ineffective; users want answers applied to their specific context. Answering repetitive Level 1 support tickets burns out human agents and creates unacceptable wait times for enterprise clients.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error/80"></div>
+<div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-error-container text-on-error-container rounded-lg flex items-center justify-center"><span class="material-symbols-outlined text-lg">data_usage</span></div><h3 class="font-headline-md text-lg text-primary-container">Unused Feature Bloat</h3></div>
+<p class="font-body-md text-sm text-on-surface-variant">SaaS platforms inevitably suffer from feature bloat. Your engineering team ships a powerful new reporting module, but 80% of users never discover it because they are stuck in their habitual workflows. Without intelligent, contextual nudging based on what the user is actively trying to accomplish, ROI on R&D expenditure plummets.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Architecture -->
+<section class="py-20 px-6 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Architecture</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Embedded Intelligence Microservices</h2>
+<p class="font-body-md text-on-surface-variant">We build standalone, secure AI microservices that your core engineering team can simply call via API, keeping your monolith clean and your ML operations managed.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-8 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-primary-container">api</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Core Product</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>Your SaaS Database</p><p>App Telemetry / Usage Data</p><p>Support Ticket History</p><p>Billing / CRM Data</p></div>
+</div>
+<div class="text-center p-6 bg-primary-container rounded-xl border border-secondary/30 shadow-lg relative">
+<div class="absolute -top-2 -right-2 w-5 h-5 bg-secondary rounded-full animate-pulse"></div>
+<div class="w-14 h-14 bg-surface-tint/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/30"><span class="material-symbols-outlined text-accent-gold">hub</span></div>
+<h4 class="font-headline-md text-base text-on-primary mb-2">Zorex Microservices</h4>
+<div class="space-y-1 font-body-md text-xs text-on-primary-container"><p>Predictive Churn Model</p><p>Agentic Action Framework</p><p>Contextual RAG Engine</p><p>Support Resolution Agent</p></div>
+</div>
+<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary">insights</span></div>
+<h4 class="font-headline-md text-base text-primary-container mb-2">Capabilities Delivered</h4>
+<div class="space-y-1 font-body-md text-xs text-on-surface-variant"><p>Generative UI Components</p><p>Early Warning Dashboards</p><p>Autonomous Issue Resolution</p><p>Natural Language Queries</p></div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-xs text-on-surface-variant font-label-sm uppercase tracking-widest"><span class="material-symbols-outlined text-secondary text-sm">settings_ethernet</span> Built on FastAPI &bull; Vector DB Integration &bull; Multi-tenant Security Contexts</div>
+</div>
+</div>
+</section>
+
+<!-- Use Cases -->
+<section class="py-20 px-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-secondary font-label-sm tracking-widest uppercase block mb-3 text-xs">Use Cases</span>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Deep Product Integrations We Build</h2>
+</div>
+<div class="space-y-6 max-w-3xl mx-auto">
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 1</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Action-Oriented Product Agents</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Instead of a chatbot that just talks, we build AI agents that "do". By securely exposing your application's internal APIs to an orchestration layer, a user can simply type, "Generate a Q3 revenue report grouped by territory, exclude churned accounts, and email it to the executive team." The agent translates this natural language into the necessary database queries, renders the report, and executes the email action entirely autonomously. This turns complex, multi-click workflows into single conversational commands.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 2</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Predictive Health &amp; Churn Modeling</h4>
+<p class="font-body-md text-sm text-on-surface-variant">We ingest your raw product telemetry (clickstreams, feature usage breadth, session length), billing history, and support ticket sentiment into a custom machine learning model. This model identifies the subtle, non-obvious behavior patterns that precede churn 6-8 weeks in advance. It alerts your Customer Success team not just that an account is at risk, but exactly *why* (e.g., "Integration X has failed silently for 3 days," or "Key power user ceased logging in"), allowing for highly targeted, proactive interventions that save MRR.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 3</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-secondary rounded-full"></div></div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 flex-1 shadow-sm">
+<h4 class="font-headline-md text-base text-primary-container mb-2">Autonomous Support Triage &amp; Resolution</h4>
+<p class="font-body-md text-sm text-on-surface-variant">When a user submits a ticket, our RAG-powered agent intercepts it. It reads the user's specific account context (tier, configuration, recent actions in the app), cross-references this against your internal Jira tickets, Confluence docs, and past resolved Zendesk tickets, and generates a highly specific resolution. If it's a known bug, it links the user to the bug tracker and automatically tags the ticket. If it's a configuration issue, it provides step-by-step instructions customized to their exact account setup. This deflects up to 40% of Level 1 tickets instantly.</p>
+</div></div>
+<div class="flex gap-6 items-start"><div class="w-20 shrink-0 text-right"><span class="font-label-sm text-xs text-secondary uppercase tracking-widest">Agent 4</span></div><div class="w-px bg-outline-variant/50 shrink-0 relative"><div class="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary-container rounded-full border-2 border-secondary"></div></div>
+<div class="bg-primary-container border border-secondary/30 rounded-xl p-6 flex-1 shadow-lg">
+<h4 class="font-headline-md text-base text-on-primary mb-2">Contextual Feature Nudging (Generative UI)</h4>
+<p class="font-body-md text-sm text-on-surface-variant text-on-primary-container">We implement systems that observe what a user is trying to accomplish and dynamically generate UI elements to assist them. If a user is struggling to build a complex data filter, the AI recognizes the friction point and proactively surfaces a natural language input box saying, "Describe the data you want to see." This creates a personalized, adaptive interface that accelerates feature adoption without relying on annoying pop-up tutorials.</p>
+</div></div>
+</div>
+</div>
+</section>
+
+<!-- Results -->
+<section class="py-24 bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 gs opacity-20 pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-6 relative z-10">
+<div class="text-center mb-14"><h2 class="font-headline-md text-headline-md text-white mb-4">Impact on SaaS Metrics</h2></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">85%</div><div class="font-body-md text-on-primary font-semibold mb-2">Predictive Accuracy</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[85%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Identifying at-risk MRR weeks before the customer formally cancels.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">3x</div><div class="font-body-md text-on-primary font-semibold mb-2">Feature Adoption</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[80%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Users utilizing complex product capabilities via conversational interfaces.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">-40%</div><div class="font-body-md text-on-primary font-semibold mb-2">L1 Support Tickets</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[60%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Autonomous resolution of "how-to" and configuration inquiries.</p></div>
+<div class="bg-primary-container/80 backdrop-blur-sm p-8 rounded-xl border border-secondary-container/30"><div class="font-headline-xl text-4xl text-secondary-container mb-1">+12%</div><div class="font-body-md text-on-primary font-semibold mb-2">Net Rev Retention</div><div class="h-1.5 w-full bg-primary/50 rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary-container w-[95%] rounded-full"></div></div><p class="text-xs text-primary-fixed-dim">Driven by proactive CS interventions and deeper product stickiness.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-6 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
+<div class="max-w-[1280px] mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-3xl md:text-4xl text-on-primary mb-4 font-bold">Don't lose to competitors with better AI features.</h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Let's discuss how to embed robust, production-ready AI microservices into your SaaS product without derailing your engineering team's core roadmap.</p>
+<a href="contact.html" class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">Schedule a Technical Discovery<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span></a>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 bg-[#193868] border-t border-white/10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8 gap-12 md:gap-8">
+<div class="flex flex-col gap-4">
+<a href="index.html" class="text-2xl font-bold text-white no-underline">Zorex AI</a>
+<div class="flex flex-col gap-2">
+<a href="mailto:hello@zorex.com" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> hello@zorex.com</a>
+<a href="tel:+923417571401" class="font-['Manrope'] text-sm tracking-wide text-slate-300 hover:text-white transition-colors no-underline flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +92 3417571401</a>
+</div></div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#E2C08D] text-left md:text-center max-w-xs">
+<p class="mb-2">&copy; 2026 Zorex AI.</p>
+<p>Precision-engineered growth.</p>
+</div>
+<div class="flex flex-wrap justify-start md:justify-end gap-x-6 gap-y-4 max-w-md">
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="services.html">Services</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="industries.html">Industries</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="case-studies.html">Case Studies</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-slate-400 hover:text-[#E2C08D] transition-colors no-underline" href="contact.html">Contact Us</a>
+</div></div></footer>
+<script>
+    (function(){var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');btn.querySelector('.material-symbols-outlined').textContent=menu.classList.contains('hidden')?'menu':'close';});}}();
+</script>
+</body></html>

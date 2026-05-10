@@ -4,10 +4,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Case Studies — Real Results | Zorex AI Automation</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -116,6 +117,8 @@
   <meta property="og:description" content="Read how Zorex AI has helped growing businesses achieve 60-98% efficiency gains through custom AI software, agentic systems, and LLM automation workflows.">
   <meta property="og:url" content="https://zorex.ai/case-studies.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
 
 <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
     <script type="application/ld+json">
@@ -172,6 +175,11 @@
   ]
 }
     </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
 <!-- Unified TopNavBar -->
@@ -204,9 +212,16 @@
 </div>
 </nav>
 <main class="pt-20">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Case Studies</li>
+</ol>
+</nav>
 
   <!-- Hero -->
-  <section class="relative py-24 px-8 bg-surface-bright border-b border-outline-variant/30 overflow-hidden">
+  <section class="relative pt-8 pb-24 px-8 bg-surface-bright border-b border-outline-variant/30 overflow-hidden">
     <div class="max-w-[1280px] mx-auto relative z-10 text-center">
       <span class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm uppercase tracking-widest mb-6 shadow-sm text-xs">
         <span class="material-symbols-outlined text-sm icon-fill">verified</span>
@@ -275,9 +290,9 @@
           </div>
           <div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
             <div class="flex items-center gap-3 text-xs font-label-sm text-outline uppercase tracking-widest">
-              <span>Aisha M., Operations Director</span>
+              <span>Aisha Malik, Operations Director</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
-              <span>Regional Logistics Provider</span>
+              <span>Novus Logistics Group</span>
             </div>
             <span class="inline-flex items-center gap-1 text-secondary font-label-sm text-xs uppercase tracking-wider group-hover:gap-2 transition-all">
               Read Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -323,9 +338,9 @@
           </div>
           <div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
             <div class="flex items-center gap-3 text-xs font-label-sm text-outline uppercase tracking-widest">
-              <span>David L., Founder</span>
+              <span>David Liu, Founder & CEO</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
-              <span>B2B Financial Services</span>
+              <span>EchoCommerce Financial</span>
             </div>
             <span class="inline-flex items-center gap-1 text-secondary font-label-sm text-xs uppercase tracking-wider group-hover:gap-2 transition-all">
               Read Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -371,9 +386,9 @@
           </div>
           <div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
             <div class="flex items-center gap-3 text-xs font-label-sm text-outline uppercase tracking-widest">
-              <span>Sarah J., Practice Manager</span>
+              <span>Sarah Jensen, Practice Manager</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
-              <span>Specialized Medical Group</span>
+              <span>ViralGrowth Medical Group</span>
             </div>
             <span class="inline-flex items-center gap-1 text-secondary font-label-sm text-xs uppercase tracking-wider group-hover:gap-2 transition-all">
               Read Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -393,7 +408,7 @@
       <p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Schedule a zero-commitment strategy audit and discover where automation can transform your operations.</p>
       <a href="contact.html"
          class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">
-        Book Strategy Call
+        Book a Strategy Call
         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
       </a>
     </div>
@@ -443,6 +458,10 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+// Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
 })();
 </script>
 

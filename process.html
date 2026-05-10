@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Our Build Process - Zorex AI Software Agency</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -111,6 +112,8 @@
   <meta property="og:description" content="Discover Zorex AI's straightforward, rigorous build process for engineering agentic systems. We prioritize clear documentation, data security, and seamless handoffs.">
   <meta property="og:url" content="https://zorex.ai/process.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
 
 <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
     <script type="application/ld+json">
@@ -167,6 +170,11 @@
   ]
 }
     </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased pt-[72px]">
 <!-- Unified TopNavBar -->
@@ -200,7 +208,7 @@
 </nav>
 
 <!-- Hero Section -->
-<header class="py-section-padding px-8 relative overflow-hidden">
+<header class="pt-8 pb-section-padding px-8 relative overflow-hidden">
 <div class="max-w-container-max mx-auto text-center relative z-10">
 <span class="inline-block bg-secondary-container text-on-secondary-container font-label-sm px-4 py-2 rounded-full mb-stack-lg shadow-sm">THE PROCESS</span>
 <h1 class="font-headline-xl text-headline-xl text-primary-container max-w-4xl mx-auto mb-6">
@@ -270,6 +278,13 @@ Our Build Process:<br/>
 
 <!-- Process Timeline / Sections -->
 <main class="pb-section-padding px-8">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">How We Work</li>
+</ol>
+</nav>
 <div class="max-w-container-max mx-auto relative">
 <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/50 transform -translate-x-1/2 z-0"></div>
 <section class="mb-card-gap relative z-10 flex flex-col md:flex-row items-center justify-between group">
@@ -416,10 +431,10 @@ Our Build Process:<br/>
 <p class="font-body-lg text-primary-fixed-dim mb-12 max-w-2xl mx-auto">
     Schedule a private briefing with our senior architects to discuss your specific operational challenges and discover how Zorex can deploy precise, enterprise-grade AI automation.
 </p>
-<button class="bg-secondary text-on-secondary font-label-sm px-8 py-4 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg uppercase tracking-widest text-sm inline-flex items-center gap-2">
-    Request Architecture Review
+<a href="contact.html" class="bg-secondary text-on-secondary font-label-sm px-8 py-4 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg uppercase tracking-widest text-sm inline-flex items-center gap-2 no-underline">
+    Book a Strategy Call
     <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</button>
+</a>
 </div>
 </section>
 
@@ -468,6 +483,10 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+// Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
 })();
 </script>
 

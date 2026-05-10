@@ -3,11 +3,12 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Blog — AI Automation Insights | Zorex</title>
+<title>Blog — AI Automation Insights | Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -116,6 +117,8 @@
   <meta property="og:description" content="Read the latest insights from Zorex AI's engineering team on agentic systems, LLM application architecture, and high-leverage enterprise automation.">
   <meta property="og:url" content="https://zorex.ai/blog.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zorex.ai/assets/images/hero_ai_visual.png">
+  <meta property="og:site_name" content="Zorex AI">
 
 <!-- JSON-LD Structured Data: SEO + AEO Infrastructure -->
     <script type="application/ld+json">
@@ -172,6 +175,11 @@
   ]
 }
     </script>
+<style>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+</style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-accent-gold/30 selection:text-primary-container">
 <!-- Unified TopNavBar -->
@@ -205,9 +213,16 @@
 </nav>
 <!-- Main Content -->
 <main class="pt-20">
+<nav aria-label="Breadcrumb" class="max-w-[1280px] mx-auto px-8 pt-6 pb-2">
+<ol class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant uppercase tracking-wider">
+<li><a href="index.html" class="hover:text-primary transition-colors no-underline">Home</a></li>
+<li><span class="material-symbols-outlined text-[10px] text-outline">chevron_right</span></li>
+<li class="text-primary-container font-semibold">Blog</li>
+</ol>
+</nav>
 
   <!-- Blog Hero -->
-  <section class="relative py-24 px-8 bg-surface-bright border-b border-outline-variant/30 overflow-hidden">
+  <section class="relative pt-8 pb-24 px-8 bg-surface-bright border-b border-outline-variant/30 overflow-hidden">
     <div class="max-w-[1280px] mx-auto relative z-10 text-center">
       <span class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm uppercase tracking-widest mb-6 shadow-sm text-xs">
         <span class="material-symbols-outlined text-sm icon-fill">article</span>
@@ -255,9 +270,9 @@
           </p>
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-3 text-xs font-label-sm text-outline uppercase tracking-widest">
-              <span>Dr. Aris Thorne</span>
+              <span>Zorex AI Engineering</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
-              <span>Oct 24, 2024</span>
+              <span>Mar 15, 2026</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
               <span>12 min read</span>
             </div>
@@ -291,9 +306,9 @@
           </p>
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-3 text-xs font-label-sm text-outline uppercase tracking-widest">
-              <span>Aetheris Research</span>
+              <span>Zorex AI Team</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
-              <span>Nov 12, 2024</span>
+              <span>Apr 02, 2026</span>
               <span class="w-1 h-1 bg-secondary rounded-full"></span>
               <span>10 min read</span>
             </div>
@@ -324,7 +339,7 @@
           <p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">Deep technical dive into vector databases, semantic routing, and how Zorex builds multi-agent systems that synthesize context dynamically.</p>
           <div class="flex items-center justify-between mt-auto">
             <div class="flex items-center gap-2 text-[10px] font-label-sm text-outline uppercase tracking-widest">
-              <span>Nov 05, 2024</span>
+              <span>Jan 28, 2026</span>
             </div>
             <span class="inline-flex items-center text-secondary font-label-sm text-[10px] uppercase tracking-wider group-hover:pr-1 transition-all">Read <span class="material-symbols-outlined text-xs ml-1">arrow_forward</span></span>
           </div>
@@ -345,7 +360,7 @@
           <p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">Addressing the biggest enterprise objection—data privacy. Detailing self-hosted models, VPC deployments, and deterministic guardrails.</p>
           <div class="flex items-center justify-between mt-auto">
             <div class="flex items-center gap-2 text-[10px] font-label-sm text-outline uppercase tracking-widest">
-              <span>Dec 12, 2024</span>
+              <span>Feb 18, 2026</span>
             </div>
             <span class="inline-flex items-center text-secondary font-label-sm text-[10px] uppercase tracking-wider group-hover:pr-1 transition-all">Read <span class="material-symbols-outlined text-xs ml-1">arrow_forward</span></span>
           </div>
@@ -366,7 +381,7 @@
           <p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">How decision-layer AI replaces brittle logic trees, featuring the mathematics of error reduction and ROI horizons for growing businesses.</p>
           <div class="flex items-center justify-between mt-auto">
             <div class="flex items-center gap-2 text-[10px] font-label-sm text-outline uppercase tracking-widest">
-              <span>Jan 18, 2025</span>
+              <span>Mar 05, 2026</span>
             </div>
             <span class="inline-flex items-center text-secondary font-label-sm text-[10px] uppercase tracking-wider group-hover:pr-1 transition-all">Read <span class="material-symbols-outlined text-xs ml-1">arrow_forward</span></span>
           </div>
@@ -377,14 +392,31 @@
   </section>
 
   <!-- CTA Strip -->
+
+  <!-- Newsletter Signup -->
+  <section class="py-section-padding px-8 bg-surface-container border-t border-outline-variant/20">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <span class="material-symbols-outlined text-4xl text-secondary mb-6">mail</span>
+      <h2 class="font-headline-md text-headline-md text-primary-container mb-4">Get AI insights that actually move the needle</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">One email per month. No fluff — just the frameworks, case studies, and technical breakdowns we use with our own clients.</p>
+      <form class="flex flex-col sm:flex-row items-center gap-4 max-w-md mx-auto" action="https://formspree.io/f/xpwdjqgz" method="POST" id="newsletter-form">
+        <input type="hidden" name="_subject" value="Newsletter Signup - Blog" />
+        <input type="email" name="email" required placeholder="your@email.com" class="flex-1 w-full px-5 py-4 rounded-full border border-outline-variant bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm" />
+        <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-primary-container text-on-primary rounded-full font-label-sm uppercase tracking-wider hover:bg-primary transition-colors shadow-md whitespace-nowrap">Subscribe</button>
+      </form>
+      <p class="text-xs text-on-surface-variant mt-3">Join 800+ operators and founders. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
   <section class="py-20 px-8 bg-primary-container relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/50 via-primary-container to-primary-container"></div>
     <div class="max-w-[1280px] mx-auto text-center relative z-10">
       <h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Ready to automate your operations?</h2>
-      <p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Schedule a zero-commitment strategy audit to see exactly where AI can scale your revenue.</p>
+      <p class="font-body-lg text-on-primary-container mb-8 max-w-xl mx-auto">Schedule a zero-commitment strategy call to see exactly where AI can scale your revenue.</p>
       <a href="contact.html"
          class="inline-flex items-center justify-center px-10 py-4 bg-accent-gold text-primary-container rounded-full font-label-sm uppercase tracking-wider font-bold hover:bg-white transition-colors shadow-lg no-underline">
-        Book Strategy Call
+        Book a Strategy Call
         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
       </a>
     </div>
@@ -434,6 +466,10 @@ if(d==='contact'&&page==='contact.html')a=true;
 if(d==='about'&&page==='about.html')a=true;
 if(a){l.classList.remove('text-slate-600');l.classList.add('text-amber-600','border-b-2','border-amber-600','pb-1');}
 });
+// Scroll-reveal
+var rEls=document.querySelectorAll('.reveal');
+var rObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');rObs.unobserve(e.target);}});},{threshold:0.15});
+rEls.forEach(function(el){rObs.observe(el);});
 })();
 </script>
 

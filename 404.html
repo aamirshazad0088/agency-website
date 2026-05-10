@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Page Not Found — Zorex AI</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23193868'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23E2C08D'%3EZ%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "surface": "#fcf9f8",
+                "on-surface": "#1b1c1c",
+                "primary": "#00224e",
+                "primary-container": "#193868",
+                "on-primary": "#ffffff",
+                "on-primary-container": "#87a2d9",
+                "secondary": "#745a27",
+                "secondary-container": "#fedb9b",
+                "on-secondary-container": "#795f2b",
+                "accent-gold": "#E2C08D",
+                "outline-variant": "#c4c6d0",
+                "on-surface-variant": "#44474f",
+            },
+            fontFamily: {
+                "headline-xl": ["Manrope"],
+                "body-lg": ["Manrope"],
+                "label-sm": ["Manrope"],
+            },
+        },
+    },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.icon-fill { font-variation-settings: 'FILL' 1; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-['Manrope'] min-h-screen flex flex-col">
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-[#FDFCFB]/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+<a class="text-2xl font-extrabold tracking-tighter text-[#193868] no-underline" href="index.html">Zorex AI</a>
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-[#193868] text-white rounded-full text-xs font-semibold uppercase tracking-wider hover:scale-105 transition-transform duration-300 no-underline" href="contact.html">Book Strategy Call</a>
+</div>
+</nav>
+
+<main class="flex-1 flex items-center justify-center px-8 pt-20">
+<div class="max-w-2xl text-center">
+    <div class="mb-8" style="animation: float 3s ease-in-out infinite;">
+        <span class="material-symbols-outlined text-[120px] text-primary-container/20">explore_off</span>
+    </div>
+    <h1 class="text-8xl font-extrabold text-primary-container mb-4 tracking-tighter">404</h1>
+    <h2 class="text-2xl font-bold text-on-surface mb-6">This page doesn't exist — but your AI system could.</h2>
+    <p class="text-lg text-on-surface-variant mb-10 max-w-md mx-auto">Looks like this page got lost in the data pipeline. Let's get you back on track.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="index.html" class="inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors shadow-md no-underline">
+            <span class="material-symbols-outlined mr-2 text-sm">home</span>
+            Back to Home
+        </a>
+        <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary-container text-primary-container rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-primary-container hover:text-on-primary transition-colors no-underline">
+            Book a Strategy Call
+        </a>
+    </div>
+    <div class="mt-16 flex items-center justify-center gap-8 text-sm text-on-surface-variant">
+        <a href="services.html" class="hover:text-primary transition-colors no-underline">Services</a>
+        <a href="case-studies.html" class="hover:text-primary transition-colors no-underline">Case Studies</a>
+        <a href="blog.html" class="hover:text-primary transition-colors no-underline">Blog</a>
+    </div>
+</div>
+</main>
+
+<footer class="w-full py-8 bg-[#193868] text-center">
+    <p class="text-sm text-[#E2C08D]">© 2026 Zorex AI. Custom AI software for growing businesses.</p>
+</footer>
+</body>
+</html>
